@@ -1,0 +1,19 @@
+doctype html
+html(lang='th')
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    block content
+
+    br
+    div.container-fluid
+      div.row(style='background-color: #EBE8E0;')
+        //- Footer
+        p ส่วนล่างของเว็บไซต์
+
+    script(type='text/javascript', src='/js/jquery-3.1.1.slim.min.js')
+    script(type='text/javascript', src='/bootstrap/js/bootstrap.min.js')
