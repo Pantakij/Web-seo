@@ -34,3 +34,19 @@ h3.card-content{ padding-left: 10px; }
 
 div.inline { float:left; }
 .clearBoth { clear:both; }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+
+div.table-content-right{
+  text-align: right; 
+  width: 120px; 
+  margin: auto;
+}
+
+.clear-padding{
+  padding: 0px;
+}
