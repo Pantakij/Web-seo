@@ -1,5 +1,5 @@
 body {
-  background-color: #e7e7e7;
+  background-color: #E2E2E2;
 }
 
 div.card{
@@ -47,6 +47,34 @@ div.table-content-right{
   margin: auto;
 }
 
+.inline{
+  display: inline-block;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.bank-picture{
+  width: 3em; 
+  padding-top: 5px !important;
+}
+
+.bank-number{
+  font-size: 1.5em; 
+  padding-top: 0.9em !important;
+}
+
+.rotate-plus-15-degree{
+  -ms-transform: rotate(15deg); /* IE 9 */
+  -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+  transform: rotate(15deg);
+}
+
 .clear-padding{
-  padding: 0px;
+  padding: 0px !important;
+}
+
+.clear-margin{
+  margin: 0 !important;
 }

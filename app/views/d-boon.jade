@@ -11,7 +11,7 @@ block content
                     span.icon-bar
                 a.navbar-brand(href='#')= title
 
-            div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
+            //-div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
                 ul.nav.navbar-nav
                     li.active
                         a(href='#') Link 
@@ -61,7 +61,6 @@ block content
                 ol.carousel-indicators
                     li.active(data-target='#DboonCarousel', data-slide-to='0') 
                     li(data-target='#DboonCarousel', data-slide-to='1')
-                    li(data-target='#DboonCarousel', data-slide-to='2')
 
                 //- Wrapper for slides
                 div.carousel-inner(role='listbox')
@@ -69,8 +68,6 @@ block content
                         img(src='/img/d-boon-med.jpg', alt='D-Boon ชนิดเม็ด รับประทานวันละ 1 เม็ด', width='460', height='345')
                     div.item
                         img(src='/img/d-boon-pong.jpg', alt='D-Boon ชนิดผง ผสมน้ำพร้อมรับประทาน', width='460', height='345')
-                    div.item
-                        img(src='/img/d-network.jpg', alt='D Network WorldWide บริษัทขายตรงน้ำดี... สัญชาติไทย', width='460', height='345')
                     
                 
                 //- Left and right controls
@@ -87,87 +84,184 @@ block content
             div.col-xs-12.col-sm-8.col-md-8(style='background-color: white;')
                 p
                     h1(style='font-weight: bold') D-Boon 
-                    p(style='font-size: 1.5em') (ดีบูน) เป็นผลิตภัณฑ์อาหารเสริมที่ช่วยเรื่องความเสื่อมของกระดูกและข้อต่อต่างๆในร่างกาย ด้วยส่วนผสมที่ลงตัวเพื่อการซ่อมแซมเนื้อเยื่อกระดูกอ่อนรอบๆข้อต่อ เอ็นร้อยหวาย และเอ็นยึดข้อ จึงเป็นอาหารเสริมที่มียอดขายสูงสุดทั้งในยุโรปและอเมริกา ครบถ้วนสารอาหารที่เสริมสร้างความแข็งแรงของกระดูกและข้อต่อ
+                    p(style='font-size: 1.5em') (ดีบูน หรือ ดีบูเน่ D-Boone) เป็นผลิตภัณฑ์อาหารเสริมที่ช่วยเรื่องความเสื่อมของกระดูกและข้อต่อต่างๆในร่างกาย มีส่วนผสมที่ลงตัวเพื่อการซ่อมแซมเนื้อเยื่อกระดูกอ่อนรอบๆข้อต่อ เอ็นร้อยหวาย และเอ็นยึดข้อ จึงเป็นอาหารเสริมที่มียอดขายสูงสุดทั้งในยุโรปและอเมริกา ด้วยสารอาหารที่ครบถ้วนเสริมสร้างความแข็งแรงของกระดูกและข้อ
         
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8(style='background-color: white;')
-                h2(style='font-weight: bold') D-Boon&nbsp;อาหารเสริมบำรุงกระดูกและข้อ&nbsp;เหมาะสำหรับ
-                div.row
-                    div.hidden-xs.col-sm-5.col-md-5
-                        img(src='/img/samart.jpg', alt='D-Boon และ คุณสามารถ พยักฆ์อรุณ', style='width: 100%;')
-                    div.col-xs-12.col-sm-7.col-md-7
-                        p(style='font-size: 1.5em') &nbsp;&nbsp;-&nbsp;ป้องกันการเกิดโรคกระดูกพรุน
-                        p(style='font-size: 1.5em') &nbsp;&nbsp;-&nbsp;โรคหมอนรองกระดูกสันหลังเคลื่อน
-                        p(style='font-size: 1.5em') &nbsp;&nbsp;-&nbsp;นิ้วล็อค&nbsp;โรคฮิตของคนทำงาน
-                        p(style='font-size: 1.5em') &nbsp;&nbsp;-&nbsp;บรรเทาอาการปวดข้อ
-                        p(style='font-size: 1.5em') &nbsp;&nbsp;-&nbsp;สตรีวัยหมดประจำเดือน&nbsp;ขาดแคลเซียม
-                        p(style='font-size: 1.5em') &nbsp;&nbsp;-&nbsp;ผู้ที่ต้องการเพิ่มความสูง
-                        p(style='font-size: 1.5em') &nbsp;&nbsp;-&nbsp;นักกีฬา&nbsp;หรือผู้ที่ต้องการออกกำลังกายเป็นจำ
-                        p(style='font-size: 1.5em') &nbsp;&nbsp;-&nbsp;ผู้ที่มีอาชีพที่ต้องยืนเป็นเวลานานๆ
-                        p(style='font-size: 1.5em') &nbsp;&nbsp;-&nbsp;ผู้ที่มีปัญหาโรคข้อเสื่อม&nbsp;ข้ออักเสบ&nbsp;กระดูกพรุน
-                        p(style='font-size: 1.5em') &nbsp;&nbsp;-&nbsp;ป้องกันการเกิดโรคข้อเสื่อม
-                    
+            div.col-xs-12.col-sm-5.col-md-5
+                h2(style='font-weight: bold') D-Boon&nbsp;เหมาะสำหรับ
+                div.col-xs-12.col-sm-12.col-md-12
+                    ul(style='font-size: 1.4em;')
+                        li ป้องกันการเกิดโรคกระดูกพรุน
+                        li โรคหมอนรองกระดูกสันหลังเคลื่อน
+                        li นิ้วล็อค&nbsp;โรคฮิตของคนทำงาน
+                        li บรรเทาอาการปวดข้อ
+                        li สตรีวัยหมดประจำเดือน&nbsp;ขาดแคลเซียม
+                        li ผู้ที่ต้องการเพิ่มความสูง
+                        li นักกีฬา&nbsp;หรือผู้ที่ต้องการออกกำลังกายเป็นจำ
+                        li ผู้ที่มีอาชีพที่ต้องยืนเป็นเวลานานๆ
+                        li ผู้ที่มีปัญหาโรคข้อเสื่อม&nbsp;ข้ออักเสบ&nbsp;กระดูกพรุน
+                        li ป้องกันการเกิดโรคข้อเสื่อม
+            div.hidden-xs.col-sm-3.col-md-3
+                img(src='/img/samart.jpg', alt='D-Boon และ คุณสามารถ พยักฆ์อรุณ', style='width: 100%;')
+
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8(style='background-color: white;')
                 
                 h2(style='font-weight: bold') ส่วนประกอบสำคัญ
-                div.row
-                    div.hidden-xs.col-sm-2.col-md-2
-                    div.col-xs-12.col-sm-8.col-md-8
-                        table(style='width: 100%; margin: auto;')
-                            tr
-                                td 
-                                    div Hydrolyzed&nbsp;Fish&nbsp;Collagen
-                                    div (คอลลาเจนจากปลาทะเล)
-                                td 
-                                    div.table-content-right 250.000&nbsp;มิลลิกรัม
-                            tr
-                                td 
-                                    div Shark&nbsp;Cartilage
-                                    div (กระดูกอ่อนปลาฉลาม)
-                                td 
-                                    div.table-content-right 100.000&nbsp;มิลลิกรัม
-                            tr
-                                td 
-                                    div Pine&nbsp;Bark&nbsp;Extract&nbsp;(MSM)
-                                    div (สารสกัดจากเปลือกสน)
-                                td 
-                                    div.table-content-right 60.000&nbsp;มิลลิกรัม
-                            tr
-                                td 
-                                    div Ascorbic&nbsp;Acid 
-                                    div (แอสคอร์บิค&nbsp;เอซิด)
-                                td 
-                                    div.table-content-right 60.000&nbsp;มิลลิกรัม
-                            tr
-                                td 
-                                    div Turmeric&nbsp;Extract&nbsp;Powder
-                                    div (สารสกัดจากขมิ้น)
-                                td 
-                                    div.table-content-right 30.000&nbsp;มิลลิกรัม
-                            tr
-                                td 
-                                    div Vitamin&nbsp;D3&nbsp;100&nbsp;SD/S 
-                                    div (วิตามิน&nbsp;ดี3)
-                                td 
-                                    div.table-content-right 2.000&nbsp;มิลลิกรัม
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8
+                    table(style='width: 100%; margin: auto;')
+                        tr
+                            td 
+                                div Hydrolyzed&nbsp;Fish&nbsp;Collagen
+                                div (คอลลาเจนจากปลาทะเล)
+                            td 
+                                div.table-content-right 250.000&nbsp;มิลลิกรัม
+                        tr
+                            td 
+                                div Shark&nbsp;Cartilage
+                                div (กระดูกอ่อนปลาฉลาม)
+                            td 
+                                div.table-content-right 100.000&nbsp;มิลลิกรัม
+                        tr
+                            td 
+                                div Pine&nbsp;Bark&nbsp;Extract&nbsp;(MSM)
+                                div (สารสกัดจากเปลือกสน)
+                            td 
+                                div.table-content-right 60.000&nbsp;มิลลิกรัม
+                        tr
+                            td 
+                                div Ascorbic&nbsp;Acid 
+                                div (แอสคอร์บิค&nbsp;เอซิด)
+                            td 
+                                div.table-content-right 60.000&nbsp;มิลลิกรัม
+                        tr
+                            td 
+                                div Turmeric&nbsp;Extract&nbsp;Powder
+                                div (สารสกัดจากขมิ้น)
+                            td 
+                                div.table-content-right 30.000&nbsp;มิลลิกรัม
+                        tr
+                            td 
+                                div Vitamin&nbsp;D3&nbsp;100&nbsp;SD/S 
+                                div (วิตามิน&nbsp;ดี3)
+                            td 
+                                div.table-content-right 2.000&nbsp;มิลลิกรัม
                     
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.clear-padding
-                img(src='/img/garunty3.jpg', alt='รางวัลการันตีคุณภาพ Best product of the year 2016', style='width: 100%;')
+                P review product
         
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.clear-padding
-                P review product
+                img(src='/img/garunty3.jpg', alt='รางวัลการันตีคุณภาพ Best product of the year 2016', style='width: 100%;')
 
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.clear-padding
-                P contact
+                P สรรพคุณ
+        
+        div.row
+            div.hidden-xs.col-sm-2.col-md-2
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding
+                P โรค
+
+        div.row
+            div.hidden-xs.col-sm-2.col-md-2
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding
+                img(src='/img/d-network.jpg', alt='D Network WorldWide บริษัทขายตรงน้ำดี... สัญชาติไทย', width='100%')
+
+        div.row
+            div.hidden-xs.col-sm-2.col-md-2
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding(style='background-color: white;')
+                div.col-xs-12.col-sm-6.col-md-6.clear-padding
+                    img(src='/img/S__11354179.jpg', style='width: 100%;', alt='คุณอักษรา มงคลนำเจริญ ตัวแทนจำหน่าย D-Boon')
+                div.col-xs-12.col-sm-6.col-md-6.clear-padding
+                    img(src='/img/S__11354180.jpg', style='width: 100%;', alt='คุณก้องเกียรติ ภัทรพรไพศาล ตัวแทนจำหน่าย D-Boon')
+                        
+                div.col-xs-12.col-sm-12.col-md-12.clear-padding
+                    div.col-xs-12.col-sm-6.col-md-6.clear-padding
+                        div.col-xs-12.col-sm-8.col-md-8.clear-padding()
+                            div.col-xs-12.col-sm-12.col-md-12.clear-padding(style='background-color: #00C300; color: white; border: 1px solid #00C300; border-radius: 8px;')
+                                div.col-xs-10.col-sm-10.col-md-10.clear-padding(style='text-align: center;')
+                                    div(style='width: 10em; margin: 0 auto;')
+                                        div.rotate-plus-15-degree.inline(style='padding-top: 5px; color: red; font-weight: bold; font-size: 1.4em;') คลิ๊ก
+                                        div.inline(style='padding-top: 10px; font-size: 1.2em;') เพื่อติดต่อเรา
+                                    div(style='clear: both; font-size: 1.2em; margin-bottom: 5px;') 
+                                        span(title='Line ID') ID : @dboonthai
+                                div.col-xs-2.col-sm-2.col-md-2.clear-padding
+                                    img(src='/img/LINE.jpg', style='width: 4em; float: right; padding: 5px; padding-top: 7px;', alt='Line icon')
+                            div.col-xs-12.col-sm-12.col-md-12.clear-padding(style='background-color: #018F99; color: white; border: 1px solid #018F99; border-radius: 8px;')
+                                div.col-xs-10.col-sm-10.col-md-10.clear-padding(style='text-align: center;')
+                                    div(style='width: 10em; margin: 0 auto;')
+                                        div.rotate-plus-15-degree.inline(style='padding-top: 5px; color: red; font-weight: bold; font-size: 1.4em;') คลิ๊ก
+                                        div.inline(style='padding-top: 10px; font-size: 1.2em;') เพื่อโทรสั่งซื้อ
+                                    div(style='clear: both; font-size: 1.2em; margin-bottom: 5px;') 
+                                        span(title='Phone-number') 095-220-6249
+                                div.col-xs-2.col-sm-2.col-md-2.clear-padding
+                                    img(src='/img/phone-icon-945.png', style='width: 4em; float: right; padding: 5px; padding-top: 7px;', alt='Line icon')
+
+                        div.hidden-xs.col-sm-4.col-md-4.clear-padding
+                            img(src='/img/line-ad.jpg', style='width: 100%;', alt='QR Code ศูนย์จำหน่าย D-Boon')
+                    div.col-xs-12.col-sm-6.col-md-6.clear-padding(style='background-color: #7B7BC1; border: 1px solid #7B7BC1; border-radius: 8px;')
+                        img(src='/img/kerry-express.jpg', style='display: block; margin: 0 auto;', alt='ส่งสินค้าผ่าน Kerry Express บริการเก็บเงินปลายทาง ส่งเร็ว มั่นใจ ได้รับสินค้า 100%')
+
+                div.col-xs-12.col-sm-12.col-md-12.clear-padding
+                    div.col-xs-12.col-sm-12.col-md-12.text-center
+                        p.clear-margin(style='padding-top: 8px; font-size: 1.8em; font-weight: bold;') เลขบัญชีธนาคาร
+                        p(style='font-size: 1.4em;') คุณอักษรา&nbsp;มงคลนำเจริญ
+                    div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #0090D6; color: white;')
+                        div.col-xs-4.col-sm-4.col-md-4.clear-padding
+                            img.bank-picture(src='/img/ktb-bank.jpg', alt='ธนาคารกรุงไทย')
+                            p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') KTB
+                            p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') กรุงไทย
+                        div.col-xs-8.col-sm-8.col-md-8.clear-padding
+                            p.clear-margin.bank-number 690-0-44529-2
+                            p สาขาเซ็นทรัล&nbsp;พลาซ่า&nbsp;ลาดพร้าว
+                    div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #111583; color: white;')
+                        div.col-xs-4.col-sm-4.col-md-4.clear-padding
+                            img.bank-picture(src='/img/bkk-bank.jpg', alt='ธนาคารกรุงเทพ')
+                            p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') Bangkok&nbsp;Bank
+                            p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') กรุงเทพ
+                        div.col-xs-8.col-sm-8.col-md-8.clear-padding
+                            p.clear-margin.bank-number 026-4-43418-4
+                            p สาขาฟิวเจอร์พาร์ค&nbsp;รังสิต
+                    div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #FFBE00; color: #5d4d4d;')
+                        div.col-xs-4.col-sm-4.col-md-4.clear-padding
+                            img.bank-picture(src='/img/ks-bank.jpg', alt='ธนาคารกรุงศรีฯ')
+                            p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') krungsri
+                            p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') กรุงศรีฯ
+                        div.col-xs-8.col-sm-8.col-md-8.clear-padding
+                            p.clear-margin.bank-number 527-1-15128-0
+                            p สาขาเซ็นจูรี่&nbsp;พลาซ่า
+                    div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #00811A; color: white;')
+                        div.col-xs-4.col-sm-4.col-md-4.clear-padding
+                            img.bank-picture(src='/img/k-bank.jpg', alt='ธนาคารกสิกรไทย')
+                            p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') KBank
+                            p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') กสิกรไทย
+                        div.col-xs-8.col-sm-8.col-md-8.clear-padding
+                            p.clear-margin.bank-number 021-3-45619-9
+                            p สาขาแฟชั่นไอส์แลนด์
+                    div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #4B2886; color: white;')
+                        div.col-xs-4.col-sm-4.col-md-4.clear-padding
+                            img.bank-picture(src='/img/scb-bank.jpg', alt='ธนาคารไทยพาณิชย์')
+                            p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') SCB
+                            p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') ไทยพาณิชย์
+                        div.col-xs-8.col-sm-8.col-md-8.clear-padding
+                            p.clear-margin.bank-number 206-2-63537-2
+                            p สาขาเซ็นทรัล&nbsp;พลาซ่า&nbsp;ลาดพร้าว
+                    div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: white; color: #0079C2; border: 1px solid black;')
+                        div.col-xs-4.col-sm-4.col-md-4.clear-padding
+                            img.bank-picture(src='/img/tmb-bank.jpg', alt='ธนาคารทหารไทย' style='width: 5em;')
+                            p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') TMB
+                            p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') ทหารไทย
+                        div.col-xs-8.col-sm-8.col-md-8.clear-padding
+                            p.clear-margin.bank-number 233-2-46207-2
+                            p สาขาเซ็นทรัล&nbsp;พลาซ่า&nbsp;ลาดพร้าว
 
         div.row
             div.hidden-xs.col-sm-2.col-md-2
