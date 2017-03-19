@@ -56,7 +56,7 @@ block content
         div.row
             //-  แนะนำผลิตภัณฑ์
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.carousel.slide.clear-padding(id='DboonCarousel', data-ride='carousel')
+            div.col-xs-12.col-sm-8.col-md-8.carousel.slide.clear-padding.card(id='DboonCarousel', data-ride='carousel')
                 //- Indicators
                 ol.carousel-indicators
                     li.active(data-target='#DboonCarousel', data-slide-to='0') 
@@ -81,16 +81,18 @@ block content
 
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8(style='background-color: white;')
+            div.col-xs-12.col-sm-8.col-md-8.card(style='background-color: white;')
                 p
                     h1(style='font-weight: bold') D-Boon 
-                    p(style='font-size: 1.5em') (ดีบูน หรือ ดีบูเน่ D-Boone) เป็นผลิตภัณฑ์อาหารเสริมที่ช่วยเรื่องความเสื่อมของกระดูกและข้อต่อต่างๆในร่างกาย มีส่วนผสมที่ลงตัวเพื่อการซ่อมแซมเนื้อเยื่อกระดูกอ่อนรอบๆข้อต่อ เอ็นร้อยหวาย และเอ็นยึดข้อ จึงเป็นอาหารเสริมที่มียอดขายสูงสุดทั้งในยุโรปและอเมริกา ด้วยสารอาหารที่ครบถ้วนเสริมสร้างความแข็งแรงของกระดูกและข้อ
+                    p(style='font-size: 1.5em') (ดีบูน หรือ ดีบูเน่ D-Boone) เป็นผลิตภัณฑ์อาหารเสริมที่ช่วยเรื่องความเสื่อมของกระดูกและข้อต่อต่างๆในร่างกาย 
+                        | มีส่วนผสมที่ลงตัวเพื่อการซ่อมแซมเนื้อเยื่อกระดูกอ่อนรอบๆข้อต่อ เอ็นร้อยหวาย และเอ็นยึดข้อ 
+                        | จึงเป็นอาหารเสริมที่มียอดขายสูงสุดทั้งในยุโรปและอเมริกา ด้วยสารอาหารที่ครบถ้วนเสริมสร้างความแข็งแรงของกระดูกและข้อ
         
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-5.col-md-5
-                h2(style='font-weight: bold') D-Boon&nbsp;เหมาะสำหรับ
-                div.col-xs-12.col-sm-12.col-md-12
+            div.col-xs-12.col-sm-8.col-md-8.card
+                div.col-xs-12.col-sm-7.col-md-7.clear-padding
+                    h2(style='font-weight: bold') D-Boon&nbsp;เหมาะสำหรับ
                     ul(style='font-size: 1.4em;')
                         li ป้องกันการเกิดโรคกระดูกพรุน
                         li โรคหมอนรองกระดูกสันหลังเคลื่อน
@@ -102,54 +104,100 @@ block content
                         li ผู้ที่มีอาชีพที่ต้องยืนเป็นเวลานานๆ
                         li ผู้ที่มีปัญหาโรคข้อเสื่อม&nbsp;ข้ออักเสบ&nbsp;กระดูกพรุน
                         li ป้องกันการเกิดโรคข้อเสื่อม
-            div.hidden-xs.col-sm-3.col-md-3
-                img(src='/img/samart.jpg', alt='D-Boon และ คุณสามารถ พยักฆ์อรุณ', style='width: 100%;')
+                div.hidden-xs.col-sm-5.col-md-5.clear-padding
+                    img(src='/img/samart.png', alt='D-Boon และ คุณสามารถ พยักฆ์อรุณ', style='width: 100%; padding: 0;')
 
+        //- Product factor
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8(style='background-color: white;')
-                
+            div.col-xs-12.col-sm-8.col-md-8.card(style='background-color: white;')
                 h2(style='font-weight: bold') ส่วนประกอบสำคัญ
-                div.hidden-xs.col-sm-2.col-md-2
-                div.col-xs-12.col-sm-8.col-md-8
-                    table(style='width: 100%; margin: auto;')
-                        tr
+                div.col-xs-12.col-sm-6.col-md-6(style='padding: 2px;')
+                    h4.text-center ดีบูนชนิดเม็ด
+                    table(style='width: 100%;')
+                        tr.even
                             td 
-                                div Hydrolyzed&nbsp;Fish&nbsp;Collagen
-                                div (คอลลาเจนจากปลาทะเล)
+                                div.table-content-left Hydrolyzed&nbsp;Fish&nbsp;Collagen
+                                div.table-content-left (คอลลาเจนจากปลาทะเล)
                             td 
                                 div.table-content-right 250.000&nbsp;มิลลิกรัม
                         tr
                             td 
-                                div Shark&nbsp;Cartilage
-                                div (กระดูกอ่อนปลาฉลาม)
+                                div.table-content-left Shark&nbsp;Cartilage
+                                div.table-content-left (กระดูกอ่อนปลาฉลาม)
                             td 
                                 div.table-content-right 100.000&nbsp;มิลลิกรัม
-                        tr
+                        tr.even
                             td 
-                                div Pine&nbsp;Bark&nbsp;Extract&nbsp;(MSM)
-                                div (สารสกัดจากเปลือกสน)
-                            td 
-                                div.table-content-right 60.000&nbsp;มิลลิกรัม
-                        tr
-                            td 
-                                div Ascorbic&nbsp;Acid 
-                                div (แอสคอร์บิค&nbsp;เอซิด)
+                                div.table-content-left Pine&nbsp;Bark&nbsp;Extract&nbsp;(MSM)
+                                div.table-content-left (สารสกัดจากเปลือกสน)
                             td 
                                 div.table-content-right 60.000&nbsp;มิลลิกรัม
                         tr
                             td 
-                                div Turmeric&nbsp;Extract&nbsp;Powder
-                                div (สารสกัดจากขมิ้น)
+                                div.table-content-left Ascorbic&nbsp;Acid 
+                                div.table-content-left (แอสคอร์บิค&nbsp;เอซิด)
+                            td 
+                                div.table-content-right 60.000&nbsp;มิลลิกรัม
+                        tr.even
+                            td 
+                                div.table-content-left Turmeric&nbsp;Extract&nbsp;Powder
+                                div.table-content-left (สารสกัดจากขมิ้น)
                             td 
                                 div.table-content-right 30.000&nbsp;มิลลิกรัม
                         tr
                             td 
-                                div Vitamin&nbsp;D3&nbsp;100&nbsp;SD/S 
-                                div (วิตามิน&nbsp;ดี3)
+                                div.table-content-left Vitamin&nbsp;D3&nbsp;100&nbsp;SD/S 
+                                div.table-content-left (วิตามิน&nbsp;ดี3)
                             td 
                                 div.table-content-right 2.000&nbsp;มิลลิกรัม
-                    
+                div.col-xs-12.col-sm-6.col-md-6(style='padding: 2px;')
+                    h4.text-center ดีบูนชนิดผง
+                    table(style='width: 100%;')
+                        tr.even
+                            td 
+                                div.table-content-left Hydrolyzed&nbsp;Fish&nbsp;Collagen
+                                div.table-content-left (คอลลาเจนจากปลาทะเล)
+                            td 
+                                div.table-content-right 600.000&nbsp;มิลลิกรัม
+                        tr
+                            td 
+                                div.table-content-left Calcium&nbsp;Carbonate
+                                div.table-content-left (แคลเซียมคาร์บอเนต)
+                            td 
+                                div.table-content-right 600.000&nbsp;มิลลิกรัม
+                        tr.even
+                            td 
+                                div.table-content-left Shark&nbsp;Cartilage
+                                div.table-content-left (กระดูกอ่อนปลาฉลาม)
+                            td 
+                                div.table-content-right 500.000&nbsp;มิลลิกรัม
+                        tr
+                            td 
+                                div.table-content-left Beta&nbsp;Glucan
+                                div.table-content-left (เบต้ากลูแคนจากยีสต์)
+                            td 
+                                div.table-content-right 300.000&nbsp;มิลลิกรัม
+                        tr.even
+                            td 
+                                div.table-content-left Pine&nbsp;Bark&nbsp;Extract&nbsp;(MSM)
+                                div.table-content-left (สารสกัดจากเปลือกสน)
+                            td 
+                                div.table-content-right 50.000&nbsp;มิลลิกรัม
+                        tr
+                            td 
+                                div.table-content-left Ascorbic&nbsp;Acid 
+                                div.table-content-left (แอสคอร์บิค&nbsp;เอซิด)
+                            td 
+                                div.table-content-right 1800.000&nbsp;มิลลิกรัม
+                        tr.even
+                            td 
+                                div.table-content-left Vitamin&nbsp;D3&nbsp;100&nbsp;SD/S 
+                                div.table-content-left (วิตามิน&nbsp;ดี3)
+                            td 
+                                div.table-content-right 2.000&nbsp;มิลลิกรัม
+                    br
+        //- Feedback            
         hr            
         div.row
             div.hidden-xs.col-sm-2.col-md-2
@@ -230,12 +278,12 @@ block content
                         h4.media-heading คุณเจริญ โปร่งศิริ อยู่ที่จ.ประจวบศีรีขันธ์
                         p โดนล้อยางรถบนต์ ตกทับจนขาหักหมอต้องผ่าตัดใส่เหล็กและเข้าเฝือกแต่หลังจากถอดเฝือกออกมามีอาการปวดที่ขามาก เวลาเดินจะเหมือนคนขาไม่เท่ากันลูกสาวได้ซื้อโกเรจินส์-ดี ทานคู่กับ ดีบูน ทานได้ 1 สัปดาห์ ก็สามารถเดินได้เหมือนคนปกติ และไม่มีอาการที่เคยเป็น
         hr
-        
+        //- Product reward
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.clear-padding
                 img(src='/img/garunty3.jpg', alt='รางวัลการันตีคุณภาพ Best product of the year 2016', style='width: 100%;')
-
+        //- Product properties
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
@@ -340,7 +388,8 @@ block content
                             | โดยจะพบได้มากที่กระดูกอ่อน (cartilage) ซึ่งจะอยู่ที่บริเวณส่วนปลายของกระดูกโดยเฉพาะที่ข้อต่อ 
                             | กระดูกอ่อนมีความสามารถในการดึงน้ำเข้ามาหาตัวเองได้ดี จึงทำให้กระดูกอ่อนมีความยืดหยุ่น 
                             | และสามารถรองรับการเคลื่อนไหวของกระดูกข้อต่อได้
-            
+
+        //- Sickness    
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card 
@@ -386,13 +435,14 @@ block content
                 p ศึกษาข้อมูลเพิ่มเติม&nbsp;
                     a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') คลิ๊ก
         
-        
+        //- Company Picture
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding(style='margin-top: 0.5em;')
                 img(src='/img/d-network.jpg', alt='D Network WorldWide บริษัทขายตรงน้ำดี... สัญชาติไทย', width='100%')
 
-        div.row
+        //- Contact
+        div.row 
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.clear-padding(style='background-color: white;')
                 div.col-xs-12.col-sm-6.col-md-6.clear-padding
@@ -480,10 +530,11 @@ block content
                             p.clear-margin.bank-number 233-2-46207-2
                             p สาขาเซ็นทรัล&nbsp;พลาซ่า&nbsp;ลาดพร้าว
 
+        //- QA
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding
-                P คำถามเกี่ยวกับผลิตภัณฑ์ที่พบบ่อย
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
+                h3.text-center คำถามเกี่ยวกับผลิตภัณฑ์ที่พบบ่อย
                 p Q :ดีบูน ช่วยอะไรได้บ้าง ?
                 p A : ช่วยบำรุงไขข้อ จุดข้อต่อต่างๆ ของร่างกาย รวมถึงผู้ป่วยที่เป็นโรครูมาตอยด์พาร์กินสัน 
                     | เก๊าท์ ส่วนวัยกำลังโต สามารถเพิ่มความสูงได้เป็นอย่างดี และการทานดีบูน เป็นประจำ จะทำให้ไขกระดูกมีความแข็งแรง 
