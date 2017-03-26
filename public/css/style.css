@@ -3,6 +3,10 @@ body {
   font-family: Helvethai;
 }
 
+p{
+  font-size: 1.1em;
+}
+
 div.card{
   border-radius: 8px; 
   border: 2px solid;
@@ -91,6 +95,19 @@ td:first-child {
 td:last-child {
   border-top-right-radius: 10px;  
   border-bottom-right-radius: 10px; 
+}
+
+span.q{
+  padding-left: 4px;
+}
+
+div.q{
+  margin-top: 1em;
+}
+
+div.a{
+  display: none;
+  padding: 0.5em;
 }
 
 .clear-padding{

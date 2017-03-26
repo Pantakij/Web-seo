@@ -58,15 +58,15 @@ block content
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.carousel.slide.clear-padding.card(id='DboonCarousel', data-ride='carousel')
                 //- Indicators
-                ol.carousel-indicators
+                //-ol.carousel-indicators
                     li.active(data-target='#DboonCarousel', data-slide-to='0') 
                     li(data-target='#DboonCarousel', data-slide-to='1')
 
                 //- Wrapper for slides
                 div.carousel-inner(role='listbox')
                     div.item.active
-                        img(src='/img/d-boon-med.jpg', alt='D-Boon ชนิดเม็ด รับประทานวันละ 1 เม็ด', width='460', height='345')
-                    div.item
+                        img(src='/img/main-pic.jpg', alt='หากคุณมีอาการปวดข้อ ปวดเข้า ให้นึกถึงผลิตภัณฑ์อาหารเสริมดีบูน', width='460', height='345')
+                    //-div.item
                         img(src='/img/d-boon-pong.jpg', alt='D-Boon ชนิดผง ผสมน้ำพร้อมรับประทาน', width='460', height='345')
                     
                 
@@ -88,6 +88,12 @@ block content
                         | มีส่วนผสมที่ลงตัวเพื่อการซ่อมแซมเนื้อเยื่อกระดูกอ่อนรอบๆข้อต่อ เอ็นร้อยหวาย และเอ็นยึดข้อ 
                         | จึงเป็นอาหารเสริมที่มียอดขายสูงสุดทั้งในยุโรปและอเมริกา ด้วยสารอาหารที่ครบถ้วนเสริมสร้างความแข็งแรงของกระดูกและข้อ
         
+        //- Product reward
+        div.row
+            div.hidden-xs.col-sm-2.col-md-2
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
+                img(src='/img/garunty3.jpg', alt='รางวัลการันตีคุณภาพ Best product of the year 2016', style='width: 100%;')
+
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card
@@ -113,7 +119,9 @@ block content
             div.col-xs-12.col-sm-8.col-md-8.card(style='background-color: white;')
                 h2(style='font-weight: bold') ส่วนประกอบสำคัญ
                 div.col-xs-12.col-sm-6.col-md-6(style='padding: 2px;')
-                    h4.text-center ดีบูนชนิดเม็ด
+                    div(style='width: 100%; text-align: center;')
+                        img(src='/img/d-boon-capsule.png', alt='D-Boon ชนิดเม็ด รับประทานวันละ 1 เม็ด')
+                    h4.text-center ดีบูนชนิดแคปซูล
                     table(style='width: 100%;')
                         tr.even
                             td 
@@ -152,6 +160,8 @@ block content
                             td 
                                 div.table-content-right 2.000&nbsp;มิลลิกรัม
                 div.col-xs-12.col-sm-6.col-md-6(style='padding: 2px;')
+                    div(style='width: 100%; text-align: center;')
+                        img(src='/img/d-boon-powder.png', alt='D-Boon ชนิดเม็ด รับประทานวันละ 1 เม็ด')
                     h4.text-center ดีบูนชนิดผง
                     table(style='width: 100%;')
                         tr.even
@@ -278,119 +288,112 @@ block content
                         h4.media-heading คุณเจริญ โปร่งศิริ อยู่ที่จ.ประจวบศีรีขันธ์
                         p โดนล้อยางรถบนต์ ตกทับจนขาหักหมอต้องผ่าตัดใส่เหล็กและเข้าเฝือกแต่หลังจากถอดเฝือกออกมามีอาการปวดที่ขามาก เวลาเดินจะเหมือนคนขาไม่เท่ากันลูกสาวได้ซื้อโกเรจินส์-ดี ทานคู่กับ ดีบูน ทานได้ 1 สัปดาห์ ก็สามารถเดินได้เหมือนคนปกติ และไม่มีอาการที่เคยเป็น
         hr
-        //- Product reward
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding
-                img(src='/img/garunty3.jpg', alt='รางวัลการันตีคุณภาพ Best product of the year 2016', style='width: 100%;')
+        
         //- Product properties
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
-                    div.col-xs-12.col-sm-3.col-md-3.clear-padding
-                        img(style='width: 100%; border-radius: 8px;', src='http://www.healthstore.uk.com/images/www.healthstore.uk.com/extralarge/094425Glucosamine-MSM-Chondroitin.jpg')
-                    div.col-xs-12.col-sm-9.col-md-9.clear-padding
-                        h3 คอนดรอยตินช่วยเสริมสร้างกระดูกอ่อนให้กลับมาแข็งแรงขึ้นเคลื่อนไหวร่างกายได้สะดวกมากขึ้น
-                        p ในปัจจุบันการสกัดสารคอนดรอยติน (Chondroitin) จากกระดูกอ่อนของปลาทะเลน้ำลึก มีการนำมาประยุกต์ใช้อย่างแพร่หลายในวงการแแพทย์
-                            | ใช้สำหรับบำรุงข้อ ช่วยบรรเทาอาการจากโรคข้อเสื่อม ข้ออักเสบ ซึ่งคอนดรอยตินเป็นสารที่มีหน้าที่ทำให้เราสามารถขยับข้อต่อได้ตามปกติ
-                            | เมื่อร่างกายของเรามีอายุมากขึ้นข้อต่อและกระดูกอ่อนต่างๆเริ่มเสื่อมสภาพลง
-                            | จึงส่งผลให้เกิดอาการปวดตามข้อได้ง่ายขึ้น 
-                            | ปัจจุบันพบว่ากระดูกอ่อนปลาฉลามซึ่งเป็นหนึ่งในส่วนผสมของดีบูน จะประกอบไปด้วย
-                            | โปรตีนคอลลาเจนและสารในกลุ่มไกลโคสะมิโนไกลแคน (Glycosaminoglycans: link to wiki)
-                            | ซึ่งโดยส่วนใหญ่เป็นสารคอนดรอยติน ที่จะช่วยเสริมสร้าง ซ่อมแซม บำรุงกระดูกอ่อนและยังช่วยชะลอโรคและบรรเทาอาการได้ดีในโรคข้อเข่าเสื่อม
-        
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card  
-                    div.col-xs-12.col-sm-3.col-md-3.clear-padding
-                        img(style='width: 100%; border-radius: 8px;', src='http://www.healthstore.uk.com/images/www.healthstore.uk.com/extralarge/094425Glucosamine-MSM-Chondroitin.jpg')
-                    div.col-xs-12.col-sm-9.col-md-9.clear-padding
-                        h3 แคลเซียมสกัดจากไข่มุก ช่วยยับยั้งการสร้างเมลานิน มีส่วนช่วยเร่งการเจริญเติบโต
-                        p สารอาหารจากไข่มุกธรรมชาติ (Pearl calcium) ที่เป็นหนึ่งในส่วนผสมของดีบูน
-                            | อุดมไปด้วยกรด(อะมิโน 18 ชนิด: link to wiki) พร้อมด้วย(แร่ธาตุ 56: link to wiki) ที่มีความจำเป็นต่อการสังเคราะห์โครงสร้างผิว
-                            | และมีความสำคัญต่อการสังเคราะห์ (DNA: link to wiki) และ (RNA: link to wiki) เพื่อสร้างเซลล์ผิวใหม่ ที่ส่งเสริมการทำงานของเอ็นไซม์ (SOD: link to wiki) ช่วยยับยั้งการสร้าง(เมลานิน: link to wiki) 
-                            | มีส่วนช่วยเร่งโครงสร้างให้ร่างกายให้สูงใหญ่ได้ตามเด็กที่กำลังเจริญเติบโต
-
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card  
-                    div.col-xs-12.col-sm-3.col-md-3.clear-padding
-                        img(style='width: 100%; border-radius: 8px;', src='http://www.healthstore.uk.com/images/www.healthstore.uk.com/extralarge/094425Glucosamine-MSM-Chondroitin.jpg')
-                    div.col-xs-12.col-sm-9.col-md-9.clear-padding
-                        h3 วิตามินดี ช่วยให้ร่างกายได้รับแคลเซียมและฟอสฟอรัสมากขึ้น
-                        p โดยวิตามินดี ((Vitamin D): link to wiki) ที่เป็นหนึ่งในส่วนผสมของดีบูน มีหน้าที่ช่วยให้ร่างกายดูดซึม(แคลเซียม: link to wiki)และ(ฟอสฟอรัส: link to wiki) จากลำไส้เข้าสู่กระแสเลือดได้ดีขึ้น
-                            | ซึ่งแคลเซียมนั่นก็จะถูกร่างกายนำไปเสริมสร้างกระดูกอีกที ซึ่งแคลเซียมและฟอสฟอรัสมีส่วนสำคัญต่อกระบวนการต่างๆของร่างกาย
-                            | โดยเฉพาะการบำรุงรักษาของสุขภาพกระดูกและฟันหากต้องการมีกระดูกที่แข็งแรง การรับประทานแคลเซียมเพียงอย่างเดียวนั้นอาจไม่เพียงพอ
-                            | เพราะอีกองค์ประกอบสำคัญในการเสริมสร้างและซ่อมแซมกระดูกก็คือวิตามินดี
-
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card  
-                    div.col-xs-12.col-sm-3.col-md-3.clear-padding
-                        img(style='width: 100%; border-radius: 8px;', src='http://www.healthstore.uk.com/images/www.healthstore.uk.com/extralarge/094425Glucosamine-MSM-Chondroitin.jpg')
-                    div.col-xs-12.col-sm-9.col-md-9.clear-padding
-                        h3 วิตามินซีช่วยป้องกันโรคข้ออักเสบ และเสริมสร้างระบบภูมิคุ้มกันของร่างกาย
-                        p โดยวิตามินซี ((Vitamin C): link to wiki) ที่เป็นหนึ่งในส่วนประกอบของดีบูน
-                            | เป็นสารสำคัญในการสร้างโปรตีนชนิดหนึ่งที่เรียกว่า (คอลลาเจน: link to wiki) ซึ่งคอลลาเจนมีหน้าทีสำคัญในการสร้างกระดูก โดยทำหน้าที่ในการยึดเซลล์กระดูกเข้าด้วยกัน
-                            | ดังนั้น หากร่างกายขาดวิตามินซี จะส่งผลกระทบต่อการสร้างคอลลาเจนและส่งผลต่อสุขภาพกระดูก
-                            | นอกจากนี้วิตามินซียังเป็นสารต้านอนุมูลอิสระที่มีประสิทธิภาพสูง ช่วยทำให้ระบบภูมิคุ้มกันของร่างกายมีความแข็งแรงมากขึ้น 
-                            | สามารถลดระดับ(คอเลสเตอรอล: link to wiki)ในเลือด ช่วยลดการเกิดเส้นเลือดอุดตันในหลอดเลือดดำ ช่วยซ่อมแซมเส้นเลือดฝอยเล็ก ๆ 
-                            | รวมไปถึงเส้นเลือดหัวใจ และเส้นเลือดในร่างกาย
-        
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card  
-                    div.col-xs-12.col-sm-3.col-md-3.clear-padding
-                        img(style='width: 100%; border-radius: 8px;', src='http://www.healthstore.uk.com/images/www.healthstore.uk.com/extralarge/094425Glucosamine-MSM-Chondroitin.jpg')
-                    div.col-xs-12.col-sm-9.col-md-9.clear-padding
-                        h3 คอลลาเจนจากปลาทะเลช่วยในการเสริมสร้างกระดูกอ่อน และให้ความแข็งแรงแก่ข้อต่อ
-                        p คอลลาเจนจากปลาทะเล ((Hydrolyzed Fish Collagen): link to wiki) ที่เป็นหนึ่งในส่วนประกอบของดีบูน
-                            | จะช่วยในการเสริมสร้างกระดูกอ่อนซึ่งทำหน้าที่รองรับน้ำหนัก ลดแรงกระแทก ให้มีโครงสร้างที่แข็งแรง และยืดหยุ่น
-                            | ทำให้ ป้องกันหรือชะลอการเกิดข้อเสื่อม รวมถึงให้ความแข็งแรงแก่ข้อต่อในขณะที่มีการเคลื่อนไหวทำกิจกรรมต่างๆ
-                            | และคอลลาเจนยังเป็นส่วนประกอบสำคัญของอวัยวะต่างๆ หลายอวัยะ เช่น เอ็นกล้ามเนื้อ กระจกตา และหมอนกระดูกสันหลัง อีกด้วย
-
-         div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card  
-                    div.col-xs-12.col-sm-3.col-md-3.clear-padding
-                        img(style='width: 100%; border-radius: 8px;', src='http://www.healthstore.uk.com/images/www.healthstore.uk.com/extralarge/094425Glucosamine-MSM-Chondroitin.jpg')
-                    div.col-xs-12.col-sm-9.col-md-9.clear-padding
-                        h3 ผงขมิ้นช่วยบรรเทาอาการโรคข้อเข่าเสื่อมและไขข้ออักเสบ
-                        p ผงขมิ้น ((Turmeric): link to wiki) ที่เป็นหนึ่งในส่วนประกอบของดีบูน มีสาร (curcumin: link to wiki) ที่เป็นส่วนสำคัญในการช่วยลดการอักเสบ
-                            | จึงทำให้สามารถช่วยบรรเทาอาการโรคข้อเข่าเสื่อมและไขข้ออักเสบได้ เช่น (โรคข้ออักเสบรูมาตอยด์: link to wiki) และขมิ้นเป็นพืชสมุนไพรที่มีสารต้านอนุมูลอิสระอยู่เป็นจำนวนมาก
-                            | มีการทดลองทางคลินิกในผู้ป่วยที่มีปัญหากระดูกและข้ออักเสบเรื้อรังโดยใช้สมุนไพรที่มีส่วนประกอบของขมิ้นพบว่า 
-                            | การได้รับสมุนไพรดังกล่าว สามารถลดความเจ็บปวดที่รุนแรงได้นอกจากนี้ขมิ้นยังมีสารอาหารที่ดีต่อสุขภาพหลายอย่าง เช่น โปรตีน ใยอาหาร แคลเซียม วิตามินซี วิตามินอี วิตามินเค
-                            | ด้วยการขมิ้นอุดมไปด้วยสารอาหารมาก จึงทำให้ขมิ้นถูกนำมาใช้ในการรักษาปัญหาสุขภาพต่าง ๆ อย่างแพร่หลาย
-        
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card  
-                    div.col-xs-12.col-sm-3.col-md-3.clear-padding
-                        img(style='width: 100%; border-radius: 8px;', src='http://www.healthstore.uk.com/images/www.healthstore.uk.com/extralarge/094425Glucosamine-MSM-Chondroitin.jpg')
-                    div.col-xs-12.col-sm-9.col-md-9.clear-padding
-                        h3 สารสกัดจากเปลือกสนฝรั่งเศสช่วยสร้างความแข็งแรงให้กับไขข้อกระดูก
-                        p สารสกัดจากเปลือกสนฝรั่งเศส ((Pine Bark Exrtact): link to wiki) ที่เป็นหนึ่งในส่วนประกอบของดีบูน
-                            | มีส่วนผสมของ(ซัลเฟอร์: link to wiki) ที่สร้างความแข็งแรงให้กับไขข้อกระดูก และเป็นองค์ประกอบของการสังเคราะห์สารคอลลาเจนในข้อ
-                            | นอกจากนี้ สารสกัดจากเปลือกสนฝรั่งเศสมีคุณสมบัติต่อต้านอนุมูลอิสระประสิทธิภาพสูง เสริมการทำงานของ(วิตามิน C: link to wiki) เเละ(วิตามิน E: link to wiki) 
-                            | ช่วยป้องกันร่างกายจากอนุมูลอิสระ ที่เกิดขึ้นในร่างกายตลอดเวลา รวมทั้งปัจจัยภายนอกต่างๆ ที่เป็นสาเหตุของการเสื่อมของอวัยวะ 
-                            | และยังช่วยปรับปรุงการไหลเวียนเลือดช่วยให้เลือดนำออกซิเจนไปเลี้ยงส่วนต่างๆของร่างกายได้มากขึ้น 
-        
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card  
-                    div.col-xs-12.col-sm-3.col-md-3.clear-padding
-                        img(style='width: 100%; border-radius: 8px;', src='http://www.healthstore.uk.com/images/www.healthstore.uk.com/extralarge/094425Glucosamine-MSM-Chondroitin.jpg')
-                    div.col-xs-12.col-sm-9.col-md-9.clear-padding
-                        h3 กลูโคซามีนไฮโดรคลอไรด์ส่วนประกอบสำคัญในการสร้างเซลล์กระดูกอ่อน
-                        p กลูโคซามีน ไฮโดรคลอไรด์ (Glucosamine HCI) ที่เป็นหนึ่งในส่วนประกอบของดีบูน
-                            | เป็นองค์ประกอบสำคัญในการสร้างเซลล์กระดูกอ่อนช่วยซ่อมแซมเนื้อเยื่อ เสริมความแข็งแรงของเส้นเอ็นยึดข้อ 
-                            | รักษาอาการข้อเสื่อม และข้ออักเสบ กลูโคซามีนจะถูกนำไปใช้เป็นส่วนประกอบในเนื้อเยื่อเกือบทุกชนิดของร่างกาย 
-                            | โดยจะพบได้มากที่กระดูกอ่อน (cartilage) ซึ่งจะอยู่ที่บริเวณส่วนปลายของกระดูกโดยเฉพาะที่ข้อต่อ 
-                            | กระดูกอ่อนมีความสามารถในการดึงน้ำเข้ามาหาตัวเองได้ดี จึงทำให้กระดูกอ่อนมีความยืดหยุ่น 
-                            | และสามารถรองรับการเคลื่อนไหวของกระดูกข้อต่อได้
+                div.col-xs-12.col-sm-12.col-md-12
+                    h2(style='font-weight: bold') สรรพคุณของดีบูน
+                    ul
+                        li
+                            h4 กระดูกอ่อนปลาฉลามช่วยเสริมสร้างกระดูกอ่อนให้กลับมาแข็งแรง&nbsp;เคลื่อนไหวร่างกายได้สะดวก
+                            p กระดูกอ่อนปลาฉลามที่เป็นส่วนประกอบของดีบูน&nbsp;ประกอบไปด้วย
+                                a(href='https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%99', target='_blank') คอลลาเจน
+                                | &nbsp;และสารในกลุ่ม
+                                a(href='https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B9%82%E0%B8%84%E0%B8%AA%E0%B8%B0%E0%B8%A1%E0%B8%B4%E0%B9%82%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B9%81%E0%B8%84%E0%B8%99', target='_blank') ไกลโคสะมิโนไกลแคน
+                                | &nbsp;ซึ่งสารในกลุ่มไกลโคสะมิโนไกลแคนนั้นโดยส่วนใหญ่เป็นสาร&nbsp;
+                                a(href='http://www.pharmacy.mahidol.ac.th/dic/news_week_full.php?id=481', target='_blank') คอนดรอยติน&nbsp;(Chondroitin)
+                                | &nbsp;โดยสารนี้เป็นส่วนประกอบของกระดูกอ่อน
+                                | ทำให้กระดูกอ่อนมีคุณสมบัติยืดหยุ่น&nbsp;ทนทานต่อแรงกดดัน&nbsp;สามารถรองรับกระดูกข้อต่อได้
+                            hr
+                        li
+                            h4 แคลเซียมคาร์บอเนตช่วยเสริมสร้างกระดูก&nbsp;ป้องกันโรคกระดูกพรุน
+                            p 
+                                a(href='http://haamor.com/th/%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%AD%E0%B9%80%E0%B8%99%E0%B8%95/', target='_blank') แคลเซียมคาร์บอเนต
+                                | นั้นเป็นส่วนผสมของผลิตภัณฑ์หลายอย่าง&nbsp;เช่น&nbsp;นมผง&nbsp;ชีส&nbsp;แยม&nbsp;หมากฝรั่ง&nbsp;ผักผลไม้กระป๋อง&nbsp;
+                                | ยาลดกรด&nbsp;ยาแก้ท้องอืดท้องเสีย&nbsp;ยาบำรุงเสริมสร้างกระดูก&nbsp;และดีบูนก็เป็นหนึ่งในนั้น&nbsp;ซึ่ง
+                                a(href='http://haamor.com/th/%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%AD%E0%B9%80%E0%B8%99%E0%B8%95/', target='_blank') แคลเซียมคาร์บอเนต
+                                | นั้นมีสรรพคุณหลายอย่าง&nbsp;เช่น&nbsp;ป้องกัน
+                                a(href='http://haamor.com/th/%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B9%E0%B8%81%E0%B8%9E%E0%B8%A3%E0%B8%B8%E0%B8%99/', target='_blank') โรคกระดูกพรุน
+                                | &nbsp;ช่วยให้มีระดับแคลเซียมในกระแสเลือดมากขึ้น&nbsp;แก้ท้องอืดท้องเสีย
+                                | &nbsp;บรรเทาอาการกรดไหลย้อนและอาหารไม่ย่อย&nbsp;เป็นต้น
+                            hr
+                        li
+                            h4 วิตามิน&nbsp;D3&nbsp;เสริมการดูดซึมแคลเซียมเข้าสู่ร่างกายให้ดียิ่งขึ้น
+                            p ผลิตภัณฑ์ดีบูนไม่เพียงแต่ผสมแค่
+                                a(href='http://www.pr.chula.ac.th/index.php/15-article/81-1-000-1-200-360-600-800-40', target='_blank') แคลเซียม
+                                | เท่านั้น&nbsp;ยังคำนึงถึงการรับแคลเซียมเข้าสู่ร่างกายอย่างมีประสิทธิภาพด้วยส่วนผสม
+                                a(href='http://www.siamchemi.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5/', target='_blank') วิตามิน&nbsp;D3
+                                | จะช่วยให้ร่างกายสามารถดูดซึมแคลเซียม&nbsp;และ
+                                a(href='https://th.wikipedia.org/wiki/%E0%B8%9F%E0%B8%AD%E0%B8%AA%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B8%B1%E0%B8%AA', target='_blank') ฟอสฟอรัส
+                                | ได้มากขึ้น&nbsp;ทำให้ร่างกายมีกระดูกที่แข็งแรง
+                            hr
+                        li 
+                            h4 คอลลาเจนจากปลาทะเลช่วยป้องกัน&nbsp;และชะลอโรคข้อเข่าเสื่อม
+                            p 
+                            a(href='https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%99', target='_blank') คอลลาเจน
+                                | เป็นโปรตีนอย่างหนึ่งที่สำคัญต่อร่างกาย เพราะเป็นส่วนประกอบของหลายๆอวัยวะ&nbsp;เช่น&nbsp;กล้ามเนื้อ&nbsp;เอ็น&nbsp;ผิวหนัง&nbsp;และยังพบว่ามีมากใน
+                                | กระจกตา&nbsp;กระดูกอ่อน&nbsp;หมอนรองกระดูก&nbsp;เป็นต้น&nbsp;ซึ่งหน้าที่อย่างหนึ่งของ
+                                a(href='https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%99', target='_blank') คอลลาเจน
+                                | คือ&nbsp;เสริมสร้างกระดูกอ่อนให้มีโครงสร้างที่แข็งแรง&nbsp;ยืดหยุ่น&nbsp;รองรับน้ำหนักได้ดี&nbsp;จึงทำให้สามารถป้องกันหรือชะลอการเกิด
+                                a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') โรคข้อเข่าเสื่อมได้
+                                | &nbsp;ผลิตภัณฑ์ดีบูนจึงเลือกคอลลาเจนจากปลาทะเลเป็นหนึ่งในส่วนผสมหลักของผลิตภัณฑ์
+                            hr
+                        li
+                            h4 เบต้ากลูแคนจากยีสต์ช่วยลดอาการปวดข้อ&nbsp;และป้องกันโรคไขข้ออักเสบ
+                            p 
+                                a(href='https://en.wikipedia.org/wiki/Beta-glucan', target='_blank') เบต้ากลูแคน&nbsp;(Beta&nbsp;Glucan)
+                                | &nbsp;มีหน้าที่ในการช่วยกระตุ้นการทำงานของ
+                                a(href='https://th.wikipedia.org/wiki/%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%84%E0%B8%B8%E0%B9%89%E0%B8%A1%E0%B8%81%E0%B8%B1%E0%B8%99', target='_blank') ระบบภูมิคุ้มกัน
+                                | ของร่างกายร่างกายที่ชื่อว่า
+                                a(href='https://sites.google.com/site/lifecellthailand/GCMAF', target='_blank') แมโครฟาจ&nbsp;(Macrophage)
+                                | &nbsp;ซึ่งภูมิคุ้มกันที่ว่านี้&nbsp;สามารถทำลายเชื้อจุลินทรีย์ที่เป็นสาเหตุของ
+                                a(href='https://th.wikipedia.org/wiki/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%9A', target='_blank') โรคไขข้ออักเสบ
+                                | ได้&nbsp;ทำให้ผลิตภัณฑ์ดีบูนที่มีส่วนผสมของเบต้ากลูแคน&nbsp;สามารถช่วยรักษาหรือบรรเทาอาการของโรคไขข้ออักเสบ
+                                | ด้วยระบบภูมิคุ้มกันของร่างกายอย่างเป็นธรรมชาติ
+                            hr
+                        li
+                            h4 สารสกัดจากเปลือกสนฝรั่งเศสช่วยสร้างความแข็งแรงให้กับไขข้อกระดูก
+                            p หนึ่งใน
+                                a(href='https://mahosot.com/%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%81%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%99.html', target='_blank') สารสกัดจากเปลือกสน
+                                | นั้นคือ
+                                a(href='https://healthgossip.co/what-is-sulfur/', target='_blank') กำมะถัน
+                                | ที่เป็นส่วนช่วยในการสังเคราะห์คอลลาเจน ซึ่งคอลลาเจนนั้นเป็นส่วนประกอบของกระดูกอีกทีหนึ่ง และยังมีสาร
+                                a(href='https://en.wikipedia.org/wiki/Proanthocyanidin', target='_blank') พิกโนจีนอล&nbsp;(Pycnogenol)
+                                | &nbsp;คอยทำหน้าที่ปกป้องและประสานคอลลาเจนไม่ให้เสื่อมสภาพ นอกจากนี้ยังมีสาร
+                                a(href='https://en.wikipedia.org/wiki/Flavonoid', target='_blank') กลุ่มไบโอฟลาโวนอยด์&nbsp;(Bioflavonoids)
+                                | &nbsp;ที่เสริมการทำงานของ
+                                a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%8B%E0%B8%B5/', target='_blank') วิตามิน&nbsp;C
+                                | &nbsp;และ
+                                a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%AD%E0%B8%B5/', target='_blank') วิตามิน&nbsp;E
+                                | &nbsp;ช่วยปกป้องร่างกายจากอนุมูลอิสระที่เกิดขึ้นในร่างกาย
+                                | ด้วยประโยชน์ที่หลากหลาย&nbsp;ผลิตภัณฑ์ดีบูนจึงเลือกสารสกัดจากเปลือกสนฝรั่งเศษมาเป็นส่วนประกอบ
+                            hr
+                        li
+                            h4 แอสคอร์บิค&nbsp;เอซิด&nbsp;ช่วยป้องกันโรคข้ออักเสบ&nbsp;และเสริมสร้างระบบภูมิคุ้มกันของร่างกาย
+                            p 
+                                a(href='http://www.siamchemi.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%8B%E0%B8%B5/', target='_blank') แอสคอร์บิค&nbsp;เอซิด&nbsp;(Ascorbic&nbsp;Acid)
+                                | &nbsp;หรือ&nbsp;
+                                a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%8B%E0%B8%B5/', target='_blank') วิตามิน&nbsp;C
+                                | &nbsp;เป็นสารสำคัญในการสร้าง
+                                a(href='https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%99', target='_blank') คอลลาเจน
+                                | &nbsp;ซึ่งคอลลาเจนมีหน้าทีสำคัญในการสร้างกระดูก
+                                | &nbsp;โดยทำหน้าที่ในการยึดเซลล์กระดูกเข้าด้วยกัน&nbsp;นอกจากนี้วิตามิน&nbsp;C&nbsp;ยังเป็นสารต้านอนุมูลอิสระที่มีประสิทธิภาพสูง
+                                | &nbsp;ช่วยทำให้
+                                a(href='https://th.wikipedia.org/wiki/%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%84%E0%B8%B8%E0%B9%89%E0%B8%A1%E0%B8%81%E0%B8%B1%E0%B8%99', target='_blank') ระบบภูมิคุ้มกัน
+                                | ของร่างกายมีความแข็งแรงมากขึ้น&nbsp;สามารถลดระดับ
+                                a(href='http://healthydeedee.com/%E0%B9%84%E0%B8%82%E0%B8%A1%E0%B8%B1%E0%B8%99-%E0%B8%84%E0%B8%AD%E0%B9%80%E0%B8%A5%E0%B8%AA%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B8%AD%E0%B8%A5%E0%B8%AA%E0%B8%B9%E0%B8%87-%E0%B8%84%E0%B8%B7%E0%B8%AD/', target='_blank') คอเลสเตอรอล
+                                | ในเลือด&nbsp;ช่วยลดการเกิดเส้นเลือดอุดตันในหลอดเลือดดำ&nbsp;ช่วยซ่อมแซมเส้นเลือดฝอยเล็ก&nbsp;ๆ
+                                | &nbsp;รวมไปถึงเส้นเลือดหัวใจ&nbsp;และเส้นเลือดในร่างกาย&nbsp;ผลิตภัณฑ์ดีบูนที่มีส่วนผสมของวิตามิน&nbsp;C&nbsp;
+                                | ที่ช่วยเสริมการทำงานของระบบภูมิคุ้มกันของร่างกาย&nbsp;จึงทำให้สามารถป้องกันหรือชะลอการเกิด
+                                a(href='https://th.wikipedia.org/wiki/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%9A', target='_blank') โรคข้ออักเสบ
+                                | ได้
+                    div(style='margin-top: 2em;')
+       
 
         //- Sickness    
-        div.row
+        //-div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card 
                 h3 โรคกระดูกพรุน คืออะไร ?
@@ -411,7 +414,7 @@ block content
                 p ศึกษาข้อมูลเพิ่มเติม&nbsp;
                     a(href='https://www.bumrungrad.com/th/orthopedic-surgery-care-center-bangkok-thailand/conditions/osteoporosis-cause-treatment', target='_blank') คลิ๊ก
         
-        div.row
+        //-div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card 
                 h3 โรคข้อเข่าเสื่อม คืออะไร ?
@@ -436,7 +439,7 @@ block content
                     a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') คลิ๊ก
         
         //- Company Picture
-        div.row
+        //-div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.clear-padding(style='margin-top: 0.5em;')
                 img(src='/img/d-network.jpg', alt='D Network WorldWide บริษัทขายตรงน้ำดี... สัญชาติไทย', width='100%')
@@ -444,7 +447,7 @@ block content
         //- Contact
         div.row 
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding(style='background-color: white;')
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card(style='background-color: white;')
                 div.col-xs-12.col-sm-6.col-md-6.clear-padding
                     img(src='/img/S__11354179.jpg', style='width: 100%;', alt='คุณอักษรา มงคลนำเจริญ ตัวแทนจำหน่าย D-Boon')
                 div.col-xs-12.col-sm-6.col-md-6.clear-padding
@@ -453,7 +456,7 @@ block content
                 div.col-xs-12.col-sm-12.col-md-12.clear-padding
                     div.col-xs-12.col-sm-6.col-md-6.clear-padding
                         div.col-xs-12.col-sm-8.col-md-8.clear-padding()
-                            div.col-xs-12.col-sm-12.col-md-12.clear-padding(style='background-color: #00C300; color: white; border: 1px solid #00C300; border-radius: 8px;')
+                            div.col-xs-12.col-sm-12.col-md-12.clear-padding(style='background-color: #00C300; color: white; border: 1px solid #00C300;')
                                 div.col-xs-10.col-sm-10.col-md-10.clear-padding(style='text-align: center;')
                                     div(style='width: 10em; margin: 0 auto;')
                                         div.rotate-plus-15-degree.inline(style='padding-top: 5px; color: red; font-weight: bold; font-size: 1.4em;') คลิ๊ก
@@ -462,7 +465,7 @@ block content
                                         span(title='Line ID') ID : @dboonthai
                                 div.col-xs-2.col-sm-2.col-md-2.clear-padding
                                     img(src='/img/LINE.jpg', style='width: 4em; float: right; padding: 5px; padding-top: 7px;', alt='Line icon')
-                            div.col-xs-12.col-sm-12.col-md-12.clear-padding(style='background-color: #018F99; color: white; border: 1px solid #018F99; border-radius: 8px;')
+                            div.col-xs-12.col-sm-12.col-md-12.clear-padding(style='background-color: #018F99; color: white; border: 1px solid #018F99;')
                                 div.col-xs-10.col-sm-10.col-md-10.clear-padding(style='text-align: center;')
                                     div(style='width: 10em; margin: 0 auto;')
                                         div.rotate-plus-15-degree.inline(style='padding-top: 5px; color: red; font-weight: bold; font-size: 1.4em;') คลิ๊ก
@@ -474,7 +477,7 @@ block content
 
                         div.hidden-xs.col-sm-4.col-md-4.clear-padding
                             img(src='/img/line-ad.jpg', style='width: 100%;', alt='QR Code ศูนย์จำหน่าย D-Boon')
-                    div.col-xs-12.col-sm-6.col-md-6.clear-padding(style='background-color: #7B7BC1; border: 1px solid #7B7BC1; border-radius: 8px;')
+                    div.col-xs-12.col-sm-6.col-md-6.clear-padding(style='background-color: #EE6F1E; border: 1px solid #EE6F1E;')
                         img(src='/img/kerry-express.jpg', style='display: block; margin: 0 auto;', alt='ส่งสินค้าผ่าน Kerry Express บริการเก็บเงินปลายทาง ส่งเร็ว มั่นใจ ได้รับสินค้า 100%')
 
                 div.col-xs-12.col-sm-12.col-md-12.clear-padding
@@ -533,43 +536,44 @@ block content
         //- QA
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
+            div.col-xs-12.col-sm-8.col-md-8.card
                 h3.text-center คำถามเกี่ยวกับผลิตภัณฑ์ที่พบบ่อย
-                p Q :ดีบูน ช่วยอะไรได้บ้าง ?
-                p A : ช่วยบำรุงไขข้อ จุดข้อต่อต่างๆ ของร่างกาย รวมถึงผู้ป่วยที่เป็นโรครูมาตอยด์พาร์กินสัน 
-                    | เก๊าท์ ส่วนวัยกำลังโต สามารถเพิ่มความสูงได้เป็นอย่างดี และการทานดีบูน เป็นประจำ จะทำให้ไขกระดูกมีความแข็งแรง 
-                    | ทำให้การผลิตเลือดมีประสิทธิภาพสูง
-                p Q :คนเป็นภูมิแพ้ ทาน ดีบูน ได้ไหม ?
-                p A : ผู้ที่เป็นภูมิแพ้ สามารถทานดีบูนได้ ไม่มีผลข้างเคียงใดๆ
-                p Q :เด็ก สามารถทานดีบูน เพื่อเพิ่มความสูงได้หรือไม่ ?
-                p A : เหมาะมาก สามารถทานดีบูนได้ดีมาก เพราะ ดีบูน มีส่วนผสมที่สกัดมาจากธรรมชาติ 
-                    | ซึ่งผ่านการวิเคราะห์วิจัยให้ได้สารสกัดที่ลงตัว ทำให้มีผลดี กับวัยที่กำลังเจริญเติบโต
-                p Q :โรคที่ไม่ควรทานดีบูน มีอะไรบ้าง?
-                p A : ผู้ที่ไม่แนะนำให้ทานดีบูน ได้แก่ ผู้ที่เป็นนิ่วในระบบทางเดินปัสสาวะ, นิ่วในไต, ผู้ที่มีสภาวะแคลเซียมในเลือดสูง
-                p Q :ผู้ที่เคยกระดูกหัก สามารถทานดีบูนได้หรือไม่ ?
-                p A : สามารถทานได้ ยิ่งดีมากๆ เพราะจะช่วยประสานบริเวณที่หัก ให้หายได้เร็วยิ่งขึ้น
-                p Q :ทานดีบูนนานแค่ไหนถึงจะดีขึ้น ?
-                p A : ขึ้นอยู่กับแต่ละบุคคล เพราะระบบการดูดซึมของแต่ละคน ไม่เหมือนกัน ทั้งนี้ขึ้นอยู่กับอาการและพฤติกรรมการใช้ชีวิตของแต่ละคน
-                p Q :ทานดีบูนเป็นประจำได้หรือไม่ ? มีผลข้างเคียงไหม ?
-                p A : สำหรับผู้ที่ทานเพื่อบำรุง แนะนำให้ทานดีบูน ติดต่อกัน 3 เดือน หยุดพักสัก 1 เดือน / สำหรับผู้ป่วย 
-                    | ให้ทานเป็นประจำจนกว่าอาการดีขึ้น หรือหายเป็นปกติ แล้วจึงทานติดต่อกัน 3 เดือน หยุดพักสัก 1 เดือน
-                p Q :ใครบ้างที่ควรทานดีบูน?
-                p A : ทานได้ทุกเพศทุกวัย ยกเว้นผู้ที่ป่วยเป็นโรคนิ่วในระบบทางเดินปัสสาวะ, ผู้ที่เป็นนิ่วในไต และผู้ที่มีความเสี่ยงจากโรคหัวใจ
-                p Q :ปวดหลัง ปวดไหล่ ทานดีบูน ได้หรือไม่ ? ทานดีบูนแล้วจะดีขึ้นหรือเปล่า ?
-                p A :สามารถทานได้เลย ทั้งนี้อาการปวดหลังควรเช็คให้ดีก่อนว่ามีสาเหตุมากจากอะไร ? ถ้าเกี่ยวกับไต 
-                    | ไม่ควรทาน การทานให้ได้ผลดี แนะนำให้ทานควบคู่กับผลิตภัณฑ์โกเรจินส์-ดี (Koregins-D) และ สโนวี่พาวเดอร์ (Snowy Powder)
-                p Q :ปวดตามข้อ บวมตามข้อ ทานดีบูนแล้วจะหายหรือเปล่า ?
-                p A : อาการปวดตามข้อ และบวมตามข้อ สามารถดีขึ้นครับแต่ควรทานคู่กับ ผลิตภัณฑ์โกเรจินส์-ดี (Koregins-D) และ สโนวี่พาวเดอร์ (Snowy Powder) 
-                    | เพราะมีสารสกัดแอสต้าแซนทีน (Astaxanthin) ที่มีความเข้มข้นสูง ช่วยลดอาการอักเสบได้เป็นอย่างดี
-                p Q :ดีบูน แตกต่างจากแคลเซียมที่ขายตามท้องตลาดทั่วไปอย่างไร ?
-                p A : ดีบูน ไม่ได้มีแค่แคลเซียม แต่มีส่วนผสมอื่นเข้ามาด้วย ซึ่งเป็นสารอาหารที่ล้วนแล้วมีผลต่อการสร้างไขกระดูก ไขข้อ เส้นเอ็น รวมถึงยังมีวิตามิน ดี3 
-                    | ที่ช่วยให้กระบวนการดูดซึมแคลเซียมมีประสิทธิภาพดีเยี่ยม
-                p Q :เป็นโรครูมาตอยด์พาร์กินสัน เก๊าท์ ทานดีบูนแล้วดีขึ้นหรือไม่ ?
-                p A : สามารถทาน ดีบูน เห็นผลดีขึ้น แต่เพื่อให้มีประสิทธิภาพ แนะนำให้ทานร่วมกับผลิตภัณฑ์ อเลอไทด์ (Alertide) และ สโนวี่พาวเดอร์ (Snowy Powder)
-                p Q :ทานยาหมออยู่ สามารถทานดีบูนได้หรือเปล่า ?
-                p A : สามารถทานร่วมกันได้ แต่ควรเว้นระยะการทาน 30 - 60 นาที จากการทานยาหมอ การทาน ดีบูน ให้ได้ผลดีแนะนำให้ทานช่วงหลังอาหารเช้า
-                p Q :ถ้าเป็นมาก หรือมีอาการปวดตามข้อหรือปวดกระดูกมากๆ ต้องการให้เห็นผลเร็ว ควรทำอย่างไร ?
-                p A : ถ้าต้องการให้เห็นผลเร็ว ช่วงแรกแนะนำให้ทานดีบูนแบบผง วันละ 1 ซอง ผสมน้ำดื่ม หลังอาหารเช้าหรือก่อนนอน
+
+                div.q
+                    button.btn.btn-info.btn-sm(id='q1') คำตอบ
+                    span.q ดีบูน ช่วยอะไรได้บ้าง ?
+                div.card.clear-margin.a(style='border-color: #46b8da; border-radius: 0;', data-for='q1')
+                    span ช่วยบำรุงไขข้อ จุดข้อต่อต่างๆ ของร่างกาย รวมถึงผู้ป่วยที่เป็นโรครูมาตอยด์พาร์กินสัน 
+                        | เก๊าท์ ส่วนวัยกำลังโต สามารถเพิ่มความสูงได้เป็นอย่างดี และการทานดีบูน เป็นประจำ จะทำให้ไขกระดูกมีความแข็งแรง 
+                        | ทำให้การผลิตเลือดมีประสิทธิภาพสูง
+
+                div.q
+                    button.btn.btn-info.btn-sm(id='q2') คำตอบ
+                    span.q คนเป็นภูมิแพ้ทาน ดีบูน ได้ไหม ?
+                div.card.clear-margin.a(style='border-color: #46b8da; border-radius: 0;', data-for='q2')
+                    span ผู้ที่เป็นภูมิแพ้ สามารถทานดีบูนได้ ไม่มีผลข้างเคียงใดๆ
+
+                div.q
+                    button.btn.btn-info.btn-sm(id='q3') คำตอบ
+                    span.q เด็กสามารถทาน ดีบูน เพื่อเพิ่มความสูงได้หรือไม่ ?
+                div.card.clear-margin.a(style='border-color: #46b8da; border-radius: 0;', data-for='q3')
+                    span เหมาะมาก สามารถทานดีบูนได้ดีมากเพราะ ดีบูน มีส่วนผสมที่สกัดมาจากธรรมชาติ
+                        | ซึ่งผ่านการวิเคราะห์วิจัยให้ได้สารสกัดที่ลงตัว ทำให้มีผลดีกับวัยที่กำลังเจริญเติบโต 
+                
+                div.q
+                    button.btn.btn-info.btn-sm(id='q4') คำตอบ
+                    span.q โรคที่ไม่ควรทาน ดีบูน มีอะไรบ้าง?
+                div.card.clear-margin.a(style='border-color: #46b8da; border-radius: 0;', data-for='q4')
+                    span ผู้ที่ไม่แนะนำให้ทานดีบูนได้แก่ ผู้ที่เป็นนิ่วในระบบทางเดินปัสสาวะ นิ่วในไต และผู้ที่มีสภาวะแคลเซียมในเลือดสูง
+
+                div.q
+                    button.btn.btn-info.btn-sm(id='q5') คำตอบ
+                    span.q ผู้ที่เคยกระดูกหักสามารถทาน ดีบูน ได้หรือไม่ ?
+                div.card.clear-margin.a(style='border-color: #46b8da; border-radius: 0;', data-for='q5')
+                    span สามารถทานได้ยิ่งดีมากๆ เพราะจะช่วยประสานบริเวณที่หักให้หายได้เร็วยิ่งขึ้น
+                
+                div.q
+                
 
         
         div.row
@@ -577,12 +581,10 @@ block content
             div.col-xs-12.col-sm-8.col-md-8.clear-padding
                 P comment
 
-
-        
-
-
     br
     div.container-fluid
       div.row(style='background-color: #f8f8f8;')
         //- Footer
         p ส่วนล่างของเว็บไซต์
+
+    script(type='text/javascript', src='/js/Q-and-A.js')
