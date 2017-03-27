@@ -208,86 +208,106 @@ block content
                                 div.table-content-right 2.000&nbsp;มิลลิกรัม
                     br
         //- Feedback            
-        hr            
+        //- Feedback  
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8
+            div.col-xs-12.col-sm-8.col-md-8.card
+                h2(style='font-weight: bold') รีวิวสินค้า
                 div.row.clear-padding.media(class='media')
-                    div.media-left.media-top.col-xs-4.col-sm-4.col-md-4
+                    div.media-left.media-top.col-xs-5.col-sm-4.col-md-4(style='padding-top: 2%;padding-bottom: 2%;padding-left: 0px')
                         img.media-object(class='img-responsive', src='/img/review_customer_1.jpg', style='height:200px; width:200px;overflow:hidden;')
-                    div.media-body
-                        h4.media-heading คุณโกสม - นิ้วล๊อค
-                        p อาการ : เมื่อก่อนขับมอเตอร์ไซค์รับจ้างเป็นอาชีพเสริม ทั้งช่วงเช้าและเย็นทุกวันจนมีอาการนิ้วโป้งล๊อค งอไม่ได้ รวมทั้งปวดและตึงบริเวณหลัง จนต้องให้ลูกขึ้นเหยียบหลังเป็นประจำ
-                        p หลังจากทาน ดีบูน (คู่กับ โกเรจินส์ ) : ครบ 1 เดือน อาการนิ้วล๊อคเริ่มดีขึ้นได้จนเป็นปกติ ผลพลอยได้ตามมาคือ อาการหลังแข็ง ปวดและตึง ก็หายไปแล้ว
-        hr
+                    div.media-body(style='padding-right: 7%;padding-top: 2%;padding-bottom: 2%')
+                        h4.media-heading(style='font-weight: bold;') คุณโกสม - นิ้วล๊อค
+                        p
+                            b อาการ : 
+                            | เมื่อก่อนขับมอเตอร์ไซค์รับจ้างเป็นอาชีพเสริม ทั้งช่วงเช้าและเย็นทุกวันจนมีอาการนิ้วโป้งล๊อค งอไม่ได้ รวมทั้งปวดและตึงบริเวณหลัง จนต้องให้ลูกขึ้นเหยียบหลังเป็นประจำ
+                        p  
+                            b หลังจากทาน ดีบูน (คู่กับ โกเรจินส์ ) : 
+                            | ครบ 1 เดือน อาการนิ้วล๊อคเริ่มดีขึ้นได้จนเป็นปกติ ผลพลอยได้ตามมาคือ อาการหลังแข็ง ปวดและตึง ก็หายไปแล้ว
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
                 div.row.clear-padding.media(class='media')
-                    div.media-left.media-top.col-xs-4.col-sm-4.col-md-4
+                    div.media-left.media-top.col-xs-5.col-sm-4.col-md-4(style='padding-top: 2%;padding-bottom: 2%')
                         img.media-object(class='img-responsive', src='/img/review_customer_2.jpg', style='height:200px; width:200px;overflow:hidden;')
-                    div.media-body
-                        h4.media-heading คุณรุ่ง – หมอนรองกระดูกทับเส้นประสาท
-                        p อาการ : ปวดหลัง ขาเริ่มไม่มีความรู้สึก เดินๆอยู่ก็ล้ม ลุกยืนไม่ขึ้น ใช้ชีวิตลำบาก
-                        p ช่วงแรก : ทาน “ดีบูน” (ชนิดผง) คู่กับ “อเลอไทด์” ขาเริ่มรู้สึกมีแรง อาการปวดหลังเบาขึ้นมาก
-                        p หลังจากนั้น : ทาน “ดีบูน” (ชนิดแคปซูล) คู่กับ “อเลอไทด์” อาการดีขึ้นอย่างเห็นได้ชัด ปัจจุบันไม่มีอาการปวดแล้ว และยังทานต่อเนื่องเพื่อบำรุงและป้องกัน
-        hr
+                    div.media-body(style='padding-right: 7%;padding-top: 2%;padding-bottom: 2%')
+                        h4.media-heading(style='font-weight: bold;') คุณรุ่ง – หมอนรองกระดูกทับเส้นประสาท
+                        p
+                            b อาการ : 
+                            | ปวดหลัง ขาเริ่มไม่มีความรู้สึก เดินๆอยู่ก็ล้ม ลุกยืนไม่ขึ้น ใช้ชีวิตลำบาก
+                        p
+                            b ช่วงแรก : 
+                            | ทาน “ดีบูน” (ชนิดผง) คู่กับ “อเลอไทด์” ขาเริ่มรู้สึกมีแรง อาการปวดหลังเบาขึ้นมาก
+                        p
+                            b หลังจากทาน : 
+                            | ทาน “ดีบูน” (ชนิดแคปซูล) คู่กับ “อเลอไทด์” อาการดีขึ้นอย่างเห็นได้ชัด ปัจจุบันไม่มีอาการปวดแล้ว และยังทานต่อเนื่องเพื่อบำรุงและป้องกัน
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
                 div.row.clear-padding.media(class='media')
-                    div.media-left.media-top.col-xs-4.col-sm-4.col-md-4
+                    div.media-left.media-top.col-xs-5.col-sm-4.col-md-4(style='padding-top: 2%;padding-bottom: 2%')
                         img.media-object(class='img-responsive', src='/img/review_customer_3.jpg', style='height:200px; width:200px;overflow:hidden;')
-                    div.media-body
-                        h4.media-heading แม่อ่อน – ปวดเข่า อักเสบและบวม
-                        p อาการ : ปวดมากๆ บริเวณเข่า ลุกก็ปวด นั่งก็ปวดเนื่องจากอักเสบและบวมมากๆ จนต้องดูดน้ำออกจากเข่าเพื่อลดอาการบวม และต้องฉีกยาระงับอาการปวดด้วย ใช้ชีวิตลำบากมาก
-                        p ช่วงแรก : ทาน “ดีบูน” (ชนิดผง) วันล่ะ 2 ซอง อาการปวดเบาขึ้นมาก เดินได้สะดวกขึ้น อาการบวมลดลง เริ่มเดิน ลุก นั่ง คล่องตัวขึ้น
-                        p หลังจากนั้น : ทาน “ดีบูน” (ชนิดแคปซูล) ต่อตอนนี้แทบจะไม่มีอาการปวดเลย และยังทานอย่างต่อเนื่องเพื่อบำรุงและป้องกัน
-        hr
+                    div.media-body(style='padding-right: 7%;padding-top: 2%;padding-bottom: 2%')
+                        h4.media-heading(style='font-weight: bold;') แม่อ่อน – ปวดเข่า อักเสบและบวม
+                        p
+                            b อาการ : 
+                            | ปวดมากๆ บริเวณเข่า ลุกก็ปวด นั่งก็ปวดเนื่องจากอักเสบและบวมมากๆ จนต้องดูดน้ำออกจากเข่าเพื่อลดอาการบวม และต้องฉีกยาระงับอาการปวดด้วย ใช้ชีวิตลำบากมาก
+                        p 
+                            b ช่วงแรก : 
+                            | ทาน “ดีบูน” (ชนิดผง) วันล่ะ 2 ซอง อาการปวดเบาขึ้นมาก เดินได้สะดวกขึ้น อาการบวมลดลง เริ่มเดิน ลุก นั่ง คล่องตัวขึ้น
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
                 div.row.clear-padding.media(class='media')
-                    div.media-left.media-top.col-xs-4.col-sm-4.col-md-4
+                    div.media-left.media-top.col-xs-5.col-sm-4.col-md-4(style='padding-top: 2%;padding-bottom: 2%')
                         img.media-object(class='img-responsive', src='/img/review_customer_4.jpg', style='height:200px; width:200px;overflow:hidden;')
-                    div.media-body
-                        h4.media-heading ป้ายุพิน – ข้อเข่าอักเสบระยะแรก
-                        p อาการ : เวลายืนและเดินจะมีอาการปวดและบวมมากๆ
-                        p ช่วงแรก : ทาน “ดีบูน” (ชนิดผง) อาการบวมลดลง เริ่มเดินคล่องตัวมากขึ้น
-                        p หลังจากนั้น : ทาน “ดีบูน” (ชนิดแคปซูล) ปัจจุบันไม่มีอาการปวดแล้ว และยังทานต่อเนื่องเพื่อบำรุงและป้องกัน
-        hr
+                    div.media-body(style='padding-right: 7%;padding-top: 2%;padding-bottom: 2%')
+                        h4.media-heading(style='font-weight: bold;') ป้ายุพิน – ข้อเข่าอักเสบระยะแรก
+                        p 
+                            b อาการ :
+                            | เวลายืนและเดินจะมีอาการปวดและบวมมากๆ
+                        p
+                            b ช่วงแรก : 
+                            | ทาน “ดีบูน” (ชนิดผง) อาการบวมลดลง เริ่มเดินคล่องตัวมากขึ้น
+                        p
+                            b หลังจากทาน : 
+                            | ทาน “ดีบูน” (ชนิดแคปซูล) ปัจจุบันไม่มีอาการปวดแล้ว และยังทานต่อเนื่องเพื่อบำรุงและป้องกัน
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
                 div.row.clear-padding.media(class='media')
-                    div.media-left.media-top.col-xs-4.col-sm-4.col-md-4
+                    div.media-left.media-top.col-xs-5.col-sm-4.col-md-4(style='padding-top: 2%;padding-bottom: 2%')
                         img.media-object(class='img-responsive', src='/img/review_customer_5.jpg', style='height:200px; width:200px;overflow:hidden;')
-                    div.media-body
-                        h4.media-heading ป้าฤดี – ข้อเข่าเสื่อม ดังก๊อบแก๊บ
-                        p อาการ : ปวดเข่ามากๆ มีเสียงดังก๊อบแก๊บบริเวณหัวเข่า ต้องใช้ไม้เท้าประคองเวลายืนและเดิน
-                        p ช่วงแรก : ทาน “ดีบูน” (ชนิดผง) รู้สึกอาการปวดเบาขึ้นมาก เสียงก็อบแก๊บเริ่มหายไป อาการเสียวบริเวณข้อเข่าลดลง
-                        p หลังจากนั้น : ทาน “ดีบูน” (ชนิดแคปซูล) สามารถเดินได้เองโดยไม่ต้องใช้ไม้เท้าพยุง ประทับใจมากๆทานต่อเพื่อป้องกันและบำรุง
-        hr
+                    div.media-body(style='padding-right: 7%;padding-top: 2%;padding-bottom: 2%')
+                        h4.media-heading(style='font-weight: bold;') ป้าฤดี – ข้อเข่าเสื่อม ดังก๊อบแก๊บ
+                        p
+                            b อาการ : 
+                            | ปวดเข่ามากๆ มีเสียงดังก๊อบแก๊บบริเวณหัวเข่า ต้องใช้ไม้เท้าประคองเวลายืนและเดิน
+                        p
+                            b ช่วงแรก :
+                            | ทาน “ดีบูน” (ชนิดผง) รู้สึกอาการปวดเบาขึ้นมาก เสียงก็อบแก๊บเริ่มหายไป อาการเสียวบริเวณข้อเข่าลดลง
+                        p
+                            b หลังจากทาน :
+                            | ทาน “ดีบูน” (ชนิดแคปซูล) สามารถเดินได้เองโดยไม่ต้องใช้ไม้เท้าพยุง ประทับใจมากๆทานต่อเพื่อป้องกันและบำรุง
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
                 div.row.clear-padding.media(class='media')
-                    div.media-left.media-top.col-xs-4.col-sm-4.col-md-4
+                    div.media-left.media-top.col-xs-5.col-sm-4.col-md-4(style='padding-top: 2%;padding-bottom: 2%')
                         img.media-object(class='img-responsive', src='/img/review_customer_6.jpg', style='height:200px; width:200px;overflow:hidden;')
-                    div.media-body
-                        h4.media-heading คุณปัลดา – ข้อเข่าเสื่อมมานาน 1 ปี
+                    div.media-body(style='padding-right: 7%;padding-top: 2%;padding-bottom: 2%')
+                        h4.media-heading(style='font-weight: bold;') คุณปัลดา – ข้อเข่าเสื่อมมานาน 1 ปี
                         P มีอาการปวดเข่าทั้ง 2 ข้างมานานกว่า 1 ปีคุณหมอบอกข้อเข่าเสื่อม ให้ยาแก้ปวดและยาคลายกล้ามเนื้อมาทาน ก็ไม่ดีขึ้นระยะหลังยืนได้นาน ไม่ถึงชั่วโมง และเวลาขึ้นบันไดต้องโหนขึ้น จนต้องลาออกจากงานที่ทำ พอทานดีบูนจากเพื่อนที่แนะนำทานไป 1 กล่อง(5 ซอง)ปรากฏว่าอาการปวดลดลงขึ้นบันไดไม่ต้องโหนหรือจับราวบันไดได้แล้วประทับใจดีบูนมากค่ะ
-        hr
         div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8
+            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
                 div.row.clear-padding.media(class='media')
-                    div.media-left.media-top.col-xs-4.col-sm-4.col-md-4
+                    div.media-left.media-top.col-xs-5.col-sm-4.col-md-4(style='padding-top: 2%;padding-bottom: 2%')
                        img.media-object(class='img-responsive', src='/img/review_customer_7.jpg', style='height:200px; width:200px;overflow:hidden;')
-                    div.media-body
-                        h4.media-heading คุณเจริญ โปร่งศิริ อยู่ที่จ.ประจวบศีรีขันธ์
+                    div.media-body(style='padding-right: 7%;padding-top: 2%;padding-bottom: 2%')
+                        h4.media-heading(style='font-weight: bold;') คุณเจริญ โปร่งศิริ อยู่ที่จ.ประจวบศีรีขันธ์
                         p โดนล้อยางรถบนต์ ตกทับจนขาหักหมอต้องผ่าตัดใส่เหล็กและเข้าเฝือกแต่หลังจากถอดเฝือกออกมามีอาการปวดที่ขามาก เวลาเดินจะเหมือนคนขาไม่เท่ากันลูกสาวได้ซื้อโกเรจินส์-ดี ทานคู่กับ ดีบูน ทานได้ 1 สัปดาห์ ก็สามารถเดินได้เหมือนคนปกติ และไม่มีอาการที่เคยเป็น
-        hr
+
         
         //- Product properties
         div.row
