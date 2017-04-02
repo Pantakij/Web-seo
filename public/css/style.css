@@ -3,6 +3,15 @@ body {
   font-family: Helvethai;
 }
 
+.navbar-default {
+    background-color: #D3FA14;
+    border-color: #AEE70A;
+}
+
+h1, h2, h3{
+  color: #45BF00;
+}
+
 p{
   font-size: 1.1em;
 }
@@ -81,8 +90,13 @@ div.table-content-left{
   transform: rotate(15deg);
 }
 
-tr.even{
-  background-color: #FEF9E9;
+tr.odd{
+  background-color: #D6FC7E;
+}
+
+tr:hover{
+  background-color: #BCF51A;
+  cursor: pointer;
 }
 
 table { border-collapse: separate; }
@@ -108,6 +122,12 @@ div.q{
 div.a{
   display: none;
   padding: 0.5em;
+  border-color: #398439 !important; 
+  border-radius: 0 !important;
+}
+
+div.answer{
+  
 }
 
 .clear-padding{
