@@ -1,19 +1,39 @@
 body {
   background-color: #E2E2E2;
-  font-family: Helvethai;
 }
 
-.navbar-default {
-    background-color: #D3FA14;
-    border-color: #AEE70A;
+.navbar-default, .footer {
+  background-color: #2EA652;
+  border-color: #269347;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-brand{
+  color: white !important;
+}
+
+.navbar-brand:hover{
+  color: black !important;
 }
 
 h1, h2, h3{
   color: #45BF00;
+  font-weight: bold;
+}
+
+.footer, h1, h2, h3{
+  font-family: 'Prompt', serif;
 }
 
 p{
   font-size: 1.1em;
+}
+
+[name=line-at]:hover, [name=call-us]:hover{
+  cursor: pointer;
 }
 
 div.card{
@@ -126,8 +146,8 @@ div.a{
   border-radius: 0 !important;
 }
 
-div.answer{
-  
+.btn-social-icon{
+  margin: 2px;
 }
 
 .clear-padding{
