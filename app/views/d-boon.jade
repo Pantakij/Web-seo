@@ -648,27 +648,15 @@ block content
                 
                 div.q
         
-        //-div.row
+        div.row
             div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding
-                P comment
-    
-    footer.footer(style='margin-top: 1em;')
-        div.container
-            div.row
-                div.hidden-xs.col-sm-2.col-md-2
-                div.col-xs-12.col-sm-8.col-md-8
-                    div.col-xs-6.col-sm-6.col-md-6(style='text-align: center;')
-                        p(style='margin: 2px; color: white;') Contact us
-                        p(style='margin-bottom: 2px; color: white;') 095-220-6249
-                        p(style='color: white;') @dboonthai
-                    div.col-xs-6.col-sm-6.col-md-6(style='text-align: center; padding-bottom: 1em;')
-                        p(style='margin: 2px; color: white;') Follow us
-                        a.btn.btn-social.btn-facebook(href='https://www.facebook.com/dbooneth/?fref=nf', target='_blank')
-                            span.fa.fa-facebook
-                            span dboon thai
+            div.col-xs-12.col-sm-8.col-md-8.card(id='fb-root')
+                div.fb-comments(data-href='http://localhost:3000/', data-width='100%', data-numposts='5')
+                div.fb-like(style='padding-left: 1em; margin-bottom: 1em;', data-href='https://www.facebook.com/dbooneth/', data-layout='standard', 
+                            data-action='like', data-size='small', data-show-faces='true', data-share='true')
 
     script(type='text/javascript', src='/js/Product-factor-modal.js')
     script(type='text/javascript', src='/js/font-blink.js')
     script(type='text/javascript', src='/js/Contact.js')
     script(type='text/javascript', src='/js/Q-and-A.js')
+    script(type='text/javascript', src='/js/facebook-sdk.js')
