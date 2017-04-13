@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    nav.navbar.navbar-default
+    nav.navbar.navbar-default.navbar-fixed-top
         div.container-fluid
             div.navbar-header
                 button.navbar-toggle.collapsed(type='button', data-toggle='collapse' data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
@@ -11,31 +11,52 @@ block content
                     span.icon-bar
                 a.navbar-brand(href='#')= title
 
-            //-div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
-                ul.nav.navbar-nav
-                    li.active
+            div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
+                ul.nav.navbar-nav(style='color: white;')
+                    li.dropdown.active
+                        a.dropdown-toggle(href='#', data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') เกี่ยวกับดีบูน
+                            span.caret
+                        ul.dropdown-menu 
+                            li
+                                a(href='#what-is-dboon') ดีบูนคืออะไร
+                            li
+                                a(href='#product-reward') รางวัลการันตีคุณภาพ
+                            li
+                                a(href='#dboon-use-for') ดีบูนเหมาะสำหรับใคร
+                            li
+                                a(href='#product-factor') ส่วนประกอบสำคัญ
+                            li.divider(role='separator')
+                            li.dropdown-header ผลตอบรับจากลูกค้า
+                            li
+                                a(href='#mr-gosom') คุณโกสม
+                            li
+                                a(href='#ms-rung') คุณรุ่ง
+                            li
+                                a(href='#mrs-on') คุณแม่อ่อน
+                            li
+                                a(href='#ms-yupin') คุณป้ายุพิน
+                            li
+                                a(href='#ms-rudee') คุณป้าฤดี
+                            li
+                                a(href='#ms-pundar') คุณปัลดา
+                            li
+                                a(href='#mr-jarearn') คุณเจริญ
+                            li.divider(role='separator')
+                            li
+                                a(href='#product-properties') สรรพคุณของดีบูน
+                            li
+                                a(href='#contact') ติดต่อเรา
+                            li
+                                a(href='#QA') คำถามที่พบบ่อย
+                            li
+                                a(href='#comments') ความคิดเห็น
+                    //-li
                         a(href='#') Link 
                             span.sr-only (current)
-                    li
+                    //-li
                         a(href='#') Link
-                    li.dropdown
-                        a.dropdown-toggle(href='#', data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Dropdown
-                            span.caret
-                        ul.dropdown-menu
-                            li
-                                a(href='#') Action
-                            li
-                                a(href='#') Another action
-                            li
-                                a(href='#') Something else here
-                            li.divider(role='separator')
-                            li
-                                a(href='#') Separated link
-                            li.divider(role='separator')
-                            li
-                                a(href='#') One more separated link
 
-                ul.nav.navbar-nav.navbar-right
+                //-ul.nav.navbar-nav.navbar-right
                     li
                         a(href='#') Link
                     li.dropdown
@@ -82,6 +103,7 @@ block content
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card(style='background-color: white;')
+                a.anchor(id='what-is-dboon')
                 p
                     h1 D-Boon 
                     p(style='font-size: 1.5em') (ดีบูน หรือ ดีบูเน่ D-Boone) เป็นผลิตภัณฑ์อาหารเสริมที่ช่วยเรื่องความเสื่อมของกระดูกและข้อต่อต่างๆในร่างกาย 
@@ -92,6 +114,7 @@ block content
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
+                a.anchor(id='product-reward')
                 img(src='/img/garunty3.jpg', alt='รางวัลการันตีคุณภาพ Best product of the year 2016', style='width: 100%;')
         
         //- Present
@@ -99,6 +122,7 @@ block content
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card
                 div.col-xs-12.col-sm-7.col-md-7.clear-padding
+                    a.anchor(id='dboon-use-for')
                     h2 D-Boon เหมาะสำหรับ
                     ul(style='font-size: 1.4em;')
                         li ป้องกันการเกิดโรคกระดูกพรุน
@@ -129,6 +153,7 @@ block content
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card(style='background-color: white;')
+                a.anchor(id='product-factor')
                 h2.text-center ส่วนประกอบสำคัญ
                 div.col-xs-12.col-sm-6.col-md-6(style='padding: 2px;')
                     div(style='width: 100%; text-align: center;')
@@ -223,6 +248,7 @@ block content
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card
+                a.anchor(id='mr-gosom')
                 div.row.media
                     div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
                         div.col-xs-12.col-sm-12.col-md-12.clear-padding
@@ -240,6 +266,7 @@ block content
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card
+                a.anchor(id='ms-rung')
                 div.row.media
                     div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
                         div.col-xs-12.col-sm-12.col-md-12.clear-padding
@@ -261,6 +288,7 @@ block content
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card
+                a.anchor(id='mrs-on')
                 div.row.media
                     div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
                         div.col-xs-12.col-sm-12.col-md-12.clear-padding
@@ -282,6 +310,7 @@ block content
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card
+                a.anchor(id='ms-yupin')
                 div.row.media
                     div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
                         div.col-xs-12.col-sm-12.col-md-12.clear-padding
@@ -303,6 +332,7 @@ block content
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card
+                a.anchor(id='ms-rudee')
                 div.row.media
                     div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
                         div.col-xs-12.col-sm-12.col-md-12.clear-padding
@@ -324,6 +354,7 @@ block content
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card
+                a.anchor(id='ms-pundar')
                 div.row.media(class='media')
                     div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
                         div.col-xs-12.col-sm-12.col-md-12.clear-padding
@@ -344,6 +375,7 @@ block content
          div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card
+                a.anchor(id='mr-jarearn')
                 div.row.media
                     div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
                         div.col-xs-12.col-sm-12.col-md-12.clear-padding
@@ -363,6 +395,7 @@ block content
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
+                a.anchor(id='product-properties')
                 div.col-xs-12.col-sm-12.col-md-12
                     h2.text-center สรรพคุณของดีบูน
                     ul(id='product-factor-source')
@@ -482,6 +515,7 @@ block content
         div.row 
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.clear-padding.card(style='background-color: white;')
+                a.anchor(id='contact')
                 div.col-xs-12.col-sm-6.col-md-6.clear-padding
                     img(src='/img/S__11354179.jpg', style='width: 100%;', alt='คุณอักษรา มงคลนำเจริญ ตัวแทนจำหน่าย D-Boon')
                 div.col-xs-12.col-sm-6.col-md-6.clear-padding
@@ -571,6 +605,7 @@ block content
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card
+                a.anchor(id='QA')
                 h3.text-center คำถามเกี่ยวกับผลิตภัณฑ์ที่พบบ่อย
                 
                 div.q
@@ -634,6 +669,7 @@ block content
         div.row
             div.hidden-xs.col-sm-2.col-md-2
             div.col-xs-12.col-sm-8.col-md-8.card(id='fb-root')
+                a.anchor(id='comments')
                 div.fb-comments(data-href='http://localhost:3000/', data-width='100%', data-numposts='3')
                 div.fb-like(style='padding-left: 1em; margin-bottom: 1em;', data-href='https://www.facebook.com/dbooneth/', data-layout='standard', 
                             data-action='like', data-size='small', data-show-faces='true', data-share='true')
