@@ -1,701 +1,735 @@
 extends layout
 
 block content
-    nav.navbar.navbar-default.navbar-fixed-top
-        div.container-fluid
-            div.navbar-header
-                button.navbar-toggle.collapsed(type='button', data-toggle='collapse' data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-                    span.sr-only Toggle navigation
-                    span.icon-bar
-                    span.icon-bar
-                    span.icon-bar
-                a.navbar-brand(href='#')= title
+    body(data-spy='scroll', data-target='#myScrollspy', data-offset='15')
+        nav.navbar.navbar-default.navbar-fixed-top(id ='section-bar')
+            div.container-fluid
+                div.navbar-header
+                    button.navbar-toggle.collapsed(type='button', data-toggle='collapse' data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='#')= title
 
-            div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
-                ul.nav.navbar-nav(style='color: white;')
-                    li.dropdown.active
-                        a.dropdown-toggle(href='#', data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') เกี่ยวกับดีบูน
-                            span.caret
-                        ul.dropdown-menu 
-                            li
-                                a(href='#what-is-dboon') ดีบูนคืออะไร
-                            li
-                                a(href='#product-reward') รางวัลการันตีคุณภาพ
-                            li
-                                a(href='#dboon-use-for') ดีบูนเหมาะสำหรับใคร
-                            li
-                                a(href='#product-factor') ส่วนประกอบสำคัญ
-                            li.divider(role='separator')
-                            li.dropdown-header ผลตอบรับจากลูกค้า
-                            li
-                                a(href='#mr-gosom') คุณโกสม
-                            li
-                                a(href='#ms-rung') คุณรุ่ง
-                            li
-                                a(href='#mrs-on') คุณแม่อ่อน
-                            li
-                                a(href='#ms-yupin') คุณป้ายุพิน
-                            li
-                                a(href='#ms-rudee') คุณป้าฤดี
-                            li
-                                a(href='#ms-pundar') คุณปัลดา
-                            li
-                                a(href='#mr-jarearn') คุณเจริญ
-                            li.divider(role='separator')
-                            li
-                                a(href='#product-properties') สรรพคุณของดีบูน
-                            li
-                                a(href='#contact') ติดต่อเรา
-                            li
-                                a(href='#QA') คำถามที่พบบ่อย
-                            li
-                                a(href='#comments') ความคิดเห็น
-                    //-li
-                        a(href='#') Link 
-                            span.sr-only (current)
-                    //-li
-                        a(href='#') Link
+                div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
+                    ul.nav.navbar-nav(style='color: white;')
+                        li.dropdown.active
+                            a.dropdown-toggle(href='#', data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') เกี่ยวกับดีบูน
+                                span.caret
+                            ul.dropdown-menu 
+                                li
+                                    a(href='#what-is-dboon') ดีบูนคืออะไร
+                                li
+                                    a(href='#product-reward') รางวัลการันตีคุณภาพ
+                                li
+                                    a(href='#dboon-use-for') ดีบูนเหมาะสำหรับใคร
+                                li
+                                    a(href='#product-factor') ส่วนประกอบสำคัญ
+                                li.divider(role='separator')
+                                li.dropdown-header ผลตอบรับจากลูกค้า
+                                li
+                                    a(href='#mr-gosom') คุณโกสม
+                                li
+                                    a(href='#ms-rung') คุณรุ่ง
+                                li
+                                    a(href='#mrs-on') คุณแม่อ่อน
+                                li
+                                    a(href='#ms-yupin') คุณป้ายุพิน
+                                li
+                                    a(href='#ms-rudee') คุณป้าฤดี
+                                li
+                                    a(href='#ms-pundar') คุณปัลดา
+                                li
+                                    a(href='#mr-jarearn') คุณเจริญ
+                                li.divider(role='separator')
+                                li
+                                    a(href='#product-properties') สรรพคุณของดีบูน
+                                li
+                                    a(href='#contact') ติดต่อเรา
+                                li
+                                    a(href='#QA') คำถามที่พบบ่อย
+                                li
+                                    a(href='#comments') ความคิดเห็น
+                        //-li
+                            a(href='#') Link 
+                                span.sr-only (current)
+                        //-li
+                            a(href='#') Link
 
-                //-ul.nav.navbar-nav.navbar-right
-                    li
-                        a(href='#') Link
-                    li.dropdown
-                        a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Dropdown
-                            span.caret
-                        ul.dropdown-menu
-                            li
-                                a(href='#') Action
-                            li
-                                a(href='#') Another action
-                            li
-                                a(href='#') Something else here
-                            li.divider(role='separator')
-                            li
-                                a(href='#') Separated link
+                    //-ul.nav.navbar-nav.navbar-right
+                        li
+                            a(href='#') Link
+                        li.dropdown
+                            a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Dropdown
+                                span.caret
+                            ul.dropdown-menu
+                                li
+                                    a(href='#') Action
+                                li
+                                    a(href='#') Another action
+                                li
+                                    a(href='#') Something else here
+                                li.divider(role='separator')
+                                li
+                                    a(href='#') Separated link
 
-    div.container
-        div.row
-            //-  แนะนำผลิตภัณฑ์
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.carousel.slide.clear-padding.card(id='DboonCarousel', data-ride='carousel')
-                //- Indicators
-                //-ol.carousel-indicators
-                    li.active(data-target='#DboonCarousel', data-slide-to='0') 
-                    li(data-target='#DboonCarousel', data-slide-to='1')
+        div.container
+            div.row
+                nav#myScrollspy.hidden-xs.col-sm-2.col-md-2.clear-padding
+                    ul.nav.nav-pills.nav-stacked#li-scrollspy(data-spy='affix', data-offset-top='60',style='font-size:17px;top:79px;position:fixed;z-index: 10;')
+                        li
+                            a(href='#product-suggest') แนะนำผลิตภัณฑ์
+                        li
+                            a(href='#product-present') ดีบูนเหมาะสำหรับ
+                        li
+                            a(href='#product-factor') ส่วนประกอบสำคัญ
+                        li
+                            a(href='#product-properties') สรรพคุณของดีบูน
+                        li
+                            a(href='#product-contact') ติดต่อเรา
+                div(id = 'product-suggest')
+                    //-  แนะนำผลิตภัณฑ์
+                    div.col-xs-12.col-sm-8.col-md-8.carousel.slide.clear-padding.card(id='DboonCarousel', data-ride='carousel')
+                        //- Indicators
+                        //-ol.carousel-indicators
+                            li.active(data-target='#DboonCarousel', data-slide-to='0') 
+                            li(data-target='#DboonCarousel', data-slide-to='1')
 
-                //- Wrapper for slides
-                div.carousel-inner(role='listbox')
-                    div.item.active
-                        img(src='/img/main-pic.jpg', alt='หากคุณมีอาการปวดข้อ ปวดเข้า ให้นึกถึงผลิตภัณฑ์อาหารเสริมดีบูน', width='460', height='345')
-                    //-div.item
-                        img(src='/img/d-boon-pong.jpg', alt='D-Boon ชนิดผง ผสมน้ำพร้อมรับประทาน', width='460', height='345')
-                    
-                
-                //- Left and right controls
-                //-a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-                    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-                    span.sr-only Previous
-
-                //-a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-                    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-                    span.sr-only Next
-            div.hidden-xs.col-sm-2.col-md-2
-
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.card(style='background-color: white;')
-                a.anchor(id='what-is-dboon')
-                p
-                    h1 D-Boon 
-                    p(style='font-size: 1.5em') (ดีบูน หรือ ดีบูเน่ D-Boone) เป็นผลิตภัณฑ์อาหารเสริมที่ช่วยเรื่องความเสื่อมของกระดูกและข้อต่อต่างๆในร่างกาย 
-                        | มีส่วนผสมที่ลงตัวเพื่อการซ่อมแซมเนื้อเยื่อกระดูกอ่อนรอบๆข้อต่อ เอ็นร้อยหวาย และเอ็นยึดข้อ 
-                        | จึงเป็นอาหารเสริมที่มียอดขายสูงสุดทั้งในยุโรปและอเมริกา ด้วยสารอาหารที่ครบถ้วนเสริมสร้างความแข็งแรงของกระดูกและข้อ
-            div.hidden-xs.col-sm-2.col-md-2
-        
-        //- Product reward
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
-                a.anchor(id='product-reward')
-                img(src='/img/garunty3.jpg', alt='รางวัลการันตีคุณภาพ Best product of the year 2016', style='width: 100%;')
-            div.hidden-xs.col-sm-2.col-md-2
-        
-        //- Present
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.card
-                div.col-xs-12.col-sm-7.col-md-7.clear-padding
-                    a.anchor(id='dboon-use-for')
-                    h2 D-Boon เหมาะสำหรับ
-                    ul(style='font-size: 1.4em;')
-                        li ป้องกันการเกิดโรคกระดูกพรุน
-                        li โรคหมอนรองกระดูกทับเส้นประสาท
-                        li โรคหมอนรองกระดูกสันหลังเคลื่อน
-                        li นิ้วล็อค โรคฮิตของคนทำงาน
-                        li บรรเทาอาการปวดข้อ
-                        li สตรีวัยหมดประจำเดือน ขาดแคลเซียม
-                        li ผู้ที่ต้องการเพิ่มความสูง
-                        li นักกีฬา หรือผู้ที่ต้องการออกกำลังกายเป็นจำ
-                        li ผู้ที่มีอาชีพที่ต้องยืนเป็นเวลานานๆ
-                        li ผู้ที่มีปัญหาโรคข้อเสื่อม ข้ออักเสบ กระดูกพรุน
-                        li ป้องกันการเกิดโรคข้อเสื่อม
-                div.hidden-xs.col-sm-5.col-md-5.clear-padding
-                    img(src='/img/samart.png', alt='D-Boon และ คุณสามารถ พยักฆ์อรุณ', style='width: 100%; padding: 0;')
-            div.hidden-xs.col-sm-2.col-md-2
-
-        //- Product factor
-        div.modal.fade(id='product-factor-modal', role='dialog')
-            div.modal-dialog
-                div.modal-content
-                    div.modal-header
-                        button.close(type='button', data-dismiss='modal') &times;
-                        h4.modal-title Modal Header
-                    div.modal-body
-                        p Some text in the modal.
-                    div.modal-footer
-                        button.btn.btn-danger(type='button', data-dismiss='modal') ปิด
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.card(style='background-color: white;')
-                a.anchor(id='product-factor')
-                h2.text-center ส่วนประกอบสำคัญ
-                div.col-xs-12.col-sm-6.col-md-6(style='padding: 2px;')
-                    div(style='width: 100%; text-align: center;')
-                        img(src='/img/d-boon-capsule.png', alt='D-Boon ชนิดเม็ด รับประทานวันละ 1 เม็ด')
-                    h4.text-center ดีบูนชนิดแคปซูล
-                    table(style='width: 100%;')
-                        tr.odd(source='collagen')
-                            td 
-                                div.table-content-left Hydrolyzed Fish Collagen
-                                div.table-content-left (คอลลาเจนจากปลาทะเล)
-                            td 
-                                div.table-content-right 250.000 มิลลิกรัม
-                        tr(source='shark-cartilage')
-                            td 
-                                div.table-content-left Shark Cartilage
-                                div.table-content-left (กระดูกอ่อนปลาฉลาม)
-                            td 
-                                div.table-content-right 100.000 มิลลิกรัม
-                        tr.odd(source='pine-extract')
-                            td 
-                                div.table-content-left Pine Bark Extract (MSM)
-                                div.table-content-left (สารสกัดจากเปลือกสน)
-                            td 
-                                div.table-content-right 60.000 มิลลิกรัม
-                        tr(source='ascorbic')
-                            td 
-                                div.table-content-left Ascorbic Acid 
-                                div.table-content-left (แอสคอร์บิค เอซิด)
-                            td 
-                                div.table-content-right 60.000 มิลลิกรัม
-                        tr.odd(source='turmeric-extract-powder')
-                            td 
-                                div.table-content-left Turmeric Extract Powder
-                                div.table-content-left (สารสกัดจากขมิ้น)
-                            td 
-                                div.table-content-right 30.000 มิลลิกรัม
-                        tr(source='vitamin-d3')
-                            td 
-                                div.table-content-left Vitamin D3 100 SD/S 
-                                div.table-content-left (วิตามิน ดี3)
-                            td 
-                                div.table-content-right 2.000 มิลลิกรัม
-                div.col-xs-12.col-sm-6.col-md-6(style='padding: 2px;')
-                    div(style='width: 100%; text-align: center;')
-                        img(src='/img/d-boon-powder.png', alt='D-Boon ชนิดเม็ด รับประทานวันละ 1 เม็ด')
-                    h4.text-center ดีบูนชนิดผง
-                    table(style='width: 100%;')
-                        tr.odd(source='collagen')
-                            td 
-                                div.table-content-left Hydrolyzed Fish Collagen
-                                div.table-content-left (คอลลาเจนจากปลาทะเล)
-                            td 
-                                div.table-content-right 600.000 มิลลิกรัม
-                        tr(source='calcium-carbonate')
-                            td 
-                                div.table-content-left Calcium Carbonate
-                                div.table-content-left (แคลเซียมคาร์บอเนต)
-                            td 
-                                div.table-content-right 600.000 มิลลิกรัม
-                        tr.odd(source='shark-cartilage')
-                            td 
-                                div.table-content-left Shark Cartilage
-                                div.table-content-left (กระดูกอ่อนปลาฉลาม)
-                            td 
-                                div.table-content-right 500.000 มิลลิกรัม
-                        tr(source='beta-glucan')
-                            td 
-                                div.table-content-left Beta Glucan
-                                div.table-content-left (เบต้ากลูแคนจากยีสต์)
-                            td 
-                                div.table-content-right 300.000 มิลลิกรัม
-                        tr.odd(source='pine-extract')
-                            td 
-                                div.table-content-left Pine Bark Extract (MSM)
-                                div.table-content-left (สารสกัดจากเปลือกสน)
-                            td 
-                                div.table-content-right 50.000 มิลลิกรัม
-                        tr(source='ascorbic')
-                            td 
-                                div.table-content-left Ascorbic Acid 
-                                div.table-content-left (แอสคอร์บิค เอซิด)
-                            td 
-                                div.table-content-right 1800.000 มิลลิกรัม
-                        tr.odd(source='vitamin-d3')
-                            td 
-                                div.table-content-left Vitamin D3 100 SD/S 
-                                div.table-content-left (วิตามิน ดี3)
-                            td 
-                                div.table-content-right 2.000 มิลลิกรัม
-                    br
-            div.hidden-xs.col-sm-2.col-md-2
-        //- Feedback  
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.card
-                a.anchor(id='mr-gosom')
-                div.row.media
-                    div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
-                        div.col-xs-12.col-sm-12.col-md-12.clear-padding
-                            img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_1.jpg')        
-                    div.media-body(class='feedback-media-body')
-                        h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณโกสม 
-                        p
-                            b อาการ : 
-                            a(href='https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A3%E0%B8%84%E0%B8%99%E0%B8%B4%E0%B9%89%E0%B8%A7%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81', target='_blank') นิ้วล๊อค 
-                            | เมื่อก่อนขับมอเตอร์ไซค์รับจ้างเป็นอาชีพเสริม ทั้งช่วงเช้าและเย็นทุกวันจนมีอาการนิ้วโป้งล๊อค งอไม่ได้ รวมทั้งปวดและตึงบริเวณหลัง จนต้องให้ลูกขึ้นเหยียบหลังเป็นประจำ
-                        p  
-                            b ผลลัพธ์ : 
-                            | จากการทาน “ดีบูน” (ชนิดแคปซูล) คู่กับ “โกเรจินส์” ครบ 1 เดือน อาการนิ้วล๊อคเริ่มดีขึ้นได้จนเป็นปกติ ผลพลอยได้ตามมาคืออาการหลังแข็งปวดและตึงก็หายไปแล้ว
-                        p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
-            div.hidden-xs.col-sm-2.col-md-2
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.card
-                a.anchor(id='ms-rung')
-                div.row.media
-                    div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
-                        div.col-xs-12.col-sm-12.col-md-12.clear-padding
-                            img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_2.jpg') 
-                    div.media-body(class='feedback-media-body')
-                        h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณรุ่ง
-                        p
-                            b อาการ : 
-                            a(href='http://www.bangkokhospital.com/index.php/th/diseases-treatment/spine-herniated-nucleus-pulposus', target='_blank') หมอนรองกระดูกทับเส้นประสาท 
-                            | มีอาการปวดหลัง ขาเริ่มไม่มีความรู้สึก เดินๆอยู่ก็ล้ม ลุกยืนไม่ขึ้น ใช้ชีวิตลำบาก
-                        p
-                            b ผลลัพธ์ : 
-                            | จากการทาน “ดีบูน” (ชนิดผง) คู่กับ “อเลอไทด์” 
-                            br 
-                            | ช่วงแรก : ขาเริ่มรู้สึกมีแรง อาการปวดหลังเบาขึ้นมาก
-                            br 
-                            | ช่วงหลัง : อาการดีขึ้นอย่างเห็นได้ชัด ปัจจุบันไม่มีอาการปวดแล้ว และยังทานต่อเนื่องเพื่อบำรุงและป้องกัน
-                        p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
-            div.hidden-xs.col-sm-2.col-md-2
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.card
-                a.anchor(id='mrs-on')
-                div.row.media
-                    div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
-                        div.col-xs-12.col-sm-12.col-md-12.clear-padding
-                            img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_3.jpg')
-                    div.media-body(class='feedback-media-body')
-                        h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณแม่อ่อน
-                        p
-                            b อาการ : 
-                            a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') ข้อเข่าเสื่อม 
-                            | ปวดเข่าอักเสบและบวม ปวดมากๆบริเวณเข่า ลุกหรือนั่งก็ปวดเนื่องจากอักเสบและบวมมากๆ จนต้องดูดน้ำออกจากเข่าเพื่อลดอาการบวม และต้องฉีดยาระงับอาการปวดด้วย ใช้ชีวิตลำบากมาก
-                        p
-                            b ผลลัพธ์ : 
-                            | จากการทาน “ดีบูน” (ชนิดผง) และ (ชนิดแคปซูล)
-                            br
-                            | ช่วงแรก : ทาน “ดีบูน” (ชนิดผง) วันล่ะ 2 ซอง อาการปวดเบาขึ้นมาก เดินได้สะดวกขึ้น อาการบวมลดลง เริ่มเดิน ลุก นั่ง คล่องตัวขึ้น
-                            br
-                            | ช่วงหลัง : ทาน “ดีบูน” (ชนิดแคปซูล) ตอนนี้แทบจะไม่มีอาการปวดเลย และยังทานอย่างต่อเนื่องเพื่อบำรุงและป้องกัน
-                        p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
-            div.hidden-xs.col-sm-2.col-md-2
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.card
-                a.anchor(id='ms-yupin')
-                div.row.media
-                    div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
-                        div.col-xs-12.col-sm-12.col-md-12.clear-padding
-                            img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_4.jpg')
-                    div.media-body(class='feedback-media-body')
-                        h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณป้ายุพิน
-                        p 
-                            b อาการ : 
-                            a(href='https://www.vejthani.com/TH/Article/392/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B9%80%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B9%80%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B2', target='_blank') ข้อเข่าอักเสบ 
-                            | เวลายืนและเดินจะมีอาการปวดและบวมมากๆ
-                        p
-                            b ผลลัพธ์ : 
-                            | จากการทาน “ดีบูน” (ชนิดผง) และ (ชนิดแคปซูล)
-                            br
-                            | ช่วงแรก : ทาน “ดีบูน” (ชนิดผง) อาการบวมลดลง เริ่มเดินคล่องตัวมากขึ้น
-                            br
-                            | ช่วงหลัง : ทาน “ดีบูน” (ชนิดแคปซูล) ปัจจุบันไม่มีอาการปวดแล้ว และยังทานต่อเนื่องเพื่อบำรุงและป้องกัน
-                        p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
-            div.hidden-xs.col-sm-2.col-md-2
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.card
-                a.anchor(id='ms-rudee')
-                div.row.media
-                    div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
-                        div.col-xs-12.col-sm-12.col-md-12.clear-padding
-                            img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_5.jpg')
-                    div.media-body(class='feedback-media-body')
-                        h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณป้าฤดี
-                        p
-                            b อาการ : 
-                            a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') ข้อเข่าเสื่อม 
-                            | ปวดเข่ามากๆ มีเสียงดังในข้อบริเวณหัวเข่า ต้องใช้ไม้เท้าประคองเวลายืนและเดิน
-                        p
-                            b ผลลัพธ์ : 
-                            | จากการทาน “ดีบูน” (ชนิดผง) และ (ชนิดแคปซูล)
-                            br
-                            | ช่วงแรก : ทาน “ดีบูน” (ชนิดผง) รู้สึกอาการปวดเบาขึ้นมาก เสียงดังในข้อเริ่มหายไป อาการเสียวบริเวณข้อเข่าลดลง
-                            br
-                            | ช่วงหลัง : ทาน “ดีบูน” (ชนิดแคปซูล) สามารถเดินได้เองโดยไม่ต้องใช้ไม้เท้าพยุง ประทับใจมากๆจึงทานต่อเพื่อป้องกันและบำรุง
-                        p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
-            div.hidden-xs.col-sm-2.col-md-2
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.card
-                a.anchor(id='ms-pundar')
-                div.row.media(class='media')
-                    div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
-                        div.col-xs-12.col-sm-12.col-md-12.clear-padding
-                            img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_6.jpg')  
-                    div.media-body(class='feedback-media-body')
-                        h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณปัลดา
-                        P 
-                            b อาการ : 
-                            a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') ข้อเข่าเสื่อม 
-                            | ปวดเข่าทั้ง 2 ข้างเป็นมานาน 1 ปี คุณหมอ
-                            | ให้ยาแก้ปวดและยาคลายกล้ามเนื้อมาทานก็ไม่ดีขึ้นระยะหลังยืนได้ไม่ถึงชั่วโมง 
-                            | และเวลาขึ้นบันไดต้องโหนราวบันไดขึ้น จนต้องลาออกจากงานที่ทำงาน
-                         p  
-                            b ผลลัพธ์ : 
-                            | จากการทาน “ดีบูน” (ชนิดแคปซูล)
-                            | พอทานดีบูนจากเพื่อนที่แนะนำทานไป 1 กล่อง(5 ซอง) ปรากฏว่าอาการปวดลดลงขึ้นบันไดไม่ต้องโหนหรือจับราวบันไดได้แล้วประทับใจดีบูนมากค่ะ
-                        p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
-            div.hidden-xs.col-sm-2.col-md-2
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.card
-                a.anchor(id='mr-jarearn')
-                div.row.media
-                    div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
-                        div.col-xs-12.col-sm-12.col-md-12.clear-padding
-                            img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_7.jpg')        
-                    div.media-body(class='feedback-media-body')
-                        h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณเจริญ
-                        p
-                            b อาการ : 
-                            | โดนล้อยางรถยนต์ ตกทับจนขาหักหมอต้องผ่าตัดใส่เหล็กและเข้าเฝือกแต่หลังจากถอดเฝือกออกมามีอาการปวดที่ขามาก เวลาเดินจะเหมือนคนขาไม่เท่ากัน
-                        p  
-                            b ผลลัพธ์ : 
-                            | จากการทาน “ดีบูน” (ชนิดแคปซูล) คู่กับ “โกเรจินส์”
-                            | หลังจากลูกสาวได้ซื้อ ดีบูน และ โกเรจินส์-ดี ให้ทานคู่กันได้ 1 สัปดาห์ ก็สามารถเดินได้เหมือนคนปกติ และไม่มีอาการที่เคยเป็น
-                        p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
-            div.hidden-xs.col-sm-2.col-md-2
-
-        //- Product properties
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
-                a.anchor(id='product-properties')
-                div.col-xs-12.col-sm-12.col-md-12
-                    h2.text-center สรรพคุณของดีบูน
-                    ul(id='product-factor-source')
-                        li(data-for='shark-cartilage')
-                            h4(name='header') กระดูกอ่อนปลาฉลามช่วยเสริมสร้างกระดูกอ่อนให้กลับมาแข็งแรง เคลื่อนไหวร่างกายได้สะดวก
-                            p(name='content') กระดูกอ่อนปลาฉลามที่เป็นส่วนประกอบของดีบูน ประกอบไปด้วย
-                                a(href='https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%99', target='_blank') คอลลาเจน
-                                |  และสารในกลุ่ม
-                                a(href='https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B9%82%E0%B8%84%E0%B8%AA%E0%B8%B0%E0%B8%A1%E0%B8%B4%E0%B9%82%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B9%81%E0%B8%84%E0%B8%99', target='_blank') ไกลโคสะมิโนไกลแคน
-                                |  ซึ่งสารในกลุ่มไกลโคสะมิโนไกลแคนนั้นโดยส่วนใหญ่เป็นสาร 
-                                a(href='http://www.pharmacy.mahidol.ac.th/dic/news_week_full.php?id=481', target='_blank') คอนดรอยติน (Chondroitin)
-                                |  โดยสารนี้เป็นส่วนประกอบของกระดูกอ่อน
-                                | ทำให้กระดูกอ่อนมีคุณสมบัติยืดหยุ่น ทนทานต่อแรงกดดัน สามารถรองรับกระดูกข้อต่อได้
-                            hr
-                        li(data-for='calcium-carbonate')
-                            h4(name='header') แคลเซียมคาร์บอเนตช่วยเสริมสร้างกระดูก ป้องกันโรคกระดูกพรุน
-                            p(name='content') 
-                                a(href='http://haamor.com/th/%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%AD%E0%B9%80%E0%B8%99%E0%B8%95/', target='_blank') แคลเซียมคาร์บอเนต
-                                | นั้นเป็นส่วนผสมของผลิตภัณฑ์หลายอย่าง เช่น นมผง ชีส แยม หมากฝรั่ง ผักผลไม้กระป๋อง 
-                                | ยาลดกรด ยาแก้ท้องอืดท้องเสีย ยาบำรุงเสริมสร้างกระดูก และดีบูนก็เป็นหนึ่งในนั้น ซึ่ง
-                                a(href='http://haamor.com/th/%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%AD%E0%B9%80%E0%B8%99%E0%B8%95/', target='_blank') แคลเซียมคาร์บอเนต
-                                | นั้นมีสรรพคุณหลายอย่าง เช่น ป้องกัน
-                                a(href='http://haamor.com/th/%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B9%E0%B8%81%E0%B8%9E%E0%B8%A3%E0%B8%B8%E0%B8%99/', target='_blank') โรคกระดูกพรุน
-                                |  ช่วยให้มีระดับแคลเซียมในกระแสเลือดมากขึ้น แก้ท้องอืดท้องเสีย
-                                |  บรรเทาอาการกรดไหลย้อนและอาหารไม่ย่อย เป็นต้น
-                            hr
-                        li(data-for='vitamin-d3')
-                            h4(name='header') วิตามิน D3 เสริมการดูดซึมแคลเซียมเข้าสู่ร่างกายให้ดียิ่งขึ้น
-                            p(name='content') ผลิตภัณฑ์ดีบูนไม่เพียงแต่ผสมแค่
-                                a(href='http://www.pr.chula.ac.th/index.php/15-article/81-1-000-1-200-360-600-800-40', target='_blank') แคลเซียม
-                                | เท่านั้น ยังคำนึงถึงการรับแคลเซียมเข้าสู่ร่างกายอย่างมีประสิทธิภาพด้วยส่วนผสม
-                                a(href='http://www.siamchemi.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5/', target='_blank') วิตามิน D3
-                                | จะช่วยให้ร่างกายสามารถดูดซึมแคลเซียม และ
-                                a(href='https://th.wikipedia.org/wiki/%E0%B8%9F%E0%B8%AD%E0%B8%AA%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B8%B1%E0%B8%AA', target='_blank') ฟอสฟอรัส
-                                | ได้มากขึ้น ทำให้ร่างกายมีกระดูกที่แข็งแรง
-                            hr
-                        li(data-for='collagen') 
-                            h4(name='header') คอลลาเจนจากปลาทะเลช่วยป้องกัน และชะลอโรคข้อเข่าเสื่อม
-                            p(name='content') 
-                                a(href='https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%99', target='_blank') คอลลาเจน
-                                | เป็นโปรตีนอย่างหนึ่งที่สำคัญต่อร่างกาย เพราะเป็นส่วนประกอบของหลายๆอวัยวะ เช่น กล้ามเนื้อ เอ็น ผิวหนัง และยังพบว่ามีมากใน
-                                | กระจกตา 
-                                a(href='https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B9%E0%B8%81%E0%B8%AD%E0%B9%88%E0%B8%AD%E0%B8%99', target='_blank') กระดูกอ่อน
-                                |  หมอนรองกระดูก เป็นต้น ซึ่งหน้าที่อย่างหนึ่งของคอลลาเจน
-                                | คือ เสริมสร้างกระดูกอ่อนให้มีโครงสร้างที่แข็งแรง ยืดหยุ่น รองรับน้ำหนักได้ดี จึงทำให้สามารถป้องกันหรือชะลอการเกิด
-                                a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') โรคข้อเข่าเสื่อม
-                                | ได้ ผลิตภัณฑ์ดีบูนจึงเลือกคอลลาเจนจากปลาทะเลเป็นหนึ่งในส่วนผสมหลักของผลิตภัณฑ์
-                            hr
-                        li(data-for='beta-glucan')
-                            h4(name='header') เบต้ากลูแคนจากยีสต์ช่วยลดอาการปวดข้อ และป้องกันโรคไขข้ออักเสบ
-                            p(name='content') 
-                                a(href='https://en.wikipedia.org/wiki/Beta-glucan', target='_blank') เบต้ากลูแคน (Beta Glucan)
-                                |  มีหน้าที่ในการช่วยกระตุ้นการทำงานของ
-                                a(href='https://th.wikipedia.org/wiki/%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%84%E0%B8%B8%E0%B9%89%E0%B8%A1%E0%B8%81%E0%B8%B1%E0%B8%99', target='_blank') ระบบภูมิคุ้มกัน
-                                | ของร่างกายร่างกายที่ชื่อว่า
-                                a(href='https://sites.google.com/site/lifecellthailand/GCMAF', target='_blank') แมโครฟาจ (Macrophage)
-                                |  ซึ่งภูมิคุ้มกันที่ว่านี้ สามารถทำลายเชื้อจุลินทรีย์ที่เป็นสาเหตุของ
-                                a(href='https://th.wikipedia.org/wiki/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%9A', target='_blank') โรคไขข้ออักเสบ
-                                | ได้ ทำให้ผลิตภัณฑ์ดีบูนที่มีส่วนผสมของเบต้ากลูแคน สามารถช่วยรักษาหรือบรรเทาอาการของโรคไขข้ออักเสบ
-                                | ด้วยระบบภูมิคุ้มกันของร่างกายอย่างเป็นธรรมชาติ
-                            hr
-                        li(data-for='pine-extract')
-                            h4(name='header') สารสกัดจากเปลือกสนฝรั่งเศสช่วยสร้างความแข็งแรงให้กับไขข้อกระดูก
-                            p(name='content') หนึ่งใน
-                                a(href='https://mahosot.com/%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%81%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%99.html', target='_blank') สารสกัดจากเปลือกสน
-                                | นั้นคือ
-                                a(href='https://healthgossip.co/what-is-sulfur/', target='_blank') กำมะถัน
-                                | ที่เป็นส่วนช่วยในการสังเคราะห์คอลลาเจน ซึ่งคอลลาเจนนั้นเป็นส่วนประกอบของกระดูกอีกทีหนึ่ง และยังมีสาร
-                                a(href='https://en.wikipedia.org/wiki/Proanthocyanidin', target='_blank') พิกโนจีนอล (Pycnogenol)
-                                |  คอยทำหน้าที่ปกป้องและประสานคอลลาเจนไม่ให้เสื่อมสภาพ นอกจากนี้ยังมีสาร
-                                a(href='https://en.wikipedia.org/wiki/Flavonoid', target='_blank') กลุ่มไบโอฟลาโวนอยด์ (Bioflavonoids)
-                                |  ที่เสริมการทำงานของ
-                                a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%8B%E0%B8%B5/', target='_blank') วิตามิน C
-                                |  และ
-                                a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%AD%E0%B8%B5/', target='_blank') วิตามิน E
-                                |  ช่วยปกป้องร่างกายจากอนุมูลอิสระที่เกิดขึ้นในร่างกาย
-                                | ด้วยประโยชน์ที่หลากหลาย ผลิตภัณฑ์ดีบูนจึงเลือกสารสกัดจากเปลือกสนฝรั่งเศษมาเป็นส่วนประกอบ
-                            hr
-                        li(data-for='ascorbic')
-                            h4(name='header') แอสคอร์บิค เอซิด ช่วยป้องกันโรคข้ออักเสบ และเสริมสร้างระบบภูมิคุ้มกันของร่างกาย
-                            p(name='content') 
-                                a(href='http://www.siamchemi.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%8B%E0%B8%B5/', target='_blank') แอสคอร์บิค เอซิด (Ascorbic Acid)
-                                |  หรือ 
-                                a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%8B%E0%B8%B5/', target='_blank') วิตามิน C
-                                |  เป็นสารสำคัญในการสร้าง
-                                a(href='https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%99', target='_blank') คอลลาเจน
-                                |  ซึ่งคอลลาเจนมีหน้าทีสำคัญในการสร้างกระดูก
-                                |  โดยทำหน้าที่ในการยึดเซลล์กระดูกเข้าด้วยกัน นอกจากนี้วิตามิน C ยังเป็นสารต้านอนุมูลอิสระที่มีประสิทธิภาพสูง
-                                |  ช่วยทำให้
-                                a(href='https://th.wikipedia.org/wiki/%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%84%E0%B8%B8%E0%B9%89%E0%B8%A1%E0%B8%81%E0%B8%B1%E0%B8%99', target='_blank') ระบบภูมิคุ้มกัน
-                                | ของร่างกายมีความแข็งแรงมากขึ้น สามารถลดระดับ
-                                a(href='http://healthydeedee.com/%E0%B9%84%E0%B8%82%E0%B8%A1%E0%B8%B1%E0%B8%99-%E0%B8%84%E0%B8%AD%E0%B9%80%E0%B8%A5%E0%B8%AA%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B8%AD%E0%B8%A5%E0%B8%AA%E0%B8%B9%E0%B8%87-%E0%B8%84%E0%B8%B7%E0%B8%AD/', target='_blank') คอเลสเตอรอล
-                                | ในเลือด ช่วยลดการเกิดเส้นเลือดอุดตันในหลอดเลือดดำ ช่วยซ่อมแซมเส้นเลือดฝอยเล็ก ๆ
-                                |  รวมไปถึงเส้นเลือดหัวใจ และเส้นเลือดในร่างกาย ผลิตภัณฑ์ดีบูนที่มีส่วนผสมของวิตามิน C 
-                                | ที่ช่วยเสริมการทำงานของระบบภูมิคุ้มกันของร่างกาย จึงทำให้สามารถป้องกันหรือชะลอการเกิด
-                                a(href='https://th.wikipedia.org/wiki/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%9A', target='_blank') โรคข้ออักเสบ
-                                | ได้
-                            hr
-                        li(data-for='turmeric-extract-powder')
-                            h4(name='header') สารสกัดจากผงขมิ้น ช่วยบรรเทาอาการจากโรคข้อเข่าเสื่อม และโรคข้ออักเสบ
-                            p(name='content') ภายในสารสกัดจากผงขมิ้นมีสารที่มีชื่อว่า 
-                                a(href='https://curcuminherb.wordpress.com/2016/08/10/%E0%B9%80%E0%B8%84%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%84%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%99-curcumin-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3/', target='_blank') เคอร์คูมิน curcumin
-                                |  ซึ่งมีฤทธิ์ต้านการอักเสบจึงทำให้สามารถบรรเทาอาการจาก
-                                a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') โรคข้อเข่าเสื่อม
-                                |  และ
-                                a(href='https://th.wikipedia.org/wiki/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%9A', target='_blank') โรคข้ออักเสบ
-                                | ได้ นอกจากนี้สารสกัดจากผงขมิ้นที่เป็นหนึ่งในส่วนผสมของผลิตภัณฑ์ดีบูน ยังมีสารอาหารที่ดีต่อสุขภาพหลายอย่าง เช่น 
-                                a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%9A%E0%B8%B53/', target='_blank') วิตามิน B3
-                                |  วิตามิน C 
-                                a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%AD%E0%B8%B5/', target='_blank') วิตามิน E
-                                |  
-                                a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%84/', target='_blank') วิตามิน K
-                                |  โพแทสเซียม แคลเซียม ทองแดง เหล็ก แมกนีเซียม และสังกะสี ด้วย
-                    div(style='margin-top: 2em;')
-            div.hidden-xs.col-sm-2.col-md-2
-
-        //- Contact
-        div.row 
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.clear-padding.card(style='background-color: white;')
-                a.anchor(id='contact')
-                div.col-xs-12.col-sm-6.col-md-6.clear-padding
-                    img(src='/img/S__11354179.jpg', style='width: 100%;', alt='คุณอักษรา มงคลนำเจริญ ตัวแทนจำหน่าย D-Boon')
-                div.col-xs-12.col-sm-6.col-md-6.clear-padding
-                    img(src='/img/S__11354180.jpg', style='width: 100%;', alt='คุณก้องเกียรติ ภัทรพรไพศาล ตัวแทนจำหน่าย D-Boon')
+                        //- Wrapper for slides
+                        div.carousel-inner(role='listbox')
+                            div.item.active
+                                img(src='/img/main-pic.jpg', alt='หากคุณมีอาการปวดข้อ ปวดเข้า ให้นึกถึงผลิตภัณฑ์อาหารเสริมดีบูน', width='460', height='345')
+                            //-div.item
+                                img(src='/img/d-boon-pong.jpg', alt='D-Boon ชนิดผง ผสมน้ำพร้อมรับประทาน', width='460', height='345')
+                            
                         
-                div.col-xs-12.col-sm-12.col-md-12.clear-padding
+                        //- Left and right controls
+                        //-a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+                            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                            span.sr-only Previous
+
+                        //-a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+                            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                            span.sr-only Next
+                    div.hidden-xs.col-sm-2.col-md-2
+
+            div.row
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.card(style='background-color: white;')
+                    a.anchor(id='what-is-dboon')
+                    p
+                        h1 D-Boon 
+                        p(style='font-size: 1.5em') (ดีบูน หรือ ดีบูเน่ D-Boone) เป็นผลิตภัณฑ์อาหารเสริมที่ช่วยเรื่องความเสื่อมของกระดูกและข้อต่อต่างๆในร่างกาย 
+                            | มีส่วนผสมที่ลงตัวเพื่อการซ่อมแซมเนื้อเยื่อกระดูกอ่อนรอบๆข้อต่อ เอ็นร้อยหวาย และเอ็นยึดข้อ 
+                            | จึงเป็นอาหารเสริมที่มียอดขายสูงสุดทั้งในยุโรปและอเมริกา ด้วยสารอาหารที่ครบถ้วนเสริมสร้างความแข็งแรงของกระดูกและข้อ
+                div.hidden-xs.col-sm-2.col-md-2
+            
+            //- Product reward
+            div.row
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
+                    a.anchor(id='product-reward')
+                    img(src='/img/garunty3.jpg', alt='รางวัลการันตีคุณภาพ Best product of the year 2016', style='width: 100%;')
+                div.hidden-xs.col-sm-2.col-md-2
+            
+            //- Present
+            div.row(id = 'product-present')
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.card
+                    div.col-xs-12.col-sm-7.col-md-7.clear-padding
+                        a.anchor(id='dboon-use-for')
+                        h2 D-Boon เหมาะสำหรับ
+                        ul(style='font-size: 1.4em;')
+                            li ป้องกันการเกิดโรคกระดูกพรุน
+                            li โรคหมอนรองกระดูกทับเส้นประสาท
+                            li โรคหมอนรองกระดูกสันหลังเคลื่อน
+                            li นิ้วล็อค โรคฮิตของคนทำงาน
+                            li บรรเทาอาการปวดข้อ
+                            li สตรีวัยหมดประจำเดือน ขาดแคลเซียม
+                            li ผู้ที่ต้องการเพิ่มความสูง
+                            li นักกีฬา หรือผู้ที่ต้องการออกกำลังกายเป็นจำ
+                            li ผู้ที่มีอาชีพที่ต้องยืนเป็นเวลานานๆ
+                            li ผู้ที่มีปัญหาโรคข้อเสื่อม ข้ออักเสบ กระดูกพรุน
+                            li ป้องกันการเกิดโรคข้อเสื่อม
+                    div.hidden-xs.col-sm-5.col-md-5.clear-padding
+                        img(src='/img/samart.png', alt='D-Boon และ คุณสามารถ พยักฆ์อรุณ', style='width: 100%; padding: 0;')
+                div.hidden-xs.col-sm-2.col-md-2
+
+            //- Product factor
+            div(id='product-factor')
+                div.modal.fade(id='product-factor-modal', role='dialog')
+                    div.modal-dialog
+                        div.modal-content
+                            div.modal-header
+                                button.close(type='button', data-dismiss='modal') &times;
+                                h4.modal-title Modal Header
+                            div.modal-body
+                                p Some text in the modal.
+                            div.modal-footer
+                                button.btn.btn-danger(type='button', data-dismiss='modal') ปิด
+            div.row
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.card(style='background-color: white;')
+                    a.anchor(id='product-factor')
+                    h2.text-center ส่วนประกอบสำคัญ
+                    div.col-xs-12.col-sm-6.col-md-6(style='padding: 2px;')
+                        div(style='width: 100%; text-align: center;')
+                            img(src='/img/d-boon-capsule.png', alt='D-Boon ชนิดเม็ด รับประทานวันละ 1 เม็ด')
+                        h4.text-center ดีบูนชนิดแคปซูล
+                        table(style='width: 100%;')
+                            tr.odd(source='collagen')
+                                td 
+                                    div.table-content-left Hydrolyzed Fish Collagen
+                                    div.table-content-left (คอลลาเจนจากปลาทะเล)
+                                td 
+                                    div.table-content-right 250.000 มิลลิกรัม
+                            tr(source='shark-cartilage')
+                                td 
+                                    div.table-content-left Shark Cartilage
+                                    div.table-content-left (กระดูกอ่อนปลาฉลาม)
+                                td 
+                                    div.table-content-right 100.000 มิลลิกรัม
+                            tr.odd(source='pine-extract')
+                                td 
+                                    div.table-content-left Pine Bark Extract (MSM)
+                                    div.table-content-left (สารสกัดจากเปลือกสน)
+                                td 
+                                    div.table-content-right 60.000 มิลลิกรัม
+                            tr(source='ascorbic')
+                                td 
+                                    div.table-content-left Ascorbic Acid 
+                                    div.table-content-left (แอสคอร์บิค เอซิด)
+                                td 
+                                    div.table-content-right 60.000 มิลลิกรัม
+                            tr.odd(source='turmeric-extract-powder')
+                                td 
+                                    div.table-content-left Turmeric Extract Powder
+                                    div.table-content-left (สารสกัดจากขมิ้น)
+                                td 
+                                    div.table-content-right 30.000 มิลลิกรัม
+                            tr(source='vitamin-d3')
+                                td 
+                                    div.table-content-left Vitamin D3 100 SD/S 
+                                    div.table-content-left (วิตามิน ดี3)
+                                td 
+                                    div.table-content-right 2.000 มิลลิกรัม
+                    div.col-xs-12.col-sm-6.col-md-6(style='padding: 2px;')
+                        div(style='width: 100%; text-align: center;')
+                            img(src='/img/d-boon-powder.png', alt='D-Boon ชนิดเม็ด รับประทานวันละ 1 เม็ด')
+                        h4.text-center ดีบูนชนิดผง
+                        table(style='width: 100%;')
+                            tr.odd(source='collagen')
+                                td 
+                                    div.table-content-left Hydrolyzed Fish Collagen
+                                    div.table-content-left (คอลลาเจนจากปลาทะเล)
+                                td 
+                                    div.table-content-right 600.000 มิลลิกรัม
+                            tr(source='calcium-carbonate')
+                                td 
+                                    div.table-content-left Calcium Carbonate
+                                    div.table-content-left (แคลเซียมคาร์บอเนต)
+                                td 
+                                    div.table-content-right 600.000 มิลลิกรัม
+                            tr.odd(source='shark-cartilage')
+                                td 
+                                    div.table-content-left Shark Cartilage
+                                    div.table-content-left (กระดูกอ่อนปลาฉลาม)
+                                td 
+                                    div.table-content-right 500.000 มิลลิกรัม
+                            tr(source='beta-glucan')
+                                td 
+                                    div.table-content-left Beta Glucan
+                                    div.table-content-left (เบต้ากลูแคนจากยีสต์)
+                                td 
+                                    div.table-content-right 300.000 มิลลิกรัม
+                            tr.odd(source='pine-extract')
+                                td 
+                                    div.table-content-left Pine Bark Extract (MSM)
+                                    div.table-content-left (สารสกัดจากเปลือกสน)
+                                td 
+                                    div.table-content-right 50.000 มิลลิกรัม
+                            tr(source='ascorbic')
+                                td 
+                                    div.table-content-left Ascorbic Acid 
+                                    div.table-content-left (แอสคอร์บิค เอซิด)
+                                td 
+                                    div.table-content-right 1800.000 มิลลิกรัม
+                            tr.odd(source='vitamin-d3')
+                                td 
+                                    div.table-content-left Vitamin D3 100 SD/S 
+                                    div.table-content-left (วิตามิน ดี3)
+                                td 
+                                    div.table-content-right 2.000 มิลลิกรัม
+                        br
+                div.hidden-xs.col-sm-2.col-md-2
+            //- Feedback  
+            div.row
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.card
+                    a.anchor(id='mr-gosom')
+                    div.row.media
+                        div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
+                            div.col-xs-12.col-sm-12.col-md-12.clear-padding
+                                img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_1.jpg')        
+                        div.media-body(class='feedback-media-body')
+                            h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณโกสม 
+                            p
+                                b อาการ : 
+                                a(href='https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A3%E0%B8%84%E0%B8%99%E0%B8%B4%E0%B9%89%E0%B8%A7%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81', target='_blank') นิ้วล๊อค 
+                                | เมื่อก่อนขับมอเตอร์ไซค์รับจ้างเป็นอาชีพเสริม ทั้งช่วงเช้าและเย็นทุกวันจนมีอาการนิ้วโป้งล๊อค งอไม่ได้ รวมทั้งปวดและตึงบริเวณหลัง จนต้องให้ลูกขึ้นเหยียบหลังเป็นประจำ
+                            p  
+                                b ผลลัพธ์ : 
+                                | จากการทาน “ดีบูน” (ชนิดแคปซูล) คู่กับ “โกเรจินส์” ครบ 1 เดือน อาการนิ้วล๊อคเริ่มดีขึ้นได้จนเป็นปกติ ผลพลอยได้ตามมาคืออาการหลังแข็งปวดและตึงก็หายไปแล้ว
+                            p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
+                div.hidden-xs.col-sm-2.col-md-2
+            div.row
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.card
+                    a.anchor(id='ms-rung')
+                    div.row.media
+                        div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
+                            div.col-xs-12.col-sm-12.col-md-12.clear-padding
+                                img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_2.jpg') 
+                        div.media-body(class='feedback-media-body')
+                            h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณรุ่ง
+                            p
+                                b อาการ : 
+                                a(href='http://www.bangkokhospital.com/index.php/th/diseases-treatment/spine-herniated-nucleus-pulposus', target='_blank') หมอนรองกระดูกทับเส้นประสาท 
+                                | มีอาการปวดหลัง ขาเริ่มไม่มีความรู้สึก เดินๆอยู่ก็ล้ม ลุกยืนไม่ขึ้น ใช้ชีวิตลำบาก
+                            p
+                                b ผลลัพธ์ : 
+                                | จากการทาน “ดีบูน” (ชนิดผง) คู่กับ “อเลอไทด์” 
+                                br 
+                                | ช่วงแรก : ขาเริ่มรู้สึกมีแรง อาการปวดหลังเบาขึ้นมาก
+                                br 
+                                | ช่วงหลัง : อาการดีขึ้นอย่างเห็นได้ชัด ปัจจุบันไม่มีอาการปวดแล้ว และยังทานต่อเนื่องเพื่อบำรุงและป้องกัน
+                            p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
+                div.hidden-xs.col-sm-2.col-md-2
+            div.row
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.card
+                    a.anchor(id='mrs-on')
+                    div.row.media
+                        div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
+                            div.col-xs-12.col-sm-12.col-md-12.clear-padding
+                                img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_3.jpg')
+                        div.media-body(class='feedback-media-body')
+                            h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณแม่อ่อน
+                            p
+                                b อาการ : 
+                                a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') ข้อเข่าเสื่อม 
+                                | ปวดเข่าอักเสบและบวม ปวดมากๆบริเวณเข่า ลุกหรือนั่งก็ปวดเนื่องจากอักเสบและบวมมากๆ จนต้องดูดน้ำออกจากเข่าเพื่อลดอาการบวม และต้องฉีดยาระงับอาการปวดด้วย ใช้ชีวิตลำบากมาก
+                            p
+                                b ผลลัพธ์ : 
+                                | จากการทาน “ดีบูน” (ชนิดผง) และ (ชนิดแคปซูล)
+                                br
+                                | ช่วงแรก : ทาน “ดีบูน” (ชนิดผง) วันล่ะ 2 ซอง อาการปวดเบาขึ้นมาก เดินได้สะดวกขึ้น อาการบวมลดลง เริ่มเดิน ลุก นั่ง คล่องตัวขึ้น
+                                br
+                                | ช่วงหลัง : ทาน “ดีบูน” (ชนิดแคปซูล) ตอนนี้แทบจะไม่มีอาการปวดเลย และยังทานอย่างต่อเนื่องเพื่อบำรุงและป้องกัน
+                            p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
+                div.hidden-xs.col-sm-2.col-md-2
+            div.row
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.card
+                    a.anchor(id='ms-yupin')
+                    div.row.media
+                        div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
+                            div.col-xs-12.col-sm-12.col-md-12.clear-padding
+                                img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_4.jpg')
+                        div.media-body(class='feedback-media-body')
+                            h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณป้ายุพิน
+                            p 
+                                b อาการ : 
+                                a(href='https://www.vejthani.com/TH/Article/392/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B9%80%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B9%80%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B2', target='_blank') ข้อเข่าอักเสบ 
+                                | เวลายืนและเดินจะมีอาการปวดและบวมมากๆ
+                            p
+                                b ผลลัพธ์ : 
+                                | จากการทาน “ดีบูน” (ชนิดผง) และ (ชนิดแคปซูล)
+                                br
+                                | ช่วงแรก : ทาน “ดีบูน” (ชนิดผง) อาการบวมลดลง เริ่มเดินคล่องตัวมากขึ้น
+                                br
+                                | ช่วงหลัง : ทาน “ดีบูน” (ชนิดแคปซูล) ปัจจุบันไม่มีอาการปวดแล้ว และยังทานต่อเนื่องเพื่อบำรุงและป้องกัน
+                            p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
+                div.hidden-xs.col-sm-2.col-md-2
+            div.row
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.card
+                    a.anchor(id='ms-rudee')
+                    div.row.media
+                        div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
+                            div.col-xs-12.col-sm-12.col-md-12.clear-padding
+                                img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_5.jpg')
+                        div.media-body(class='feedback-media-body')
+                            h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณป้าฤดี
+                            p
+                                b อาการ : 
+                                a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') ข้อเข่าเสื่อม 
+                                | ปวดเข่ามากๆ มีเสียงดังในข้อบริเวณหัวเข่า ต้องใช้ไม้เท้าประคองเวลายืนและเดิน
+                            p
+                                b ผลลัพธ์ : 
+                                | จากการทาน “ดีบูน” (ชนิดผง) และ (ชนิดแคปซูล)
+                                br
+                                | ช่วงแรก : ทาน “ดีบูน” (ชนิดผง) รู้สึกอาการปวดเบาขึ้นมาก เสียงดังในข้อเริ่มหายไป อาการเสียวบริเวณข้อเข่าลดลง
+                                br
+                                | ช่วงหลัง : ทาน “ดีบูน” (ชนิดแคปซูล) สามารถเดินได้เองโดยไม่ต้องใช้ไม้เท้าพยุง ประทับใจมากๆจึงทานต่อเพื่อป้องกันและบำรุง
+                            p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
+                div.hidden-xs.col-sm-2.col-md-2
+            div.row
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.card
+                    a.anchor(id='ms-pundar')
+                    div.row.media(class='media')
+                        div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
+                            div.col-xs-12.col-sm-12.col-md-12.clear-padding
+                                img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_6.jpg')  
+                        div.media-body(class='feedback-media-body')
+                            h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณปัลดา
+                            P 
+                                b อาการ : 
+                                a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') ข้อเข่าเสื่อม 
+                                | ปวดเข่าทั้ง 2 ข้างเป็นมานาน 1 ปี คุณหมอ
+                                | ให้ยาแก้ปวดและยาคลายกล้ามเนื้อมาทานก็ไม่ดีขึ้นระยะหลังยืนได้ไม่ถึงชั่วโมง 
+                                | และเวลาขึ้นบันไดต้องโหนราวบันไดขึ้น จนต้องลาออกจากงานที่ทำงาน
+                             p  
+                                b ผลลัพธ์ : 
+                                | จากการทาน “ดีบูน” (ชนิดแคปซูล)
+                                | พอทานดีบูนจากเพื่อนที่แนะนำทานไป 1 กล่อง(5 ซอง) ปรากฏว่าอาการปวดลดลงขึ้นบันไดไม่ต้องโหนหรือจับราวบันไดได้แล้วประทับใจดีบูนมากค่ะ
+                            p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
+                div.hidden-xs.col-sm-2.col-md-2
+            div.row
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.card
+                    a.anchor(id='mr-jarearn')
+                    div.row.media
+                        div.media-left.media-top.col-xs-12.col-sm-5.col-md-4(style='padding-top: .8em;padding-bottom: 2%;')
+                            div.col-xs-12.col-sm-12.col-md-12.clear-padding
+                                img.media-object(class='img-responsive img-circle feedback-minimum-pic', src='/img/review_customer_7.jpg')        
+                        div.media-body(class='feedback-media-body')
+                            h4.media-heading(style='font-weight: bold;') ผลตอบรับจาก คุณเจริญ
+                            p
+                                b อาการ : 
+                                | โดนล้อยางรถยนต์ ตกทับจนขาหักหมอต้องผ่าตัดใส่เหล็กและเข้าเฝือกแต่หลังจากถอดเฝือกออกมามีอาการปวดที่ขามาก เวลาเดินจะเหมือนคนขาไม่เท่ากัน
+                            p  
+                                b ผลลัพธ์ : 
+                                | จากการทาน “ดีบูน” (ชนิดแคปซูล) คู่กับ “โกเรจินส์”
+                                | หลังจากลูกสาวได้ซื้อ ดีบูน และ โกเรจินส์-ดี ให้ทานคู่กันได้ 1 สัปดาห์ ก็สามารถเดินได้เหมือนคนปกติ และไม่มีอาการที่เคยเป็น
+                            p(style='color:red') (ผลลัพธ์ขึ้นอยู่กับร่างกายของแต่ละบุคคล)
+                div.hidden-xs.col-sm-2.col-md-2
+
+            //- Product properties
+            div.row(id = 'product-properties')
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
+                    a.anchor(id='product-properties')
+                    div.col-xs-12.col-sm-12.col-md-12
+                        h2.text-center สรรพคุณของดีบูน
+                        ul(id='product-factor-source')
+                            li(data-for='shark-cartilage')
+                                h4(name='header') กระดูกอ่อนปลาฉลามช่วยเสริมสร้างกระดูกอ่อนให้กลับมาแข็งแรง เคลื่อนไหวร่างกายได้สะดวก
+                                p(name='content') กระดูกอ่อนปลาฉลามที่เป็นส่วนประกอบของดีบูน ประกอบไปด้วย
+                                    a(href='https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%99', target='_blank') คอลลาเจน
+                                    |  และสารในกลุ่ม
+                                    a(href='https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B9%82%E0%B8%84%E0%B8%AA%E0%B8%B0%E0%B8%A1%E0%B8%B4%E0%B9%82%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B9%81%E0%B8%84%E0%B8%99', target='_blank') ไกลโคสะมิโนไกลแคน
+                                    |  ซึ่งสารในกลุ่มไกลโคสะมิโนไกลแคนนั้นโดยส่วนใหญ่เป็นสาร 
+                                    a(href='http://www.pharmacy.mahidol.ac.th/dic/news_week_full.php?id=481', target='_blank') คอนดรอยติน (Chondroitin)
+                                    |  โดยสารนี้เป็นส่วนประกอบของกระดูกอ่อน
+                                    | ทำให้กระดูกอ่อนมีคุณสมบัติยืดหยุ่น ทนทานต่อแรงกดดัน สามารถรองรับกระดูกข้อต่อได้
+                                hr
+                            li(data-for='calcium-carbonate')
+                                h4(name='header') แคลเซียมคาร์บอเนตช่วยเสริมสร้างกระดูก ป้องกันโรคกระดูกพรุน
+                                p(name='content') 
+                                    a(href='http://haamor.com/th/%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%AD%E0%B9%80%E0%B8%99%E0%B8%95/', target='_blank') แคลเซียมคาร์บอเนต
+                                    | นั้นเป็นส่วนผสมของผลิตภัณฑ์หลายอย่าง เช่น นมผง ชีส แยม หมากฝรั่ง ผักผลไม้กระป๋อง 
+                                    | ยาลดกรด ยาแก้ท้องอืดท้องเสีย ยาบำรุงเสริมสร้างกระดูก และดีบูนก็เป็นหนึ่งในนั้น ซึ่ง
+                                    a(href='http://haamor.com/th/%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%AD%E0%B9%80%E0%B8%99%E0%B8%95/', target='_blank') แคลเซียมคาร์บอเนต
+                                    | นั้นมีสรรพคุณหลายอย่าง เช่น ป้องกัน
+                                    a(href='http://haamor.com/th/%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B9%E0%B8%81%E0%B8%9E%E0%B8%A3%E0%B8%B8%E0%B8%99/', target='_blank') โรคกระดูกพรุน
+                                    |  ช่วยให้มีระดับแคลเซียมในกระแสเลือดมากขึ้น แก้ท้องอืดท้องเสีย
+                                    |  บรรเทาอาการกรดไหลย้อนและอาหารไม่ย่อย เป็นต้น
+                                hr
+                            li(data-for='vitamin-d3')
+                                h4(name='header') วิตามิน D3 เสริมการดูดซึมแคลเซียมเข้าสู่ร่างกายให้ดียิ่งขึ้น
+                                p(name='content') ผลิตภัณฑ์ดีบูนไม่เพียงแต่ผสมแค่
+                                    a(href='http://www.pr.chula.ac.th/index.php/15-article/81-1-000-1-200-360-600-800-40', target='_blank') แคลเซียม
+                                    | เท่านั้น ยังคำนึงถึงการรับแคลเซียมเข้าสู่ร่างกายอย่างมีประสิทธิภาพด้วยส่วนผสม
+                                    a(href='http://www.siamchemi.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5/', target='_blank') วิตามิน D3
+                                    | จะช่วยให้ร่างกายสามารถดูดซึมแคลเซียม และ
+                                    a(href='https://th.wikipedia.org/wiki/%E0%B8%9F%E0%B8%AD%E0%B8%AA%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B8%B1%E0%B8%AA', target='_blank') ฟอสฟอรัส
+                                    | ได้มากขึ้น ทำให้ร่างกายมีกระดูกที่แข็งแรง
+                                hr
+                            li(data-for='collagen') 
+                                h4(name='header') คอลลาเจนจากปลาทะเลช่วยป้องกัน และชะลอโรคข้อเข่าเสื่อม
+                                p(name='content') 
+                                    a(href='https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%99', target='_blank') คอลลาเจน
+                                    | เป็นโปรตีนอย่างหนึ่งที่สำคัญต่อร่างกาย เพราะเป็นส่วนประกอบของหลายๆอวัยวะ เช่น กล้ามเนื้อ เอ็น ผิวหนัง และยังพบว่ามีมากใน
+                                    | กระจกตา 
+                                    a(href='https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B9%E0%B8%81%E0%B8%AD%E0%B9%88%E0%B8%AD%E0%B8%99', target='_blank') กระดูกอ่อน
+                                    |  หมอนรองกระดูก เป็นต้น ซึ่งหน้าที่อย่างหนึ่งของคอลลาเจน
+                                    | คือ เสริมสร้างกระดูกอ่อนให้มีโครงสร้างที่แข็งแรง ยืดหยุ่น รองรับน้ำหนักได้ดี จึงทำให้สามารถป้องกันหรือชะลอการเกิด
+                                    a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') โรคข้อเข่าเสื่อม
+                                    | ได้ ผลิตภัณฑ์ดีบูนจึงเลือกคอลลาเจนจากปลาทะเลเป็นหนึ่งในส่วนผสมหลักของผลิตภัณฑ์
+                                hr
+                            li(data-for='beta-glucan')
+                                h4(name='header') เบต้ากลูแคนจากยีสต์ช่วยลดอาการปวดข้อ และป้องกันโรคไขข้ออักเสบ
+                                p(name='content') 
+                                    a(href='https://en.wikipedia.org/wiki/Beta-glucan', target='_blank') เบต้ากลูแคน (Beta Glucan)
+                                    |  มีหน้าที่ในการช่วยกระตุ้นการทำงานของ
+                                    a(href='https://th.wikipedia.org/wiki/%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%84%E0%B8%B8%E0%B9%89%E0%B8%A1%E0%B8%81%E0%B8%B1%E0%B8%99', target='_blank') ระบบภูมิคุ้มกัน
+                                    | ของร่างกายร่างกายที่ชื่อว่า
+                                    a(href='https://sites.google.com/site/lifecellthailand/GCMAF', target='_blank') แมโครฟาจ (Macrophage)
+                                    |  ซึ่งภูมิคุ้มกันที่ว่านี้ สามารถทำลายเชื้อจุลินทรีย์ที่เป็นสาเหตุของ
+                                    a(href='https://th.wikipedia.org/wiki/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%9A', target='_blank') โรคไขข้ออักเสบ
+                                    | ได้ ทำให้ผลิตภัณฑ์ดีบูนที่มีส่วนผสมของเบต้ากลูแคน สามารถช่วยรักษาหรือบรรเทาอาการของโรคไขข้ออักเสบ
+                                    | ด้วยระบบภูมิคุ้มกันของร่างกายอย่างเป็นธรรมชาติ
+                                hr
+                            li(data-for='pine-extract')
+                                h4(name='header') สารสกัดจากเปลือกสนฝรั่งเศสช่วยสร้างความแข็งแรงให้กับไขข้อกระดูก
+                                p(name='content') หนึ่งใน
+                                    a(href='https://mahosot.com/%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%81%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%99.html', target='_blank') สารสกัดจากเปลือกสน
+                                    | นั้นคือ
+                                    a(href='https://healthgossip.co/what-is-sulfur/', target='_blank') กำมะถัน
+                                    | ที่เป็นส่วนช่วยในการสังเคราะห์คอลลาเจน ซึ่งคอลลาเจนนั้นเป็นส่วนประกอบของกระดูกอีกทีหนึ่ง และยังมีสาร
+                                    a(href='https://en.wikipedia.org/wiki/Proanthocyanidin', target='_blank') พิกโนจีนอล (Pycnogenol)
+                                    |  คอยทำหน้าที่ปกป้องและประสานคอลลาเจนไม่ให้เสื่อมสภาพ นอกจากนี้ยังมีสาร
+                                    a(href='https://en.wikipedia.org/wiki/Flavonoid', target='_blank') กลุ่มไบโอฟลาโวนอยด์ (Bioflavonoids)
+                                    |  ที่เสริมการทำงานของ
+                                    a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%8B%E0%B8%B5/', target='_blank') วิตามิน C
+                                    |  และ
+                                    a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%AD%E0%B8%B5/', target='_blank') วิตามิน E
+                                    |  ช่วยปกป้องร่างกายจากอนุมูลอิสระที่เกิดขึ้นในร่างกาย
+                                    | ด้วยประโยชน์ที่หลากหลาย ผลิตภัณฑ์ดีบูนจึงเลือกสารสกัดจากเปลือกสนฝรั่งเศษมาเป็นส่วนประกอบ
+                                hr
+                            li(data-for='ascorbic')
+                                h4(name='header') แอสคอร์บิค เอซิด ช่วยป้องกันโรคข้ออักเสบ และเสริมสร้างระบบภูมิคุ้มกันของร่างกาย
+                                p(name='content') 
+                                    a(href='http://www.siamchemi.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%8B%E0%B8%B5/', target='_blank') แอสคอร์บิค เอซิด (Ascorbic Acid)
+                                    |  หรือ 
+                                    a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%8B%E0%B8%B5/', target='_blank') วิตามิน C
+                                    |  เป็นสารสำคัญในการสร้าง
+                                    a(href='https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%99', target='_blank') คอลลาเจน
+                                    |  ซึ่งคอลลาเจนมีหน้าทีสำคัญในการสร้างกระดูก
+                                    |  โดยทำหน้าที่ในการยึดเซลล์กระดูกเข้าด้วยกัน นอกจากนี้วิตามิน C ยังเป็นสารต้านอนุมูลอิสระที่มีประสิทธิภาพสูง
+                                    |  ช่วยทำให้
+                                    a(href='https://th.wikipedia.org/wiki/%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%84%E0%B8%B8%E0%B9%89%E0%B8%A1%E0%B8%81%E0%B8%B1%E0%B8%99', target='_blank') ระบบภูมิคุ้มกัน
+                                    | ของร่างกายมีความแข็งแรงมากขึ้น สามารถลดระดับ
+                                    a(href='http://healthydeedee.com/%E0%B9%84%E0%B8%82%E0%B8%A1%E0%B8%B1%E0%B8%99-%E0%B8%84%E0%B8%AD%E0%B9%80%E0%B8%A5%E0%B8%AA%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B8%AD%E0%B8%A5%E0%B8%AA%E0%B8%B9%E0%B8%87-%E0%B8%84%E0%B8%B7%E0%B8%AD/', target='_blank') คอเลสเตอรอล
+                                    | ในเลือด ช่วยลดการเกิดเส้นเลือดอุดตันในหลอดเลือดดำ ช่วยซ่อมแซมเส้นเลือดฝอยเล็ก ๆ
+                                    |  รวมไปถึงเส้นเลือดหัวใจ และเส้นเลือดในร่างกาย ผลิตภัณฑ์ดีบูนที่มีส่วนผสมของวิตามิน C 
+                                    | ที่ช่วยเสริมการทำงานของระบบภูมิคุ้มกันของร่างกาย จึงทำให้สามารถป้องกันหรือชะลอการเกิด
+                                    a(href='https://th.wikipedia.org/wiki/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%9A', target='_blank') โรคข้ออักเสบ
+                                    | ได้
+                                hr
+                            li(data-for='turmeric-extract-powder')
+                                h4(name='header') สารสกัดจากผงขมิ้น ช่วยบรรเทาอาการจากโรคข้อเข่าเสื่อม และโรคข้ออักเสบ
+                                p(name='content') ภายในสารสกัดจากผงขมิ้นมีสารที่มีชื่อว่า 
+                                    a(href='https://curcuminherb.wordpress.com/2016/08/10/%E0%B9%80%E0%B8%84%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%84%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%99-curcumin-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3/', target='_blank') เคอร์คูมิน curcumin
+                                    |  ซึ่งมีฤทธิ์ต้านการอักเสบจึงทำให้สามารถบรรเทาอาการจาก
+                                    a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') โรคข้อเข่าเสื่อม
+                                    |  และ
+                                    a(href='https://th.wikipedia.org/wiki/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%9A', target='_blank') โรคข้ออักเสบ
+                                    | ได้ นอกจากนี้สารสกัดจากผงขมิ้นที่เป็นหนึ่งในส่วนผสมของผลิตภัณฑ์ดีบูน ยังมีสารอาหารที่ดีต่อสุขภาพหลายอย่าง เช่น 
+                                    a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%9A%E0%B8%B53/', target='_blank') วิตามิน B3
+                                    |  วิตามิน C 
+                                    a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%AD%E0%B8%B5/', target='_blank') วิตามิน E
+                                    |  
+                                    a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%84/', target='_blank') วิตามิน K
+                                    |  โพแทสเซียม แคลเซียม ทองแดง เหล็ก แมกนีเซียม และสังกะสี ด้วย
+                        div(style='margin-top: 2em;')
+                div.hidden-xs.col-sm-2.col-md-2
+
+            //- Contact
+            div.row(id ='product-contact')
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.clear-padding.card(style='background-color: white;')
+                    a.anchor(id='contact')
                     div.col-xs-12.col-sm-6.col-md-6.clear-padding
-                        div.col-xs-12.col-sm-8.col-md-8.clear-padding()
-                            div.col-xs-12.col-sm-12.col-md-12.clear-padding(name='line-at', style='background-color: #00C300; color: white; border: 1px solid #00C300;')
-                                div.col-xs-10.col-sm-10.col-md-10.clear-padding(style='text-align: center;')
-                                    div(style='width: 10em; margin: 0 auto;')
-                                        div.rotate-plus-15-degree.inline(name='blink', style='padding-top: 5px; color: red; font-weight: bold; font-size: 1.4em;') คลิ๊ก
-                                        div.inline(style='padding-top: 10px; font-size: 1.2em;') เพื่อติดต่อเรา
-                                    div(style='clear: both; font-size: 1.2em; margin-bottom: 5px;') 
-                                        span(title='Line ID') ID : @dboonthai
-                                div.col-xs-2.col-sm-2.col-md-2.clear-padding
-                                    img(src='/img/LINE.jpg', style='width: 4em; float: right; padding: 5px; padding-top: 7px;', alt='Line icon')
-                            div.col-xs-12.col-sm-12.col-md-12.clear-padding(name='call-us', style='background-color: #018F99; color: white; border: 1px solid #018F99;')
-                                div.col-xs-10.col-sm-10.col-md-10.clear-padding(style='text-align: center;')
-                                    div(style='width: 10em; margin: 0 auto;')
-                                        div.rotate-plus-15-degree.inline(name='blink', style='padding-top: 5px; color: red; font-weight: bold; font-size: 1.4em;') คลิ๊ก
-                                        div.inline(style='padding-top: 10px; font-size: 1.2em;') เพื่อโทรสั่งซื้อ
-                                    div(style='clear: both; font-size: 1.2em; margin-bottom: 5px;') 
-                                        span(title='Phone-number') 095-220-6249
-                                div.col-xs-2.col-sm-2.col-md-2.clear-padding
-                                    img(src='/img/phone-icon-945.png', style='width: 4em; float: right; padding: 5px; padding-top: 7px;', alt='Line icon')
+                        img(src='/img/S__11354179.jpg', style='width: 100%;', alt='คุณอักษรา มงคลนำเจริญ ตัวแทนจำหน่าย D-Boon')
+                    div.col-xs-12.col-sm-6.col-md-6.clear-padding
+                        img(src='/img/S__11354180.jpg', style='width: 100%;', alt='คุณก้องเกียรติ ภัทรพรไพศาล ตัวแทนจำหน่าย D-Boon')
+                            
+                    div.col-xs-12.col-sm-12.col-md-12.clear-padding
+                        div.col-xs-12.col-sm-6.col-md-6.clear-padding
+                            div.col-xs-12.col-sm-8.col-md-8.clear-padding()
+                                div.col-xs-12.col-sm-12.col-md-12.clear-padding(name='line-at', style='background-color: #00C300; color: white; border: 1px solid #00C300;')
+                                    div.col-xs-10.col-sm-10.col-md-10.clear-padding(style='text-align: center;')
+                                        div(style='width: 10em; margin: 0 auto;')
+                                            div.rotate-plus-15-degree.inline(name='blink', style='padding-top: 5px; color: red; font-weight: bold; font-size: 1.4em;') คลิ๊ก
+                                            div.inline(style='padding-top: 10px; font-size: 1.2em;') เพื่อติดต่อเรา
+                                        div(style='clear: both; font-size: 1.2em; margin-bottom: 5px;') 
+                                            span(title='Line ID') ID : @dboonthai
+                                    div.col-xs-2.col-sm-2.col-md-2.clear-padding
+                                        img(src='/img/LINE.jpg', style='width: 4em; float: right; padding: 5px; padding-top: 7px;', alt='Line icon')
+                                div.col-xs-12.col-sm-12.col-md-12.clear-padding(name='call-us', style='background-color: #018F99; color: white; border: 1px solid #018F99;')
+                                    div.col-xs-10.col-sm-10.col-md-10.clear-padding(style='text-align: center;')
+                                        div(style='width: 10em; margin: 0 auto;')
+                                            div.rotate-plus-15-degree.inline(name='blink', style='padding-top: 5px; color: red; font-weight: bold; font-size: 1.4em;') คลิ๊ก
+                                            div.inline(style='padding-top: 10px; font-size: 1.2em;') เพื่อโทรสั่งซื้อ
+                                        div(style='clear: both; font-size: 1.2em; margin-bottom: 5px;') 
+                                            span(title='Phone-number') 095-220-6249
+                                    div.col-xs-2.col-sm-2.col-md-2.clear-padding
+                                        img(src='/img/phone-icon-945.png', style='width: 4em; float: right; padding: 5px; padding-top: 7px;', alt='Line icon')
 
-                        div.hidden-xs.col-sm-4.col-md-4.clear-padding
-                            img(src='/img/line-ad.jpg', style='width: 100%;', alt='QR Code ศูนย์จำหน่าย D-Boon')
-                    div.col-xs-12.col-sm-6.col-md-6.clear-padding(style='background-color: #EE6F1E; border: 1px solid #EE6F1E;')
-                        img(src='/img/kerry-express.jpg', style='display: block; margin: 0 auto;', alt='ส่งสินค้าผ่าน Kerry Express บริการเก็บเงินปลายทาง ส่งเร็ว มั่นใจ ได้รับสินค้า 100%')
+                            div.hidden-xs.col-sm-4.col-md-4.clear-padding
+                                img(src='/img/line-ad.jpg', style='width: 100%;', alt='QR Code ศูนย์จำหน่าย D-Boon')
+                        div.col-xs-12.col-sm-6.col-md-6.clear-padding(style='background-color: #EE6F1E; border: 1px solid #EE6F1E;')
+                            img(src='/img/kerry-express.jpg', style='display: block; margin: 0 auto;', alt='ส่งสินค้าผ่าน Kerry Express บริการเก็บเงินปลายทาง ส่งเร็ว มั่นใจ ได้รับสินค้า 100%')
 
-                div.col-xs-12.col-sm-12.col-md-12.clear-padding
-                    div.col-xs-12.col-sm-12.col-md-12.text-center
-                        p.clear-margin(style='padding-top: 8px; font-size: 1.8em; font-weight: bold;') เลขบัญชีธนาคาร
-                        p(style='font-size: 1.4em;') คุณอักษรา มงคลนำเจริญ
-                    div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #0090D6; color: white;')
-                        div.col-xs-4.col-sm-4.col-md-4.clear-padding
-                            img.bank-picture(src='/img/ktb-bank.jpg', alt='ธนาคารกรุงไทย')
-                            p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') KTB
-                            p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') กรุงไทย
-                        div.col-xs-8.col-sm-8.col-md-8.clear-padding
-                            p.clear-margin.bank-number 690-0-44529-2
-                            p สาขาเซ็นทรัล พลาซ่า ลาดพร้าว
-                    div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #111583; color: white;')
-                        div.col-xs-4.col-sm-4.col-md-4.clear-padding
-                            img.bank-picture(src='/img/bkk-bank.jpg', alt='ธนาคารกรุงเทพ')
-                            p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') Bangkok Bank
-                            p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') กรุงเทพ
-                        div.col-xs-8.col-sm-8.col-md-8.clear-padding
-                            p.clear-margin.bank-number 026-4-43418-4
-                            p สาขาฟิวเจอร์พาร์ค รังสิต
-                    div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #FFBE00; color: #5d4d4d;')
-                        div.col-xs-4.col-sm-4.col-md-4.clear-padding
-                            img.bank-picture(src='/img/ks-bank.jpg', alt='ธนาคารกรุงศรีฯ')
-                            p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') krungsri
-                            p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') กรุงศรีฯ
-                        div.col-xs-8.col-sm-8.col-md-8.clear-padding
-                            p.clear-margin.bank-number 527-1-15128-0
-                            p สาขาเซ็นจูรี่ พลาซ่า
-                    div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #00811A; color: white;')
-                        div.col-xs-4.col-sm-4.col-md-4.clear-padding
-                            img.bank-picture(src='/img/k-bank.jpg', alt='ธนาคารกสิกรไทย')
-                            p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') KBank
-                            p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') กสิกรไทย
-                        div.col-xs-8.col-sm-8.col-md-8.clear-padding
-                            p.clear-margin.bank-number 021-3-45619-9
-                            p สาขาแฟชั่นไอส์แลนด์
-                    div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #4B2886; color: white;')
-                        div.col-xs-4.col-sm-4.col-md-4.clear-padding
-                            img.bank-picture(src='/img/scb-bank.jpg', alt='ธนาคารไทยพาณิชย์')
-                            p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') SCB
-                            p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') ไทยพาณิชย์
-                        div.col-xs-8.col-sm-8.col-md-8.clear-padding
-                            p.clear-margin.bank-number 206-2-63537-2
-                            p สาขาเซ็นทรัล พลาซ่า ลาดพร้าว
-                    div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: white; color: #0079C2; border: 1px solid black;')
-                        div.col-xs-4.col-sm-4.col-md-4.clear-padding
-                            img.bank-picture(src='/img/tmb-bank.jpg', alt='ธนาคารทหารไทย' style='width: 5em;')
-                            p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') TMB
-                            p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') ทหารไทย
-                        div.col-xs-8.col-sm-8.col-md-8.clear-padding
-                            p.clear-margin.bank-number 233-2-46207-2
-                            p สาขาเซ็นทรัล พลาซ่า ลาดพร้าว
-            div.hidden-xs.col-sm-2.col-md-2
+                    div.col-xs-12.col-sm-12.col-md-12.clear-padding
+                        div.col-xs-12.col-sm-12.col-md-12.text-center
+                            p.clear-margin(style='padding-top: 8px; font-size: 1.8em; font-weight: bold;') เลขบัญชีธนาคาร
+                            p(style='font-size: 1.4em;') คุณอักษรา มงคลนำเจริญ
+                        div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #0090D6; color: white;')
+                            div.col-xs-4.col-sm-4.col-md-4.clear-padding
+                                img.bank-picture(src='/img/ktb-bank.jpg', alt='ธนาคารกรุงไทย')
+                                p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') KTB
+                                p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') กรุงไทย
+                            div.col-xs-8.col-sm-8.col-md-8.clear-padding
+                                p.clear-margin.bank-number 690-0-44529-2
+                                p สาขาเซ็นทรัล พลาซ่า ลาดพร้าว
+                        div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #111583; color: white;')
+                            div.col-xs-4.col-sm-4.col-md-4.clear-padding
+                                img.bank-picture(src='/img/bkk-bank.jpg', alt='ธนาคารกรุงเทพ')
+                                p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') Bangkok Bank
+                                p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') กรุงเทพ
+                            div.col-xs-8.col-sm-8.col-md-8.clear-padding
+                                p.clear-margin.bank-number 026-4-43418-4
+                                p สาขาฟิวเจอร์พาร์ค รังสิต
+                        div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #FFBE00; color: #5d4d4d;')
+                            div.col-xs-4.col-sm-4.col-md-4.clear-padding
+                                img.bank-picture(src='/img/ks-bank.jpg', alt='ธนาคารกรุงศรีฯ')
+                                p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') krungsri
+                                p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') กรุงศรีฯ
+                            div.col-xs-8.col-sm-8.col-md-8.clear-padding
+                                p.clear-margin.bank-number 527-1-15128-0
+                                p สาขาเซ็นจูรี่ พลาซ่า
+                        div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #00811A; color: white;')
+                            div.col-xs-4.col-sm-4.col-md-4.clear-padding
+                                img.bank-picture(src='/img/k-bank.jpg', alt='ธนาคารกสิกรไทย')
+                                p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') KBank
+                                p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') กสิกรไทย
+                            div.col-xs-8.col-sm-8.col-md-8.clear-padding
+                                p.clear-margin.bank-number 021-3-45619-9
+                                p สาขาแฟชั่นไอส์แลนด์
+                        div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: #4B2886; color: white;')
+                            div.col-xs-4.col-sm-4.col-md-4.clear-padding
+                                img.bank-picture(src='/img/scb-bank.jpg', alt='ธนาคารไทยพาณิชย์')
+                                p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') SCB
+                                p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') ไทยพาณิชย์
+                            div.col-xs-8.col-sm-8.col-md-8.clear-padding
+                                p.clear-margin.bank-number 206-2-63537-2
+                                p สาขาเซ็นทรัล พลาซ่า ลาดพร้าว
+                        div.col-xs-12.col-sm-12.col-md-12.text-center.clear-padding(style='background-color: white; color: #0079C2; border: 1px solid black;')
+                            div.col-xs-4.col-sm-4.col-md-4.clear-padding
+                                img.bank-picture(src='/img/tmb-bank.jpg', alt='ธนาคารทหารไทย' style='width: 5em;')
+                                p.clear-margin(title='ชื่อธนาคาร', style='font-weight: bold;') TMB
+                                p(title='ชื่อธนาคาร', style='margin-bottom: 3px;') ทหารไทย
+                            div.col-xs-8.col-sm-8.col-md-8.clear-padding
+                                p.clear-margin.bank-number 233-2-46207-2
+                                p สาขาเซ็นทรัล พลาซ่า ลาดพร้าว
+                div.hidden-xs.col-sm-2.col-md-2
 
-        //- QA
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.card
-                a.anchor(id='QA')
-                h3.text-center คำถามเกี่ยวกับผลิตภัณฑ์ที่พบบ่อย
-                
-                div.q
-                    button.btn.btn-success.btn-sm(id='q6') คำตอบ
-                    span.q ดีบูนทั้งสองชนิดต่างกันอย่างไร ?
-                div.card.clear-margin.a(data-for='q6')
-                    span(style='font-weight: bold; ') ดีบูนชนิดผง :
-                    span  จะมีสารสกัดที่เข้มข้นและมากกว่าดีบูนชนิดแคปซูล เหมาะสำหรับการฟื้นฟูร่างกาย
-                    br
-                    span(style='font-weight: bold; ') ดีบูนชนิดแคปซูล :
-                    span  จะมีสารสกัดที่เจือจางและน้อยกว่าดีบูนชนิดผง เหมาะสำหรับการป้องกันร่างกายจากการเสื่อมสภาพ
+            //- QA
+            div.row
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.card
+                    a.anchor(id='QA')
+                    h3.text-center คำถามเกี่ยวกับผลิตภัณฑ์ที่พบบ่อย
+                    
+                    div.q
+                        button.btn.btn-success.btn-sm(id='q6') คำตอบ
+                        span.q ดีบูนทั้งสองชนิดต่างกันอย่างไร ?
+                    div.card.clear-margin.a(data-for='q6')
+                        span(style='font-weight: bold; ') ดีบูนชนิดผง :
+                        span  จะมีสารสกัดที่เข้มข้นและมากกว่าดีบูนชนิดแคปซูล เหมาะสำหรับการฟื้นฟูร่างกาย
+                        br
+                        span(style='font-weight: bold; ') ดีบูนชนิดแคปซูล :
+                        span  จะมีสารสกัดที่เจือจางและน้อยกว่าดีบูนชนิดผง เหมาะสำหรับการป้องกันร่างกายจากการเสื่อมสภาพ
 
-                div.q
-                    button.btn.btn-success.btn-sm(id='q5') คำตอบ
-                    span.q ดีบูนทานอย่างไร ?
-                div.card.clear-margin.a(data-for='q5')
-                    span(style='font-weight: bold; ') ดีบูนชนิดผง :
-                    span  คนทั่วไปจะทานหลังอาหารเช้าวันละ 1 ซอง ต่อน้ำ 1 แก้ว 
-                    br
-                    span(style='font-weight: bold; ') ดีบูนชนิดแคปซูล :
-                    span  คนทั่วไปจะทานหลังอาหารเช้าและเย็นครั้งละ 2 เม็ด
-                    br
-                    span(style='color: red;') การทานดีบูนเพื่อให้เห็นผลลัพธ์จะขึ้นอยู่กับสภาพร่างกายแต่ละบุคคล
-                
-                div.q
-                    button.btn.btn-success.btn-sm(id='q7') คำตอบ
-                    span.q ต้องทานดีบูนนานแค่ไหน ?
-                div.card.clear-margin.a(data-for='q7')
-                    span โดยส่วนใหญ่จะเห็นผลลัพธ์ภายใน 1 เดือน และทานต่อเนื่อง 3-6 เดือนเพื่อเสริมร่างกายให้แข็งแรง
-                    br
-                    span การทานดีบูนอย่างต่อเนื่อง เมื่อทานครบ 3 เดือนควรหยุดพัก 1 เดือน
-                    br
-                    span(style='color: red;') การทานดีบูนเพื่อให้เห็นผลลัพธ์จะขึ้นอยู่กับสภาพร่างกายแต่ละบุคคล
+                    div.q
+                        button.btn.btn-success.btn-sm(id='q5') คำตอบ
+                        span.q ดีบูนทานอย่างไร ?
+                    div.card.clear-margin.a(data-for='q5')
+                        span(style='font-weight: bold; ') ดีบูนชนิดผง :
+                        span  คนทั่วไปจะทานหลังอาหารเช้าวันละ 1 ซอง ต่อน้ำ 1 แก้ว 
+                        br
+                        span(style='font-weight: bold; ') ดีบูนชนิดแคปซูล :
+                        span  คนทั่วไปจะทานหลังอาหารเช้าและเย็นครั้งละ 2 เม็ด
+                        br
+                        span(style='color: red;') การทานดีบูนเพื่อให้เห็นผลลัพธ์จะขึ้นอยู่กับสภาพร่างกายแต่ละบุคคล
+                    
+                    div.q
+                        button.btn.btn-success.btn-sm(id='q7') คำตอบ
+                        span.q ต้องทานดีบูนนานแค่ไหน ?
+                    div.card.clear-margin.a(data-for='q7')
+                        span โดยส่วนใหญ่จะเห็นผลลัพธ์ภายใน 1 เดือน และทานต่อเนื่อง 3-6 เดือนเพื่อเสริมร่างกายให้แข็งแรง
+                        br
+                        span การทานดีบูนอย่างต่อเนื่อง เมื่อทานครบ 3 เดือนควรหยุดพัก 1 เดือน
+                        br
+                        span(style='color: red;') การทานดีบูนเพื่อให้เห็นผลลัพธ์จะขึ้นอยู่กับสภาพร่างกายแต่ละบุคคล
 
-                div.q
-                    button.btn.btn-success.btn-sm(id='q9') คำตอบ
-                    span.q ดีบูนทานร่วมกับยาได้ไหม ?
-                div.card.clear-margin.a(data-for='q9')
-                    span หากเป็นยาที่คุณหมอจ่ายให้ทานเพื่อรักษาสามารถทานร่วมกันได้
-                        |  แต่เมื่อทานยาที่คุณหมอจ่ายให้แล้วควรเว้นระยะเวลา 30-60 นาทีก่อนทานดีบูน
-                        |  การทานดีบูนให้ได้ผลดีแนะนำให้ทานช่วงหลังอาหารเช้า
-                    br
-                    span(style='color: red;') การทานดีบูนเพื่อให้เห็นผลลัพธ์จะขึ้นอยู่กับสภาพร่างกายแต่ละบุคคล
+                    div.q
+                        button.btn.btn-success.btn-sm(id='q9') คำตอบ
+                        span.q ดีบูนทานร่วมกับยาได้ไหม ?
+                    div.card.clear-margin.a(data-for='q9')
+                        span หากเป็นยาที่คุณหมอจ่ายให้ทานเพื่อรักษาสามารถทานร่วมกันได้
+                            |  แต่เมื่อทานยาที่คุณหมอจ่ายให้แล้วควรเว้นระยะเวลา 30-60 นาทีก่อนทานดีบูน
+                            |  การทานดีบูนให้ได้ผลดีแนะนำให้ทานช่วงหลังอาหารเช้า
+                        br
+                        span(style='color: red;') การทานดีบูนเพื่อให้เห็นผลลัพธ์จะขึ้นอยู่กับสภาพร่างกายแต่ละบุคคล
 
-                div.q
-                    button.btn.btn-success.btn-sm(id='q8') คำตอบ
-                    span.q ต้องการเก็บเงินปลายทางทำอย่างไร ?
-                div.card.clear-margin.a(data-for='q8')
-                    span การชำระสินค้าด้วยบริการเก็บเงินปลายทางลูกค้าจะต้องเสียค่าบริการ 150 บาท
-                    br
-                    span หากชำระสินค้าด้วยวิธีโอนเงินฟรีค่าจัดส่ง
-                
-                div.q
-                    button.btn.btn-success.btn-sm(id='q4') คำตอบ
-                    span.q บุคคลแบบไหนที่ไม่ควรทานดีบูน ?
-                div.card.clear-margin.a(data-for='q4')
-                    span ผู้ที่ไม่แนะนำให้ทานดีบูน ได้แก่ ผู้ที่เป็นนิ่วในระบบทางเดินปัสสาวะ นิ่วในไต และผู้ที่มีสภาวะแคลเซียมในเลือดสูง
+                    div.q
+                        button.btn.btn-success.btn-sm(id='q8') คำตอบ
+                        span.q ต้องการเก็บเงินปลายทางทำอย่างไร ?
+                    div.card.clear-margin.a(data-for='q8')
+                        span การชำระสินค้าด้วยบริการเก็บเงินปลายทางลูกค้าจะต้องเสียค่าบริการ 150 บาท
+                        br
+                        span หากชำระสินค้าด้วยวิธีโอนเงินฟรีค่าจัดส่ง
+                    
+                    div.q
+                        button.btn.btn-success.btn-sm(id='q4') คำตอบ
+                        span.q บุคคลแบบไหนที่ไม่ควรทานดีบูน ?
+                    div.card.clear-margin.a(data-for='q4')
+                        span ผู้ที่ไม่แนะนำให้ทานดีบูน ได้แก่ ผู้ที่เป็นนิ่วในระบบทางเดินปัสสาวะ นิ่วในไต และผู้ที่มีสภาวะแคลเซียมในเลือดสูง
 
-                div.q
-            div.hidden-xs.col-sm-2.col-md-2
-        
-        div.row
-            div.hidden-xs.col-sm-2.col-md-2
-            div.col-xs-12.col-sm-8.col-md-8.card(id='fb-root')
-                a.anchor(id='comments')
-                div.fb-comments(data-href='http://localhost:3000/', data-width='100%', data-numposts='3')
-                div.fb-like(style='padding-left: 1em; margin-bottom: 1em;', data-href='https://www.facebook.com/dbooneth/', data-layout='standard', 
-                            data-action='like', data-size='small', data-show-faces='true', data-share='true')
-            div.hidden-xs.col-sm-2.col-md-2
+                    div.q
+                div.hidden-xs.col-sm-2.col-md-2
 
-    script(type='text/javascript', src='/js/Product-factor-modal.js')
-    script(type='text/javascript', src='/js/font-blink.js')
-    script(type='text/javascript', src='/js/Contact.js')
-    script(type='text/javascript', src='/js/Q-and-A.js')
-    script(type='text/javascript', src='/js/facebook-sdk.js')
-    script
-        | $('.dropdown-menu > li > a').click(function(){
-        |    $('.navbar-collapse').collapse('hide');
-        | });
+            div.row
+                div.col-xs-8.col-sm-12.col-md-12.clear-padding#fixpos-btn-line-at(name='fixpos-btn-line-at', style='background-color: #00C300; color: white; border: 1px solid #00C300;')
+                    div.col-xs-10.col-sm-10.col-md-10.clear-padding(style='text-align: center;')
+                        div(style='width: 10em; margin: 0 auto;')
+                            div.rotate-plus-15-degree.inline(name='blink', style='padding-top: 2px; color: red; font-weight: bold; font-size: 1.4em;') คลิ๊ก
+                            div.inline(style=' font-size: 1.1em;') เพื่อติดต่อเรา
+                        div(style='clear: both;font-size: 1.1em; margin-bottom: 2px;') 
+                            span(title='Line ID') ID : @dboonthai
+                    div.col-xs-2.col-sm-2.col-md-2.clear-padding
+                        img(src='/img/LINE.jpg', style='width: 3em; float: right; padding: 1px; padding-top: 5px;', alt='Line icon')
+                div.col-xs-8.col-sm-12.col-md-12.clear-padding#fixpos-btn-call-us(name='fixpos-btn-call-us', style='background-color: #018F99; color: white; border: 1px solid #018F99;')
+                    div.col-xs-10.col-sm-10.col-md-10.clear-padding(style='text-align: center;')
+                        div(style='width: 10em; margin: 0 auto;')
+                            div.rotate-plus-15-degree.inline(name='blink', style='padding-top: 2px; color: red; font-weight: bold; font-size: 1.4em;') คลิ๊ก
+                            div.inline(style='font-size: 1.1em;') เพื่อโทรสั่งซื้อ
+                        div(style='clear: both; font-size: 1.1em; margin-bottom: 2px;')
+                            span(title='Phone-number') 095-220-6249
+                    div.col-xs-2.col-sm-2.col-md-2.clear-padding
+            
+            div.row
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-12.col-sm-8.col-md-8.card(id='fb-root')
+                    a.anchor(id='comments')
+                    div.fb-comments(data-href='http://localhost:3000/', data-width='100%', data-numposts='3')
+                    div.fb-like(style='padding-left: 1em; margin-bottom: 1em;', data-href='https://www.facebook.com/dbooneth/', data-layout='standard', 
+                                data-action='like', data-size='small', data-show-faces='true', data-share='true')
+                div.hidden-xs.col-sm-2.col-md-2
+
+        script(type='text/javascript', src='/js/Product-factor-modal.js')
+        script(type='text/javascript', src='/js/font-blink.js')
+        script(type='text/javascript', src='/js/Contact.js')
+        script(type='text/javascript', src='/js/Q-and-A.js')
+        script(type='text/javascript', src='/js/facebook-sdk.js')
+        script
+            | $('.dropdown-menu > li > a').click(function(){
+            |    $('.navbar-collapse').collapse('hide');
+            | });
+        script(type='text/javascript', src='/js/scroll-btn.js')
