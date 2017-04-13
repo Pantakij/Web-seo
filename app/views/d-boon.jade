@@ -697,5 +697,6 @@ block content
     script(type='text/javascript', src='/js/facebook-sdk.js')
     script
         | $('.dropdown-menu > li > a').click(function(){
-        |    $(".navbar-collapse").collapse('hide');
+        |    $('.navbar-collapse').collapse('hide');
+        |    $('ul.dropdown-menu').hide();
         | });
