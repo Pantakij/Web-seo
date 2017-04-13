@@ -23,11 +23,4 @@ $(document).ready(function(){
 	    /*document.getElementById("here").scrollIntoView();*/
 	})
 
-	$('[name="fixpos-btn-line-at"]').click(function(){
-        window.location = 'https://line.me/R/ti/p/%40dboonthai';
-    })
-
-    $('[name="fixpos-btn-call-us"]').click(function(){
-        window.location = 'tel:0952206249';
-    })
 })

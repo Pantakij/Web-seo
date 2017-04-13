@@ -81,15 +81,16 @@ block content
                         li
                             a(href='#product-suggest') แนะนำผลิตภัณฑ์
                         li
-                            a(href='#product-present') ดีบูนเหมาะสำหรับ
+                            a(href='#dboon-use-for') ดีบูนเหมาะสำหรับ
                         li
                             a(href='#product-factor') ส่วนประกอบสำคัญ
                         li
                             a(href='#product-properties') สรรพคุณของดีบูน
                         li
                             a(href='#product-contact') ติดต่อเรา
-                div(id = 'product-suggest')
+                div
                     //-  แนะนำผลิตภัณฑ์
+                    a.anchor(id='product-suggest')
                     div.col-xs-12.col-sm-8.col-md-8.carousel.slide.clear-padding.card(id='DboonCarousel', data-ride='carousel')
                         //- Indicators
                         //-ol.carousel-indicators
@@ -134,7 +135,7 @@ block content
                 div.hidden-xs.col-sm-2.col-md-2
             
             //- Present
-            div.row(id = 'product-present')
+            div.row
                 div.hidden-xs.col-sm-2.col-md-2
                 div.col-xs-12.col-sm-8.col-md-8.card
                     div.col-xs-12.col-sm-7.col-md-7.clear-padding
@@ -157,7 +158,7 @@ block content
                 div.hidden-xs.col-sm-2.col-md-2
 
             //- Product factor
-            div(id='product-factor')
+            div
                 div.modal.fade(id='product-factor-modal', role='dialog')
                     div.modal-dialog
                         div.modal-content
@@ -418,7 +419,7 @@ block content
                 div.hidden-xs.col-sm-2.col-md-2
 
             //- Product properties
-            div.row(id = 'product-properties')
+            div.row
                 div.hidden-xs.col-sm-2.col-md-2
                 div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
                     a.anchor(id='product-properties')
@@ -539,10 +540,10 @@ block content
                 div.hidden-xs.col-sm-2.col-md-2
 
             //- Contact
-            div.row(id ='product-contact')
+            div.row
                 div.hidden-xs.col-sm-2.col-md-2
                 div.col-xs-12.col-sm-8.col-md-8.clear-padding.card(style='background-color: white;')
-                    a.anchor(id='contact')
+                    a.anchor(id='product-contact')
                     div.col-xs-12.col-sm-6.col-md-6.clear-padding
                         img(src='/img/S__11354179.jpg', style='width: 100%;', alt='คุณอักษรา มงคลนำเจริญ ตัวแทนจำหน่าย D-Boon')
                     div.col-xs-12.col-sm-6.col-md-6.clear-padding
@@ -696,23 +697,14 @@ block content
                 div.hidden-xs.col-sm-2.col-md-2
 
             div.row
-                div.col-xs-8.col-sm-12.col-md-12.clear-padding#fixpos-btn-line-at(name='fixpos-btn-line-at', style='background-color: #00C300; color: white; border: 1px solid #00C300;')
-                    div.col-xs-10.col-sm-10.col-md-10.clear-padding(style='text-align: center;')
-                        div(style='width: 10em; margin: 0 auto;')
-                            div.rotate-plus-15-degree.inline(name='blink', style='padding-top: 2px; color: red; font-weight: bold; font-size: 1.4em;') คลิ๊ก
-                            div.inline(style=' font-size: 1.1em;') เพื่อติดต่อเรา
-                        div(style='clear: both;font-size: 1.1em; margin-bottom: 2px;') 
-                            span(title='Line ID') ID : @dboonthai
-                    div.col-xs-2.col-sm-2.col-md-2.clear-padding
-                        img(src='/img/LINE.jpg', style='width: 3em; float: right; padding: 1px; padding-top: 5px;', alt='Line icon')
-                div.col-xs-8.col-sm-12.col-md-12.clear-padding#fixpos-btn-call-us(name='fixpos-btn-call-us', style='background-color: #018F99; color: white; border: 1px solid #018F99;')
-                    div.col-xs-10.col-sm-10.col-md-10.clear-padding(style='text-align: center;')
-                        div(style='width: 10em; margin: 0 auto;')
-                            div.rotate-plus-15-degree.inline(name='blink', style='padding-top: 2px; color: red; font-weight: bold; font-size: 1.4em;') คลิ๊ก
-                            div.inline(style='font-size: 1.1em;') เพื่อโทรสั่งซื้อ
-                        div(style='clear: both; font-size: 1.1em; margin-bottom: 2px;')
-                            span(title='Phone-number') 095-220-6249
-                    div.col-xs-2.col-sm-2.col-md-2.clear-padding
+                div.hidden-xs.col-sm-2.col-md-2
+                div.col-xs-8.col-sm-6.col-md-6.clear-padding
+                    div.clear-padding(style=' float: right;')
+                        div.clear-padding#fixpos-btn-line-at(name='line-at')
+                            img.img-circle(src='/img/LINE.jpg', style='width: 4em; hieght: 4em;', alt='Line icon')
+                        div.clear-padding#fixpos-btn-call-us(name='call-us')
+                            img.img-circle(src='/img/phone-icon-945.png', style='width: 4em; hieght: 4em;', alt='Line icon')
+                div.hidden-xs.col-sm-2.col-md-2
             
             div.row
                 div.hidden-xs.col-sm-2.col-md-2
