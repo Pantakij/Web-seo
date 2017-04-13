@@ -9,20 +9,29 @@ body {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
+  background-color: white;
 }
 
-.navbar-default .navbar-nav > li > a {
-    color: white;
+.navbar-default .navbar-nav > li > a
+{
+  color: white;
 }
 
 .navbar-default .navbar-nav > .active > a{
-    color: white;
-    background-color: #077B24;
+  color: white;
+  background-color: #077B24;
 }
 
-.navbar-default .navbar-nav>.active>a:focus, 
-.navbar-default .navbar-nav>.active>a:hover{
+@media (max-width: 767px){
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a,
+  .dropdown-header{
+    color: white;
+  }
+}
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-toggle:hover{
+  color: #FCFCFC;
   background-color: #0FDE43;
 }
 
