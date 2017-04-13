@@ -4,7 +4,11 @@ body {
 }
 
 .navbar-default, .footer {
-  background-color: #2EA652;
+  background: #2EA652; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(141deg, #2EA652, #1CF25C); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(141deg, #2EA652, #1CF25C); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(141deg, #2EA652, #1CF25C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(141deg, #2EA652, #1CF25C); /* Standard syntax */
   border-color: #269347;
 }
 
@@ -20,6 +24,10 @@ body {
 .navbar-default .navbar-nav > .active > a{
   color: white;
   background-color: #077B24;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 
 @media (max-width: 767px){
@@ -188,6 +196,13 @@ tr.odd{
 tr:hover{
   background-color: #BCF51A;
   cursor: pointer;
+}
+
+tr{
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 
 table { border-collapse: separate; }
