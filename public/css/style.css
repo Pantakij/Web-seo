@@ -105,15 +105,6 @@ img.-right{
     }
 }
 
-@media only screen and (max-width: 400px){
-    #fixpos-btn-call-us {
-      right: 5em;
-    }
-    #fixpos-btn-line-at {
-      right: 1em;
-    }
-}
-
 @media screen and (min-width: 768px) and (max-width: 991px){
   #li-scrollspy  {
       margin-right: 0px;
@@ -286,18 +277,22 @@ div.a{
 #fixpos-btn-line-at {
     display: none;
     position: fixed;
-    bottom: 30px;
+    bottom: 50%;
     z-index: 10;
     border-radius: 8px;
-    margin-left: 4.2em;
+    margin-bottom: -4em;
+    right: 1em;
+
+   
 }
 
 #fixpos-btn-call-us {
     display: none;
     position: fixed;
-    bottom: 30px;
+    bottom: 50%;
     z-index: 10;
     border-radius: 8px;
+    right: 1em;
 }
 
 /*scrollspy class*/
