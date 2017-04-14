@@ -50,6 +50,21 @@ a.anchor {
     visibility: hidden;
 }
 
+img.incontent{
+   
+  width: 5em; 
+  
+}
+
+img.-left{
+  float: left;
+  padding-right: 0.4em;
+}
+img.-right{
+  float: right;
+  padding-left: 0.4em;
+}
+
 .text-bottom-center {
     position: absolute;
     bottom: 10%;
@@ -72,21 +87,21 @@ a.anchor {
 
 @media only screen and (max-width: 720px) and (min-width: 321px){
     .feedback-minimum-pic {
-    width: 300px;
-    height:auto;
-    overflow:hidden;
-    display:block;
-    margin:auto;
+      width: 300px;
+      height:auto;
+      overflow:hidden;
+      display:block;
+      margin:auto;
     }
 }
 
 @media only screen and (max-width: 320px){
     .feedback-minimum-pic {
-    width: 240px;
-    height:auto;
-    overflow:hidden;
-    display:block;
-    margin:auto;
+      width: 240px;
+      height:auto;
+      overflow:hidden;
+      display:block;
+      margin:auto;
     }
 }
 
@@ -275,7 +290,6 @@ div.a{
     z-index: 10;
     border-radius: 8px;
     margin-left: 4.2em;
-    /*margin-bottom: .1em;*/
 }
 
 #fixpos-btn-call-us {
@@ -286,7 +300,7 @@ div.a{
     border-radius: 8px;
 }
 
-////scrollspy class
+/*scrollspy class*/
 .nav {
   margin-bottom: 0;
   padding-left: 0;
@@ -356,4 +370,4 @@ div.a{
   margin-top: 2px;
   margin-left: 0;
 }
-////end scrollspy class
+/*end scrollspy class*/

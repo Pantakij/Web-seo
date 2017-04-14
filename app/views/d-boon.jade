@@ -88,32 +88,30 @@ block content
                             a(href='#product-properties') สรรพคุณของดีบูน
                         li
                             a(href='#product-contact') ติดต่อเรา
-                div
-                    //-  แนะนำผลิตภัณฑ์
-                    a.anchor(id='product-suggest')
-                    div.col-xs-12.col-sm-8.col-md-8.carousel.slide.clear-padding.card(id='DboonCarousel', data-ride='carousel')
-                        //- Indicators
-                        //-ol.carousel-indicators
-                            li.active(data-target='#DboonCarousel', data-slide-to='0') 
-                            li(data-target='#DboonCarousel', data-slide-to='1')
 
-                        //- Wrapper for slides
-                        div.carousel-inner(role='listbox')
-                            div.item.active
-                                img(src='/img/main-pic.jpg', alt='หากคุณมีอาการปวดข้อ ปวดเข้า ให้นึกถึงผลิตภัณฑ์อาหารเสริมดีบูน', width='460', height='345')
-                            //-div.item
-                                img(src='/img/d-boon-pong.jpg', alt='D-Boon ชนิดผง ผสมน้ำพร้อมรับประทาน', width='460', height='345')
-                            
+                div.col-xs-12.col-sm-8.col-md-8.carousel.slide.clear-padding.card(id='DboonCarousel', data-ride='carousel')
+                    //- Indicators
+                    //-ol.carousel-indicators
+                        li.active(data-target='#DboonCarousel', data-slide-to='0') 
+                        li(data-target='#DboonCarousel', data-slide-to='1')
+
+                    //- Wrapper for slides
+                    div.carousel-inner(role='listbox')
+                        div.item.active
+                            img(src='/img/main-pic.jpg', alt='หากคุณมีอาการปวดข้อ ปวดเข้า ให้นึกถึงผลิตภัณฑ์อาหารเสริมดีบูน', width='460', height='345')
+                        //-div.item
+                            img(src='/img/d-boon-pong.jpg', alt='D-Boon ชนิดผง ผสมน้ำพร้อมรับประทาน', width='460', height='345')
                         
-                        //- Left and right controls
-                        //-a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-                            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-                            span.sr-only Previous
+                    
+                    //- Left and right controls
+                    //-a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+                        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                        span.sr-only Previous
 
-                        //-a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-                            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-                            span.sr-only Next
-                    div.hidden-xs.col-sm-2.col-md-2
+                    //-a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+                        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                        span.sr-only Next
+                div.hidden-xs.col-sm-2.col-md-2
 
             div.row
                 div.hidden-xs.col-sm-2.col-md-2
@@ -423,12 +421,15 @@ block content
                 div.hidden-xs.col-sm-2.col-md-2
                 div.col-xs-12.col-sm-8.col-md-8.clear-padding.card
                     a.anchor(id='product-properties')
-                    div.col-xs-12.col-sm-12.col-md-12
+                    div.col-xs-12.col-sm-12.col-md-12(id='product-factor-source')
                         h2.text-center สรรพคุณของดีบูน
-                        ul(id='product-factor-source')
-                            li(data-for='shark-cartilage')
+                        div.panel.panel-success(data-for='shark-cartilage')
+                            div.panel-heading 
                                 h4(name='header') กระดูกอ่อนปลาฉลามช่วยเสริมสร้างกระดูกอ่อนให้กลับมาแข็งแรง เคลื่อนไหวร่างกายได้สะดวก
-                                p(name='content') กระดูกอ่อนปลาฉลามที่เป็นส่วนประกอบของดีบูน ประกอบไปด้วย
+                            div.panel-body
+                                p(name='content') 
+                                    img.incontent.-left(src='/img/shark.png')
+                                    | กระดูกอ่อนปลาฉลามที่เป็นส่วนประกอบของดีบูน ประกอบไปด้วย
                                     a(href='https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%99', target='_blank') คอลลาเจน
                                     |  และสารในกลุ่ม
                                     a(href='https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B9%82%E0%B8%84%E0%B8%AA%E0%B8%B0%E0%B8%A1%E0%B8%B4%E0%B9%82%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B9%81%E0%B8%84%E0%B8%99', target='_blank') ไกลโคสะมิโนไกลแคน
@@ -436,10 +437,13 @@ block content
                                     a(href='http://www.pharmacy.mahidol.ac.th/dic/news_week_full.php?id=481', target='_blank') คอนดรอยติน (Chondroitin)
                                     |  โดยสารนี้เป็นส่วนประกอบของกระดูกอ่อน
                                     | ทำให้กระดูกอ่อนมีคุณสมบัติยืดหยุ่น ทนทานต่อแรงกดดัน สามารถรองรับกระดูกข้อต่อได้
-                                hr
-                            li(data-for='calcium-carbonate')
+
+                        div.panel.panel-warning(data-for='calcium-carbonate')
+                            div.panel-heading 
                                 h4(name='header') แคลเซียมคาร์บอเนตช่วยเสริมสร้างกระดูก ป้องกันโรคกระดูกพรุน
-                                p(name='content') 
+                            div.panel-body
+                                p(name='content')
+                                    img.incontent.-right(src='/img/calcium_carbonate.png')
                                     a(href='http://haamor.com/th/%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%AD%E0%B9%80%E0%B8%99%E0%B8%95/', target='_blank') แคลเซียมคาร์บอเนต
                                     | นั้นเป็นส่วนผสมของผลิตภัณฑ์หลายอย่าง เช่น นมผง ชีส แยม หมากฝรั่ง ผักผลไม้กระป๋อง 
                                     | ยาลดกรด ยาแก้ท้องอืดท้องเสีย ยาบำรุงเสริมสร้างกระดูก และดีบูนก็เป็นหนึ่งในนั้น ซึ่ง
@@ -448,20 +452,27 @@ block content
                                     a(href='http://haamor.com/th/%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B9%E0%B8%81%E0%B8%9E%E0%B8%A3%E0%B8%B8%E0%B8%99/', target='_blank') โรคกระดูกพรุน
                                     |  ช่วยให้มีระดับแคลเซียมในกระแสเลือดมากขึ้น แก้ท้องอืดท้องเสีย
                                     |  บรรเทาอาการกรดไหลย้อนและอาหารไม่ย่อย เป็นต้น
-                                hr
-                            li(data-for='vitamin-d3')
+                        
+                        div.panel.panel-success(data-for='vitamin-d3')
+                            div.panel-heading 
                                 h4(name='header') วิตามิน D3 เสริมการดูดซึมแคลเซียมเข้าสู่ร่างกายให้ดียิ่งขึ้น
-                                p(name='content') ผลิตภัณฑ์ดีบูนไม่เพียงแต่ผสมแค่
+                            div.panel-body
+                                p(name='content') 
+                                    img.incontent.-left(src='/img/d3.png')
+                                    | ผลิตภัณฑ์ดีบูนไม่เพียงแต่ผสมแค่
                                     a(href='http://www.pr.chula.ac.th/index.php/15-article/81-1-000-1-200-360-600-800-40', target='_blank') แคลเซียม
                                     | เท่านั้น ยังคำนึงถึงการรับแคลเซียมเข้าสู่ร่างกายอย่างมีประสิทธิภาพด้วยส่วนผสม
                                     a(href='http://www.siamchemi.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5/', target='_blank') วิตามิน D3
                                     | จะช่วยให้ร่างกายสามารถดูดซึมแคลเซียม และ
                                     a(href='https://th.wikipedia.org/wiki/%E0%B8%9F%E0%B8%AD%E0%B8%AA%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B8%B1%E0%B8%AA', target='_blank') ฟอสฟอรัส
                                     | ได้มากขึ้น ทำให้ร่างกายมีกระดูกที่แข็งแรง
-                                hr
-                            li(data-for='collagen') 
+                        
+                        div.panel.panel-warning(data-for='collagen')
+                            div.panel-heading 
                                 h4(name='header') คอลลาเจนจากปลาทะเลช่วยป้องกัน และชะลอโรคข้อเข่าเสื่อม
+                            div.panel-body
                                 p(name='content') 
+                                    img.incontent.-right(src='/img/collagen.png')
                                     a(href='https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%99', target='_blank') คอลลาเจน
                                     | เป็นโปรตีนอย่างหนึ่งที่สำคัญต่อร่างกาย เพราะเป็นส่วนประกอบของหลายๆอวัยวะ เช่น กล้ามเนื้อ เอ็น ผิวหนัง และยังพบว่ามีมากใน
                                     | กระจกตา 
@@ -470,10 +481,13 @@ block content
                                     | คือ เสริมสร้างกระดูกอ่อนให้มีโครงสร้างที่แข็งแรง ยืดหยุ่น รองรับน้ำหนักได้ดี จึงทำให้สามารถป้องกันหรือชะลอการเกิด
                                     a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') โรคข้อเข่าเสื่อม
                                     | ได้ ผลิตภัณฑ์ดีบูนจึงเลือกคอลลาเจนจากปลาทะเลเป็นหนึ่งในส่วนผสมหลักของผลิตภัณฑ์
-                                hr
-                            li(data-for='beta-glucan')
+                        
+                        div.panel.panel-success(data-for='beta-glucan')
+                            div.panel-heading 
                                 h4(name='header') เบต้ากลูแคนจากยีสต์ช่วยลดอาการปวดข้อ และป้องกันโรคไขข้ออักเสบ
+                            div.panel-body
                                 p(name='content') 
+                                    img.incontent.-left(src='/img/beta_glucan.png')
                                     a(href='https://en.wikipedia.org/wiki/Beta-glucan', target='_blank') เบต้ากลูแคน (Beta Glucan)
                                     |  มีหน้าที่ในการช่วยกระตุ้นการทำงานของ
                                     a(href='https://th.wikipedia.org/wiki/%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%84%E0%B8%B8%E0%B9%89%E0%B8%A1%E0%B8%81%E0%B8%B1%E0%B8%99', target='_blank') ระบบภูมิคุ้มกัน
@@ -483,10 +497,14 @@ block content
                                     a(href='https://th.wikipedia.org/wiki/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%9A', target='_blank') โรคไขข้ออักเสบ
                                     | ได้ ทำให้ผลิตภัณฑ์ดีบูนที่มีส่วนผสมของเบต้ากลูแคน สามารถช่วยรักษาหรือบรรเทาอาการของโรคไขข้ออักเสบ
                                     | ด้วยระบบภูมิคุ้มกันของร่างกายอย่างเป็นธรรมชาติ
-                                hr
-                            li(data-for='pine-extract')
+                        
+                        div.panel.panel-warning(data-for='pine-extract')
+                            div.panel-heading 
                                 h4(name='header') สารสกัดจากเปลือกสนฝรั่งเศสช่วยสร้างความแข็งแรงให้กับไขข้อกระดูก
-                                p(name='content') หนึ่งใน
+                            div.panel-body
+                                p(name='content') 
+                                    img.incontent.-right(src='/img/pine_extract.png')
+                                    | หนึ่งใน
                                     a(href='https://mahosot.com/%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%81%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%99.html', target='_blank') สารสกัดจากเปลือกสน
                                     | นั้นคือ
                                     a(href='https://healthgossip.co/what-is-sulfur/', target='_blank') กำมะถัน
@@ -500,10 +518,13 @@ block content
                                     a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%AD%E0%B8%B5/', target='_blank') วิตามิน E
                                     |  ช่วยปกป้องร่างกายจากอนุมูลอิสระที่เกิดขึ้นในร่างกาย
                                     | ด้วยประโยชน์ที่หลากหลาย ผลิตภัณฑ์ดีบูนจึงเลือกสารสกัดจากเปลือกสนฝรั่งเศษมาเป็นส่วนประกอบ
-                                hr
-                            li(data-for='ascorbic')
+                        
+                        div.panel.panel-success(data-for='ascorbic')
+                            div.panel-heading 
                                 h4(name='header') แอสคอร์บิค เอซิด ช่วยป้องกันโรคข้ออักเสบ และเสริมสร้างระบบภูมิคุ้มกันของร่างกาย
+                            div.panel-body
                                 p(name='content') 
+                                    img.incontent.-left(src='/img/ascorbic.png')
                                     a(href='http://www.siamchemi.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%8B%E0%B8%B5/', target='_blank') แอสคอร์บิค เอซิด (Ascorbic Acid)
                                     |  หรือ 
                                     a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%8B%E0%B8%B5/', target='_blank') วิตามิน C
@@ -520,10 +541,14 @@ block content
                                     | ที่ช่วยเสริมการทำงานของระบบภูมิคุ้มกันของร่างกาย จึงทำให้สามารถป้องกันหรือชะลอการเกิด
                                     a(href='https://th.wikipedia.org/wiki/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%9A', target='_blank') โรคข้ออักเสบ
                                     | ได้
-                                hr
-                            li(data-for='turmeric-extract-powder')
+                        
+                        div.panel.panel-warning(data-for='turmeric-extract-powder')
+                            div.panel-heading 
                                 h4(name='header') สารสกัดจากผงขมิ้น ช่วยบรรเทาอาการจากโรคข้อเข่าเสื่อม และโรคข้ออักเสบ
-                                p(name='content') ภายในสารสกัดจากผงขมิ้นมีสารที่มีชื่อว่า 
+                            div.panel-body
+                                p(name='content') 
+                                    img.incontent.-right(src='/img/turmeric.png')
+                                    | ภายในสารสกัดจากผงขมิ้นมีสารที่มีชื่อว่า 
                                     a(href='https://curcuminherb.wordpress.com/2016/08/10/%E0%B9%80%E0%B8%84%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%84%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%99-curcumin-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3/', target='_blank') เคอร์คูมิน curcumin
                                     |  ซึ่งมีฤทธิ์ต้านการอักเสบจึงทำให้สามารถบรรเทาอาการจาก
                                     a(href='https://www.bumrungrad.com/th/joint-replacement-surgery-center-bangkok-thailand/conditions/knee-osteoarthritis', target='_blank') โรคข้อเข่าเสื่อม
@@ -536,7 +561,7 @@ block content
                                     |  
                                     a(href='https://medthai.com/%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%84/', target='_blank') วิตามิน K
                                     |  โพแทสเซียม แคลเซียม ทองแดง เหล็ก แมกนีเซียม และสังกะสี ด้วย
-                        div(style='margin-top: 2em;')
+  
                 div.hidden-xs.col-sm-2.col-md-2
 
             //- Contact
