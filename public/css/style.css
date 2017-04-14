@@ -106,13 +106,8 @@ img.-right{
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
-  #li-scrollspy  {
-      margin-right: 0px;
-      padding: 14px 2px;
-  }
-  #li-scrollspy > li > a {
-      padding: 14px 2px;
-      font-size:15px;
+  #bs-scroll-docs-sidebar  {
+      padding: 158px 395px;
   }
 }
 
@@ -296,73 +291,72 @@ div.a{
 }
 
 /*scrollspy class*/
-.nav {
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
+.group {
+    background: yellow;
+    width: 200px;
+    height: 500px;
 }
-.nav > li {
-  position: relative;
-  display: block;
+.group .subgroup {
+    background: orange;
+    width: 150px;
+    height: 200px;
 }
-.nav > li > a {
-  position: relative;
-  display: block;
-  padding: 14px 6px;
-  text-align: center;
-  color: #2EA652;
-}
-.nav > li > a:hover,
-.nav > li > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
-}
-.nav > li.disabled > a {
-  color: #777777;
-}
-.nav > li.disabled > a:hover,
-.nav > li.disabled > a:focus {
-  color: #777777;
-  text-decoration: none;
-  background-color: transparent;
-  cursor: not-allowed;
-}
-.nav .open > a,
-.nav .open > a:hover,
-.nav .open > a:focus {
-  background-color: #eeeeee;
-  border-color: #2EA652;
-}
-.nav .nav-divider {
-  height: 1px;
-  margin: 9px 0;
-  overflow: hidden;
-  background-color: #e5e5e5;
-}
-.nav > li > a > img {
-  max-width: none;
+.fixed {
+    position: fixed;
 }
 
-.nav-pills > li {
-  float: left;
+/* sidebar */
+.bs-docs-sidebar {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.nav-pills > li > a {
-  border-radius: 4px;
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    border-left: 2px solid transparent;
+    padding: 3px 20px;
+    font-size: 14px;
+    font-weight: 400;
 }
-.nav-pills > li + li {
-  margin-left: 2px;
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 13px;
 }
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
-  color: #fff;
-  background-color: #2EA652;
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
+.bs-docs-sidebar .nav>li>a:focus {
+    color: #2EA652;                 
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left-color: #2EA652; 
 }
-.nav-stacked > li {
-  float: none;
+/* all active links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 900;
 }
-.nav-stacked > li + li {
-  margin-top: 2px;
-  margin-left: 0;
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a, 
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-weight: 600;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;           
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;           
 }
 /*end scrollspy class*/

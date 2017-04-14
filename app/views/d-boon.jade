@@ -76,18 +76,41 @@ block content
 
         div.container
             div.row
-                nav#myScrollspy.hidden-xs.col-sm-2.col-md-2.clear-padding
-                    ul.nav.nav-pills.nav-stacked#li-scrollspy(data-spy='affix', data-offset-top='60',style='font-size:17px;top:79px;position:fixed;z-index: 10;')
+                nav.hidden-xs.col-sm-2.col-md-2.clear-padding.col-xs-3.bs-docs-sidebar
+                    ul#bs-scroll-docs-sidebar.nav.nav-stacked.fixed
                         li
-                            a(href='#what-is-dboon') แนะนำผลิตภัณฑ์
+                            a(href='#what-is-dboon') ดีบูนคืออะไร
                         li
-                            a(href='#dboon-use-for') ดีบูนเหมาะสำหรับ
+                            a(href='#product-reward') รางวัลการันตีคุณภาพ
+                        li
+                            a(href='#dboon-use-for') ดีบูนเหมาะสำหรับใคร
                         li
                             a(href='#product-factor') ส่วนประกอบสำคัญ
+                        li
+                            a(href='#mr-gosom') ผลตอบรับจากลูกค้า
+                            ul.nav.nav-stacked
+                                li  
+                                    a(href='#mr-gosom') คุณโกสม
+                                li
+                                    a(href='#ms-rung') คุณรุ่ง
+                                li
+                                    a(href='#mrs-on') คุณแม่อ่อน
+                                li
+                                    a(href='#ms-yupin') คุณป้ายุพิน
+                                li
+                                    a(href='#ms-rudee') คุณป้าฤดี
+                                li
+                                    a(href='#ms-pundar') คุณปัลดา
+                                li
+                                    a(href='#mr-jarearn') คุณเจริญ
                         li
                             a(href='#product-properties') สรรพคุณของดีบูน
                         li
                             a(href='#product-contact') ติดต่อเรา
+                        li
+                            a(href='#QA') คำถามที่พบบ่อย
+                        li
+                            a(href='#comments') ความคิดเห็น
 
                 div.col-xs-12.col-sm-8.col-md-8.carousel.slide.clear-padding.card(id='DboonCarousel', data-ride='carousel')
                     //- Indicators
@@ -740,6 +763,7 @@ block content
                                 data-action='like', data-size='small', data-show-faces='true', data-share='true')
                     div(style='margin-bottom: 1em;')
                 div.hidden-xs.col-sm-2.col-md-2
+
 
         script(type='text/javascript', src='/js/Product-factor-modal.js')
         script(type='text/javascript', src='/js/font-blink.js')

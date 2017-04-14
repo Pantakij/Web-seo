@@ -3,6 +3,11 @@ $(document).ready(function(){
 		scrollFunction()
 	}
 
+	$('body').scrollspy({
+    target: '.bs-docs-sidebar',
+    offset: 40
+	});
+
 	function scrollFunction() {
 
 	     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
